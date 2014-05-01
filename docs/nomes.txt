@@ -1,0 +1,7 @@
+﻿RA 06009086 - Viviane da Rocha Furtado - Gerente
+
+RA 06008891 - Tiago Ferrari - Responsável pelo Controller
+
+RA 06008905 - Thiago Morais Palota - Responsável pelo Model
+
+RA 06008876 - Taynara Luana Caetano dos Santos - Responsável pela View
