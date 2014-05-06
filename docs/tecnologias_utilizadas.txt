@@ -1,0 +1,9 @@
+Tecnologias que serão utilizadas:
+
+- PHP
+- HTML 
+- CSS 
+- Twitter Bootstrap
+- NetBeans
+- EasyPHP
+- Banco de Dados: MySQL

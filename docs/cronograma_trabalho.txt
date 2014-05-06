@@ -1,0 +1,665 @@
+------------------------------------------------------------------------------------------
+
+				CRONOGRAMA DE TRABALHO
+
+------------------------------------------------------------------------------------------
+Papel: Gerente		|	Responsável: Viviane da Rocha Furtado
+------------------------------------------------------------------------------------------
+Semana 1
+------------------------------------------------------------------------------------------
+Tarefas:
+
+1) Acompanhar o desenvolvimento do projeto de cada desenvolvedor;
+
+2) Fazer reunião com a equipe para discutir o desenvolvimento do projeto;
+
+3) Fazer o relatório com as lições aprendidas, dificuldades encontradas, tarefas concluídas 
+e tarefas previstas para a semana e não foram concluídas no final da semana.
+
+------------------------------------------------------------------------------------------
+Semana 2
+------------------------------------------------------------------------------------------
+Tarefas:
+
+4) Avaliar o nível de dificuldade de cada desenvolvedor;
+
+5) Fazer reunião com a equipe para discutir o desenvolvimento do projeto;
+
+6) Fazer o relatório com as lições aprendidas, dificuldades encontradas, tarefas concluídas 
+e tarefas previstas para a semana e não foram concluídas no final da semana.
+
+------------------------------------------------------------------------------------------
+Semana 3
+------------------------------------------------------------------------------------------
+Tarefas:
+
+7) Fazer reunião com a equipe para discutir o desenvolvimento do projeto;
+
+8) Fazer o relatório com as lições aprendidas, dificuldades encontradas, tarefas concluídas 
+e tarefas previstas para a semana e não foram concluídas no final da semana.
+
+------------------------------------------------------------------------------------------
+Semana 4
+------------------------------------------------------------------------------------------
+Tarefas:
+
+9) Verificar se será necessário realocar os desenvolvedores para que entreguem o projeto no
+prazo estabelecido;
+
+10) Verificar no final da semana se o projeto foi concluído e está de acordo com o que foi
+solicitado;
+
+11) Fazer o relatório com as lições aprendidas, dificuldades encontradas, tarefas concluídas 
+e tarefas previstas para a semana e não foram concluídas no final da semana.
+
+_________________________________________________________________________________________
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+------------------------------------------------------------------------------------------
+Papel: Controller	|	Responsável: Tiago Ferrari
+------------------------------------------------------------------------------------------
+Semana 1
+------------------------------------------------------------------------------------------
+Tarefas:
+
+1) Criar um diretório lib.
+
+2) No diretório /mvc/lib:
+
+	2.2) Criar um arquivo chamado "Controller.php" contendo uma classe abstrata Controller 
+	com os métodos públicos e abstratos: cadastrar, listar e apagar;
+
+	2.3) Criar um diretório chamado "Controler". 
+
+3) No diretório /mvc/lib/Controller:
+
+	3.1) Criar um arquivo chamado Empresa.php contendo uma classe Controller_Empresa que 
+	estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+	3.2) Criar um arquivo chamado Marketing.php contendo uma classe Controller_Marketing 
+	que estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+	3.3) Criar um arquivo chamado Preco.php contendo uma classe Controller_Preco que 
+	estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+	3.4) Criar um arquivo chamado Venda.php contendo uma classe Controller_Venda que 
+	estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+	3.5) Criar um arquivo chamado Compra.php contendo uma classe Controller_Compra que 
+	estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+	3.6) Criar um arquivo chamado Cliente.php contendo uma classe Controller_Cliente que 
+	estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+	3.7) Criar um arquivo chamado Rh.php contendo uma classe Controller_Rh que estende a 
+	classe Controller e escrever somente a assinatura dos métodos públicos: cadastrar, 
+	listar e apagar;
+
+	3.8) Criar um arquivo chamado Administrativo.php contendo uma classe Controller_Administrativo 
+	que estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+	3.9) Criar um arquivo chamado Juridico.php contendo uma classe Controller_Juridico que 
+	estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+------------------------------------------------------------------------------------------
+Semana 2
+------------------------------------------------------------------------------------------
+Tarefas:
+
+3) No diretório /mvc/lib/Controller/Empresa.php:
+
+	3.1) Implementar o método cadastrar da classe Empresa;
+
+4) No diretório /mvc/lib/Controller/Marketing.php:
+
+	4.1) Implementar o método cadastrar da classe Marketing;
+
+5) No diretório /mvc/lib/Controller/Preco.php:
+
+	5.1) Implementar o método cadastrar da classe Preco;
+
+6) No diretório /mvc/lib/Controller/Venda.php:
+
+	6.1) Implementar o método cadastrar da classe Venda;
+
+7) No diretório /mvc/lib/Controller/Compra.php:
+
+	7.1) Implementar o método cadastrar da classe Compra;
+
+8) No diretório /mvc/lib/Controller/Cliente.php:
+
+	8.1) Implementar o método cadastrar da classe Cliente;
+
+9) No diretório /mvc/lib/Controller/Rh.php:
+
+	9.1) Implementar o método cadastrar da classe Rh;
+
+10) No diretório /mvc/lib/Controller/Administrativo.php:
+
+	10.1) Implementar o método cadastrar da classe Administrativo;	
+
+11) No diretório /mvc/lib/Controller/Juridico.php:
+
+	11.1) Implementar o método cadastrar da classe Juridico;
+
+12) No diretório /mvc:
+
+	12.1) Criar um arquivo chamado "cadastrar-empresas.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Empresa e chamar o método cadastrar;
+
+	12.2) Criar um arquivo chamado "cadastrar-marketing.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Marketing e chamar o método cadastrar;
+
+	12.3) Criar um arquivo chamado "cadastrar-precos.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Preco e chamar o método cadastrar;
+
+	12.4) Criar um arquivo chamado "cadastrar-vendas.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Vendas e chamar o método cadastrar;
+
+	12.5) Criar um arquivo chamado "cadastrar-compras.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Compra e chamar o método cadastrar;
+
+	12.6) Criar um arquivo chamado "cadastrar-clientes.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Cliente e chamar o método cadastrar;
+
+	12.7) Criar um arquivo chamado "cadastrar-rh.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Rh e chamar o método cadastrar;
+
+	12.8) Criar um arquivo chamado "cadastrar-administrativos.php" contendo o include da 
+	classe config.php, instanciar a classe Controller_Administrativo e chamar o método 
+	cadastrar;
+
+	12.9) Criar um arquivo chamado "cadastrar-juridicos.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Juridico e chamar o método cadastrar;
+
+------------------------------------------------------------------------------------------
+Semana 3
+------------------------------------------------------------------------------------------
+Tarefas:
+
+13) No diretório /mvc/lib/Controller/Empresa.php:
+
+	13.1) Implementar o método listar da classe Empresa;
+
+14) No diretório /mvc/lib/Controller/Marketing.php:
+
+	14.1) Implementar o método listar da classe Marketing;
+
+15) No diretório /mvc/lib/Controller/Preco.php:
+
+	15.1) Implementar o método listar da classe Preco;
+
+16) No diretório /mvc/lib/Controller/Venda.php:
+
+	16.1) Implementar o método listar da classe Venda;
+
+17) No diretório /mvc/lib/Controller/Compra.php:
+
+	17.1) Implementar o método listar da classe Compra;
+
+18) No diretório /mvc/lib/Controller/Cliente.php:
+
+	18.1) Implementar o método listar da classe Cliente;
+
+19) No diretório /mvc/lib/Controller/Rh.php:
+
+	19.1) Implementar o método listar da classe Rh;
+
+20) No diretório /mvc/lib/Controller/Administrativo.php:
+
+	20.1) Implementar o método listar da classe Administrativo;	
+
+21) No diretório /mvc/lib/Controller/Juridico.php:
+
+	21.1) Implementar o método listar da classe Juridico;
+
+22) No diretório /mvc:
+
+	22.1) Criar um arquivo chamado "listar-empresas.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Empresa e chamar o método listar;
+
+	22.2) Criar um arquivo chamado "listar-marketing.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Marketing e chamar o método listar;
+
+	22.3) Criar um arquivo chamado "listar-precos.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Preco e chamar o método listar;
+
+	22.4) Criar um arquivo chamado "listar-vendas.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Vendas e chamar o método listar;
+
+	22.5) Criar um arquivo chamado "listar-compras.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Compra e chamar o método listar;
+
+	22.6) Criar um arquivo chamado "listar-clientes.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Cliente e chamar o método listar;
+
+	22.7) Criar um arquivo chamado "listar-rh.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Rh e chamar o método listar;
+
+	22.8) Criar um arquivo chamado "listar-administrativos.php" contendo o include da 
+	classe config.php, instanciar a classe Controller_Administrativo e chamar o método 
+	listar;
+
+	22.9) Criar um arquivo chamado "listar-juridicos.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Juridico e chamar o método listar;
+
+
+------------------------------------------------------------------------------------------
+Semana 4
+------------------------------------------------------------------------------------------
+Tarefas:
+
+23) No diretório /mvc/lib/Controller/Empresa.php:
+
+	23.1) Implementar o método apagar da classe Empresa;
+
+24) No diretório /mvc/lib/Controller/Marketing.php:
+
+	24.1) Implementar o método apagar da classe Marketing;
+
+25) No diretório /mvc/lib/Controller/Preco.php:
+
+	25.1) Implementar o método apagar da classe Preco;
+
+26) No diretório /mvc/lib/Controller/Venda.php:
+
+	26.1) Implementar o método apagar da classe Venda;
+
+27) No diretório /mvc/lib/Controller/Compra.php:
+
+	27.1) Implementar o método apagar da classe Compra;
+
+28) No diretório /mvc/lib/Controller/Cliente.php:
+
+	28.1) Implementar o método apagar da classe Cliente;
+
+29) No diretório /mvc/lib/Controller/Rh.php:
+
+	29.1) Implementar o método apagar da classe Rh;
+
+30) No diretório /mvc/lib/Controller/Administrativo.php:
+
+	30.1) Implementar o método apagar da classe Administrativo;	
+
+31) No diretório /mvc/lib/Controller/Juridico.php:
+
+	31.1) Implementar o método apagar da classe Juridico;
+
+_________________________________________________________________________________________
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+------------------------------------------------------------------------------------------
+Papel: Model		|	Responsável: Thiago Morais Palota
+------------------------------------------------------------------------------------------
+Semana 1
+------------------------------------------------------------------------------------------
+Tarefas:
+
+1) No diretório /mvc:
+
+	1.1) Criar um arquivo chamado "script.sql" com o script do banco de dados em MySQL;
+
+	1.2) Criar um arquivo chamado "config.php" contendo:
+
+		1.2.1) As constantes 'DIRETORIO' com o caminho da pasta "mvc" e 'DIRETORIO_AUTOLOAD', 
+		no qual concatena a constante 'DIRETORIO' com a pasta '/lib';
+
+		1.2.2) Criar e implementar a função autoload.
+
+
+2) No diretório /mvc/lib:
+
+	2.1) Criar um arquivo chamado "Conexao.php" contendo:
+
+		2.1.1) Uma classe Conexao que estende a classe PDO;
+
+		2.1.2) Quatro atributos privados dsn, user, password e instancia, sendo apenas o 
+		último como estático;
+
+		2.1.3) Implementar o método construtor para inicializar o dsn, o user, o password 
+		e setar os atributos PDO::ATTR_ERRMODE e PDO::ERRMODE_EXCEPTION. Caso ocorra alguma 
+		falha de conexão gerar uma exceção;
+
+		2.1.4) Implementar o método público e estático getInstance de acordo com o design 
+		patterns Singleton.
+
+	2.2) Criar um arquivo chamado "Vo.php" contendo:
+
+		2.2.1) Uma classe abstrata Vo com dois atributos do tipo array: dados como private
+		e atributos	como protected;
+
+		2.2.2) Escrever o método construtor sem inicializar os atributos;
+
+		2.2.3) Implementar o método mágico __call() passando os parâmetros chamados metodo 
+		e parametros e que retorne o método get/set dos atributos. Se o atributo não existir 
+		lançar uma exceção;
+
+		2.2.4) Implementar o método mágico __get();
+
+		2.2.5) Implementar o método mágico __set();
+
+		2.2.6) Implementar o método get;
+
+		2.2.7) Implementar o método set;
+
+		2.2.8) Implementar o método getAll;
+
+		2.2.9) Implementar o método setAll;
+
+		2.2.10) Implementar o método setFromBd.
+
+	2.3) Criar um diretório Vo.
+
+3) No diretório /mvc/lib/Vo:
+
+	3.1) Criar um arquivo chamado "Empresa.php" contendo uma classe Vo_Empresa com o atributo 
+	protegido chamado atributos do tipo array com os atributos da tabela Empresa.
+
+	3.2) Criar um arquivo chamado "Marketing.php" contendo uma classe Vo_Marketing com o 
+	atributo protegido chamado atributos do tipo array com os atributos da tabela Marketing.
+
+	3.3) Criar um arquivo chamado "Preco.php" contendo uma classe Vo_Preco com o atributo 
+	protegido chamado atributos do tipo array com os atributos da tabela Preco.
+
+	3.4) Criar um arquivo chamado "Venda.php" contendo uma classe Vo_Venda com o atributo 
+	protegido chamado atributos do tipo array com os atributos da tabela Venda.
+
+	3.5) Criar um arquivo chamado "Compra.php" contendo uma classe Vo_Compra com o atributo 
+	protegido chamado atributos do tipo array com os atributos da tabela Compra.
+
+	3.6) Criar um arquivo chamado "Cliente.php" contendo uma classe Vo_Cliente com o atributo 
+	protegido chamado atributos do tipo array com os atributos da tabela Cliente.
+
+	3.7) Criar um arquivo chamado "Rh.php" contendo uma classe Vo_Rh com o atributo 
+	protegido chamado atributos do tipo array com os atributos da tabela Rh.
+
+	3.8) Criar um arquivo chamado "Administrativo.php" contendo uma classe Vo_Administrativo 
+	com o atributo protegido chamado atributos do tipo array com os atributos da tabela 
+	Administrativo.
+
+	3.9) Criar um arquivo chamado "Juridico.php" contendo uma classe Vo_Juridico com o atributo 
+	protegido chamado atributos do tipo array com os atributos da tabela Juridico.
+
+
+------------------------------------------------------------------------------------------
+Semana 2
+------------------------------------------------------------------------------------------
+Tarefas:
+
+4) No diretório /mvc/lib:
+
+	4.1) Criar um arquivo chamado "Dao.php" contendo uma classe abstrata Dao com os atributos 
+	protegidos tabela, pk e vo;
+
+	4.2) Implementar os métodos create, request e delete;
+
+	4.3) Criar um diretório Dao.
+
+5) No diretório /mvc/lib/Dao:
+
+	5.1) Criar um arquivo chamado "Empresa.php" contendo uma classe Dao_Empresa que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.2) Criar um arquivo chamado "Marketing.php" contendo uma classe Dao_Marketing que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.3) Criar um arquivo chamado "Preco.php" contendo uma classe Dao_Preco que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.4) Criar um arquivo chamado "Venda.php" contendo uma classe Dao_Venda que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.5) Criar um arquivo chamado "Compra.php" contendo uma classe Dao_Compra que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.6) Criar um arquivo chamado "Cliente.php" contendo uma classe Dao_Cliente que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.7) Criar um arquivo chamado "Rh.php" contendo uma classe Dao_Rh que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.8) Criar um arquivo chamado "Administrativo.php" contendo uma classe Dao_Administrativo 
+	que estende Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.9) Criar um arquivo chamado "Juridico.php" contendo uma classe Dao_Juridico que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+------------------------------------------------------------------------------------------
+Semana 3
+------------------------------------------------------------------------------------------
+Tarefas:
+
+6) No diretório /mvc/lib:
+
+	6.1) Criar um arquivo chamado "Model.php" contendo uma classe abstrata Model com o atributo 
+	protegido erros do tipo array e implementar os métodos públicos addErro, getErros e temErros.
+
+	6.2) Criar um diretório Model;
+
+7) No diretório /mvc/lib/Model:
+
+	7.1) Criar um arquivo chamado "Empresa.php" contendo uma class Model_Empresa que estende 
+	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Empresa e 
+	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). 
+	Após os campos serem validados instanciar o Dao_Empresa e o atributo pk recebe os dados do 
+	método create;
+
+	7.2) Criar um arquivo chamado "Marketing.php" contendo uma class Model_Marketing que estende 
+	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Marketing e 
+	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). Após 
+	os campos serem validados instanciar o Dao_Marketing e o atributo pk recebe os dados do método 
+	create;
+
+	7.3) Criar um arquivo chamado "Preco.php" contendo uma class Model_Preco que estende 
+	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Preco e 
+	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). Após 
+	os campos serem validados instanciar o Dao_Preco e o atributo pk recebe os dados do método 
+	create;
+
+	7.4) Criar um arquivo chamado "Venda.php" contendo uma class Model_Venda que estende 
+	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Venda e 
+	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). Após 
+	os campos serem validados instanciar o Dao_Venda e o atributo pk recebe os dados do método 
+	create;
+
+
+------------------------------------------------------------------------------------------
+Semana 4
+------------------------------------------------------------------------------------------
+Tarefas:
+
+	7.5) Criar um arquivo chamado "Compra.php" contendo uma class Model_Compra que estende 
+	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Compra e 
+	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). 
+	Após os campos serem validados instanciar o Dao_Compra e o atributo pk recebe os dados do 
+	método create;
+
+	7.6) Criar um arquivo chamado "Cliente.php" contendo uma class Model_Cliente que estende 
+	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Cliente e 
+	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). 
+	Após os campos serem validados instanciar o Dao_Cliente e o atributo pk recebe os dados do 
+	método create;
+
+	7.7) Criar um arquivo chamado "Rh.php" contendo uma class Model_Rh que estende 
+	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Rh e 
+	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). 
+	Após os campos serem validados instanciar o Dao_Rh e o atributo pk recebe os dados do 
+	método create;
+
+	7.8) Criar um arquivo chamado "Administrativo.php" contendo uma class Model_Administrativo 
+	que estende Model e implementar o método cadastrar passando como parâmetro dados do tipo 
+	Vo_Administrativo e fazer a validação dos campos e verificar se possui erros utilizando o 
+	método temErros(). Após os campos serem validados instanciar o Dao_Administrativo e o 
+	atributo pk recebe os dados do método create;
+
+	7.9) Criar um arquivo chamado "Juridico.php" contendo uma class Model_Juridico que estende 
+	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Juridico e 
+	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). 
+	Após os campos serem validados instanciar o Dao_Juridico e o atributo pk recebe os dados do 
+	método create;
+
+_________________________________________________________________________________________
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+------------------------------------------------------------------------------------------
+Papel: View		|	Responsável: Taynara Luana Caetano dos Santos
+------------------------------------------------------------------------------------------
+Semana 1
+------------------------------------------------------------------------------------------
+Tarefas:
+
+1) No diretório /mvc:
+
+	1.1) Criar o diretório "estilizacao"
+
+	1.2) Criar o diretório "telas".
+
+2) No diretório /mvc/estilizacao:
+
+	2.1) Criar um arquivo chamado "estilo.css" para utilizá-lo quando for necessário fazer 
+	alguma alteração no estilo do layout;
+
+	2.2) Criar o diretório "twitter-bootstrap".
+
+3) No diretório /mvc/estilizacao/twitter-bootstrap:
+
+	3.1) Incluir todos os diretórios do pacote do twitter-bootstrap.
+
+4) No diretório /mvc/telas:
+
+	4.1) Criar o diretório "empresa".
+
+5) No diretorio /mvc/telas/empresa:
+
+	5.1) Criar um arquivo chamado "cadastrarEmpresa.php" contendo a validação de erro, caso ocorra 
+	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
+	da questão 1 e incluir um botão chamado "Próxima".
+
+6) No diretório /mvc/telas:
+
+	6.1) Criar o diretório "marketing".
+
+7) No diretorio /mvc/telas/marketing:
+
+	7.1) Criar um arquivo chamado "cadastrarMarketing.php" contendo a validação de erro, caso ocorra 
+	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
+	da questão 2 à 2.9 e incluir um botão chamado "Próxima".
+
+8) No diretório /mvc/telas:
+
+	8.1) Criar o diretório "preco".
+
+9) No diretorio /mvc/telas/preco:
+
+	9.1) Criar um arquivo chamado "cadastrarPreco.php" contendo a validação de erro, caso ocorra 
+	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
+	da questão 3 à 3.2 e incluir um botão chamado "Próxima".
+
+
+------------------------------------------------------------------------------------------
+Semana 2
+------------------------------------------------------------------------------------------
+Tarefas:
+
+10) No diretório /mvc/telas:
+
+	10.1) Criar o diretório "venda".
+
+11) No diretorio /mvc/telas/venda:
+
+	11.1) Criar um arquivo chamado "cadastrarVenda.php" contendo a validação de erro, caso ocorra 
+	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
+	da questão 4 à 4.5 e incluir um botão chamado "Próxima".
+
+12) No diretório /mvc/telas:
+
+	12.1) Criar o diretório "compra".
+
+13) No diretorio /mvc/telas/compra:
+
+	13.1) Criar um arquivo chamado "cadastrarCompra.php" contendo a validação de erro, caso ocorra 
+	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
+	da questão 5 à 5.2 e incluir um botão chamado "Próxima".
+
+14) No diretório /mvc/telas:
+
+	14.1) Criar o diretório "cliente".
+
+15) No diretorio /mvc/telas/cliente:
+
+	15.1) Criar um arquivo chamado "cadastrarCliente.php" contendo a validação de erro, caso ocorra 
+	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
+	da questão 6 à 6.4 e incluir um botão chamado "Próxima".
+
+16) No diretório /mvc/telas:
+
+	16.1) Criar o diretório "rh".
+
+17) No diretorio /mvc/telas/rh:
+
+	17.1) Criar um arquivo chamado "cadastrarRh.php" contendo a validação de erro, caso ocorra 
+	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
+	da questão 7 à 7.7 e incluir um botão chamado "Próxima".
+
+ 
+------------------------------------------------------------------------------------------
+Semana 3
+------------------------------------------------------------------------------------------
+Tarefas:
+
+18) No diretório /mvc/telas:
+
+	18.1) Criar o diretório "administrativo".
+
+19) No diretorio /mvc/telas/administrativo:
+
+	19.1) Criar um arquivo chamado "cadastrarAdministrativo.php" contendo a validação de erro, 
+	caso ocorra algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE 
+	UNIPAR/ACIC da questão 8 à 8.4 e incluir um botão chamado "Próxima".
+
+20) No diretório /mvc/telas:
+
+	20.1) Criar o diretório "juridico".
+
+21) No diretorio /mvc/telas/juridico:
+
+	21.1) Criar um arquivo chamado "cadastrarJuridico.php" contendo a validação de erro, caso ocorra 
+	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
+	da questão 9 à 9.6 e incluir dois botões: "Salvar" e "Cancelar".
+
+22) No diretorio /mvc/telas:
+
+	22.1) Criar um arquivo chamado "Template.php" contendo o HTML, no qual será divido em 
+	duas div com id: topo e conteudo. Na div com id igual a conteudo dar include no 
+	atributo tela. 
+
+23) No diretório /mvc/lib:
+
+	23.1) Criar um arquivo chamado "View.php" contendo uma classe View com o atributo privado 
+	dados do tipo array e implementar os métodos add e desenhar;
+
+------------------------------------------------------------------------------------------
+Semana 4
+------------------------------------------------------------------------------------------
+Tarefas:
+
+24) No diretório /mvc/telas/empresa:
+
+	24.1) Criar um arquivo chamado "listar.php" contendo o HTML e CSS/Twitter Bootstrap da 
+	tela de listagem no formato de tabela e incluir os botões de incluir, deletar e visualizar;
+
+	24.2) Imprimir os dados cadastrados utilizando um laço foreach.
+
+25) Implementar a tela de visualização do formulário.
+___________________________________________________________________________________________
