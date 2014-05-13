@@ -1,0 +1,297 @@
+----------------------------------------------------------------------------------------
+
+				RELATÓRIO SEMANAL
+
+----------------------------------------------------------------------------------------
+Papel: Gerente		|	Responsável: Viviane Furtado
+----------------------------------------------------------------------------------------	
+Semana 1
+----------------------------------------------------------------------------------------
+Lições aprendidas:
+----------------------------------------------------------------------------------------
+- Elaborar um cronograma;
+- Ter a visão de como será o projeto do início ao fim.
+
+----------------------------------------------------------------------------------------
+Dificuldades encontradas:
+----------------------------------------------------------------------------------------
+- Fazer o cronograma;
+- Prever o que cada um fará nas quatro semanas;
+- Verificar a disponibilidade de cada um para que consigam realizar todas
+as tarefas solicitadas na semana.
+
+----------------------------------------------------------------------------------------
+Tarefas concluídas:
+----------------------------------------------------------------------------------------
+1) Acompanhar o desenvolvimento do projeto de cada desenvolvedor;
+
+2) Fazer reunião com a equipe para discutir o desenvolvimento do projeto;
+
+3) Fazer o relatório com as lições aprendidas, dificuldades encontradas, tarefas concluídas 
+e tarefas previstas para a semana e não foram concluídas no final da semana.
+
+----------------------------------------------------------------------------------------
+Tarefas previstas que não foram concluídas:
+----------------------------------------------------------------------------------------
+Nenhuma
+
+________________________________________________________________________________________
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+----------------------------------------------------------------------------------------
+Papel: Controller	|	Responsável: Tiago Ferrari
+----------------------------------------------------------------------------------------
+Semana 1
+----------------------------------------------------------------------------------------
+Lições aprendidas:
+----------------------------------------------------------------------------------------
+Nenhuma
+
+----------------------------------------------------------------------------------------
+Dificuldades encontradas:
+----------------------------------------------------------------------------------------
+Nenhuma
+
+----------------------------------------------------------------------------------------
+Tarefas concluídas:
+----------------------------------------------------------------------------------------
+1) Criar um diretório lib.
+
+2) No diretório /mvc/lib:
+
+	2.2) Criar um arquivo chamado "Controller.php" contendo uma classe abstrata Controller 
+	com os métodos públicos e abstratos: cadastrar, listar e apagar;
+
+	2.3) Criar um diretório chamado "Controler". 
+
+3) No diretório /mvc/lib/Controller:
+
+	3.1) Criar um arquivo chamado Empresa.php contendo uma classe Controller_Empresa que 
+	estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+	3.2) Criar um arquivo chamado Marketing.php contendo uma classe Controller_Marketing 
+	que estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+	3.3) Criar um arquivo chamado Preco.php contendo uma classe Controller_Preco que 
+	estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+	3.4) Criar um arquivo chamado Venda.php contendo uma classe Controller_Venda que 
+	estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+	3.5) Criar um arquivo chamado Compra.php contendo uma classe Controller_Compra que 
+	estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+	3.6) Criar um arquivo chamado Cliente.php contendo uma classe Controller_Cliente que 
+	estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+	3.7) Criar um arquivo chamado Rh.php contendo uma classe Controller_Rh que estende a 
+	classe Controller e escrever somente a assinatura dos métodos públicos: cadastrar, 
+	listar e apagar;
+
+	3.8) Criar um arquivo chamado Administrativo.php contendo uma classe Controller_Administrativo 
+	que estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+	3.9) Criar um arquivo chamado Juridico.php contendo uma classe Controller_Juridico que 
+	estende a classe Controller e escrever somente a assinatura dos métodos públicos: 
+	cadastrar, listar e apagar;
+
+----------------------------------------------------------------------------------------
+Tarefas previstas que não foram concluídas:
+----------------------------------------------------------------------------------------
+Nenhuma
+
+________________________________________________________________________________________
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+----------------------------------------------------------------------------------------
+Papel: Model		|	Responsável: Thiago Palota
+----------------------------------------------------------------------------------------
+Semana 1
+----------------------------------------------------------------------------------------
+Lições aprendidas:
+----------------------------------------------------------------------------------------
+- Cumprimento de atividades dentro do cronograma.
+
+----------------------------------------------------------------------------------------
+Dificuldades encontradas:
+----------------------------------------------------------------------------------------
+Nenhuma
+
+----------------------------------------------------------------------------------------
+Tarefas concluídas:
+----------------------------------------------------------------------------------------
+1) No diretório /mvc:
+
+	1.1) Criar um arquivo chamado "script.sql" com o script do banco de dados em MySQL;
+
+	1.2) Criar um arquivo chamado "config.php" contendo:
+
+		1.2.1) As constantes 'DIRETORIO' com o caminho da pasta "mvc" e 'DIRETORIO_AUTOLOAD', 
+		no qual concatena a constante 'DIRETORIO' com a pasta '/lib';
+
+		1.2.2) Criar e implementar a função autoload.
+
+
+2) No diretório /mvc/lib:
+
+	2.1) Criar um arquivo chamado "Conexao.php" contendo:
+
+		2.1.1) Uma classe Conexao que estende a classe PDO;
+
+		2.1.2) Quatro atributos privados dsn, user, password e instancia, sendo apenas o 
+		último como estático;
+
+		2.1.3) Implementar o método construtor para inicializar o dsn, o user, o password 
+		e setar os atributos PDO::ATTR_ERRMODE e PDO::ERRMODE_EXCEPTION. Caso ocorra alguma 
+		falha de conexão gerar uma exceção;
+
+		2.1.4) Implementar o método público e estático getInstance de acordo com o design 
+		patterns Singleton.
+
+	2.2) Criar um arquivo chamado "Vo.php" contendo:
+
+		2.2.1) Uma classe abstrata Vo com dois atributos do tipo array: dados como private
+		e atributos	como protected;
+
+		2.2.2) Escrever o método construtor sem inicializar os atributos;
+
+		2.2.3) Implementar o método mágico __call() passando os parâmetros chamados metodo 
+		e parametros e que retorne o método get/set dos atributos. Se o atributo não existir 
+		lançar uma exceção;
+
+		2.2.4) Implementar o método mágico __get();
+
+		2.2.5) Implementar o método mágico __set();
+
+		2.2.6) Implementar o método get;
+
+		2.2.7) Implementar o método set;
+
+		2.2.8) Implementar o método getAll;
+
+		2.2.9) Implementar o método setAll;
+
+		2.2.10) Implementar o método setFromBd.
+
+	2.3) Criar um diretório Vo.
+
+3) No diretório /mvc/lib/Vo:
+
+	3.1) Criar um arquivo chamado "Empresa.php" contendo uma classe Vo_Empresa com o atributo 
+	protegido chamado atributos do tipo array com os atributos da tabela Empresa.
+
+	3.2) Criar um arquivo chamado "Marketing.php" contendo uma classe Vo_Marketing com o 
+	atributo protegido chamado atributos do tipo array com os atributos da tabela Marketing.
+
+	3.3) Criar um arquivo chamado "Preco.php" contendo uma classe Vo_Preco com o atributo 
+	protegido chamado atributos do tipo array com os atributos da tabela Preco.
+
+	3.4) Criar um arquivo chamado "Venda.php" contendo uma classe Vo_Venda com o atributo 
+	protegido chamado atributos do tipo array com os atributos da tabela Venda.
+
+	3.5) Criar um arquivo chamado "Compra.php" contendo uma classe Vo_Compra com o atributo 
+	protegido chamado atributos do tipo array com os atributos da tabela Compra.
+
+	3.6) Criar um arquivo chamado "Cliente.php" contendo uma classe Vo_Cliente com o atributo 
+	protegido chamado atributos do tipo array com os atributos da tabela Cliente.
+
+	3.7) Criar um arquivo chamado "Rh.php" contendo uma classe Vo_Rh com o atributo 
+	protegido chamado atributos do tipo array com os atributos da tabela Rh.
+
+	3.8) Criar um arquivo chamado "Administrativo.php" contendo uma classe Vo_Administrativo 
+	com o atributo protegido chamado atributos do tipo array com os atributos da tabela 
+	Administrativo.
+
+	3.9) Criar um arquivo chamado "Juridico.php" contendo uma classe Vo_Juridico com o atributo 
+	protegido chamado atributos do tipo array com os atributos da tabela Juridico.
+
+----------------------------------------------------------------------------------------
+Tarefas previstas que não foram concluídas:
+----------------------------------------------------------------------------------------
+Nenhuma
+
+________________________________________________________________________________________
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+----------------------------------------------------------------------------------------
+Papel: View		|	Responsável: Taynara Luana
+----------------------------------------------------------------------------------------
+Semana 1
+----------------------------------------------------------------------------------------
+Lições aprendidas:
+----------------------------------------------------------------------------------------
+- Desenvolvimento em HTML;
+- Aperfeiçoamento do CSS.
+
+----------------------------------------------------------------------------------------
+Dificuldades encontradas:
+----------------------------------------------------------------------------------------
+- Utilizar as propriedades do CSS corretamente;
+- Alinhar o formulário com o CSS.
+
+----------------------------------------------------------------------------------------
+Tarefas concluídas:
+----------------------------------------------------------------------------------------
+1) No diretório /mvc:
+
+	1.1) Criar o diretório "estilizacao"
+
+	1.2) Criar o diretório "telas".
+
+2) No diretório /mvc/estilizacao:
+
+	2.1) Criar um arquivo chamado "estilo.css" para utilizá-lo quando for necessário fazer 
+	alguma alteração no estilo do layout;
+
+	2.2) Criar o diretório "twitter-bootstrap".
+
+3) No diretório /mvc/estilizacao/twitter-bootstrap:
+
+	3.1) Incluir todos os diretórios do pacote do twitter-bootstrap.
+
+4) No diretório /mvc/telas:
+
+	4.1) Criar o diretório "empresa".
+
+5) No diretorio /mvc/telas/empresa:
+
+	5.1) Criar um arquivo chamado "cadastrarEmpresa.php" contendo a validação de erro, caso ocorra 
+	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
+	da questão 1 e incluir um botão chamado "Próxima".
+
+6) No diretório /mvc/telas:
+
+	6.1) Criar o diretório "marketing".
+
+7) No diretorio /mvc/telas/marketing:
+
+	7.1) Criar um arquivo chamado "cadastrarMarketing.php" contendo a validação de erro, caso ocorra 
+	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
+	da questão 2 à 2.9 e incluir um botão chamado "Próxima".
+
+8) No diretório /mvc/telas:
+
+	8.1) Criar o diretório "preco".
+
+9) No diretorio /mvc/telas/preco:
+
+	9.1) Criar um arquivo chamado "cadastrarPreco.php" contendo a validação de erro, caso ocorra 
+	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
+	da questão 3 à 3.2 e incluir um botão chamado "Próxima".
+
+----------------------------------------------------------------------------------------
+Tarefas previstas que não foram concluídas:
+----------------------------------------------------------------------------------------
+Nenhuma
+
+________________________________________________________________________________________
