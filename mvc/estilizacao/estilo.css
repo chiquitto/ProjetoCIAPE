@@ -12,14 +12,24 @@ input[type=text]{
     outline: none; 
 } 
 
+legend{
+   font-weight: bold;
+}
+
+th {
+    font-weight:normal;
+}
+
 body {
-    padding-left: 18em;
+    margin:10px;
+    padding:10px;
     font-family:Arial, Helvetica, sans-serif;
     font-size:15px; 
-    font-weight:bold;
+    font-weight:normal;
     float:left;
     left:1em;
     width:40em
+    position:absolute;
 }
   
 input[type=text]{
