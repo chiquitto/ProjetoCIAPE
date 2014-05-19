@@ -35,6 +35,7 @@ Create table Empresa (
 ) ENGINE = MyISAM;
 
 Create table Marketing (
+	idMarketing Int NOT NULL,
 	visitaConcorrencia Int NOT NULL,
 	idConcorrente Int NOT NULL,
 	pontosFortes Int NOT NULL,
@@ -48,20 +49,24 @@ Create table Marketing (
 	espacaoPromocional Int NOT NULL,
 	numOrdem Int NOT NULL,
 	idProduto Int NOT NULL,
+ Primary Key (idMarketing),
  Constraint Relationship1 Foreign Key (numOrdem) references Empresa (numOrdem) on delete  restrict on update  restrict,
  Constraint Relationship12 Foreign Key (idProduto) references Produto (idProduto) on delete  restrict on update  restrict,
  Constraint Relationship13 Foreign Key (idConcorrente) references Concorrente (idConcorrente) on delete  restrict on update  restrict
 ) ENGINE = MyISAM;
 
 Create table Preco (
+	idPreco Int NOT NULL,
 	formacaoPreco Int NOT NULL,
 	outraFormacaoPreco Varchar(50),
 	precoConcorrencia Int NOT NULL,
 	numOrdem Int NOT NULL,
+ Primary Key (idPreco),
  Constraint Relationship2 Foreign Key (numOrdem) references Empresa (numOrdem) on delete  restrict on update  restrict
 ) ENGINE = MyISAM;
 
 Create table Venda (
+	idVenda Int NOT NULL,
 	diaSemana Int NOT NULL,
 	idFat Int NOT NULL,
 	periodoInicial Date NOT NULL,
@@ -72,11 +77,13 @@ Create table Venda (
 	vlrMedioPorVez Double NOT NULL,
 	vlrMedioMensal Double NOT NULL,
 	numOrdem Int NOT NULL,
+ Primary Key (idVenda),
  Constraint Relationship3 Foreign Key (numOrdem) references Empresa (numOrdem) on delete  restrict on update  restrict,
  Constraint Relationship14 Foreign Key (idFat) references Faturamento (idFat) on delete  restrict on update  restrict
 ) ENGINE = MyISAM;
 
 Create table Compra (
+	idCompra Int NOT NULL,
 	razaoSocialFantasia Varchar(80) NOT NULL,
 	cidadeUf Varchar(120) NOT NULL,
 	produtos Varchar(150) NOT NULL,
@@ -84,11 +91,13 @@ Create table Compra (
 	relacionamento Varchar(50) NOT NULL,
 	numOrdem Int NOT NULL,
 	idvlrCompra Int NOT NULL,
+ Primary Key (idCompra),
  Constraint Relationship10 Foreign Key (numOrdem) references Empresa (numOrdem) on delete  restrict on update  restrict,
  Constraint Relationship15 Foreign Key (idvlrCompra) references ValorCompras (idvlrCompra) on delete  restrict on update  restrict
 ) ENGINE = MyISAM;
 
 Create table Cliente (
+	idCliente Int NOT NULL,
 	qtdeClienteMensal Int NOT NULL,
 	perfilCliente Int NOT NULL,
 	vendeEmpresa Int NOT NULL,
@@ -96,10 +105,12 @@ Create table Cliente (
 	pesquisaClientes Int NOT NULL,
 	frequencia Int,
 	numOrdem Int NOT NULL,
+ Primary Key (idCliente),
  Constraint Relationship9 Foreign Key (numOrdem) references Empresa (numOrdem) on delete  restrict on update  restrict
 ) ENGINE = MyISAM;
 
 Create table Rh (
+	idRh Int NOT NULL,
 	qtdeColaboradores Int NOT NULL,
 	treinamento Int NOT NULL,
 	area Varchar(30),
@@ -112,10 +123,12 @@ Create table Rh (
 	qtdeContratacao Int NOT NULL,
 	motivo Varchar(60) NOT NULL,
 	numOrdem Int NOT NULL,
+ Primary Key (idRh),
  Constraint Relationship4 Foreign Key (numOrdem) references Empresa (numOrdem) on delete  restrict on update  restrict
 ) ENGINE = MyISAM;
 
 Create table Administrativo (
+	idAdm Int NOT NULL,
 	fluxoCaixa Int,
 	controleEstoque Int,
 	contasPagar Int,
@@ -131,10 +144,12 @@ Create table Administrativo (
 	gastos Int,
 	outrosGastos Varchar(100),
 	numOrdem Int NOT NULL,
+ Primary Key (idAdm),
  Constraint Relationship5 Foreign Key (numOrdem) references Empresa (numOrdem) on delete  restrict on update  restrict
 ) ENGINE = MyISAM;
 
 Create table Juridico (
+	idJuridico Int NOT NULL,
 	impostos Int NOT NULL,
 	autuacaoFiscal Int NOT NULL,
 	acaoJudicial Int NOT NULL,
@@ -143,6 +158,7 @@ Create table Juridico (
 	outraCobranca Varchar(100),
 	assessoriaJuridica Int NOT NULL,
 	numOrdem Int NOT NULL,
+ Primary Key (idJuridico),
  Constraint Relationship7 Foreign Key (numOrdem) references Empresa (numOrdem) on delete  restrict on update  restrict
 ) ENGINE = MyISAM;
 
