@@ -1,0 +1,256 @@
+----------------------------------------------------------------------------------------
+
+				RELATÓRIO SEMANAL
+
+----------------------------------------------------------------------------------------
+Papel: Gerente		|	Responsável: Viviane Furtado
+----------------------------------------------------------------------------------------	
+Semana 2
+----------------------------------------------------------------------------------------
+Lições aprendidas:
+----------------------------------------------------------------------------------------
+- Saber avaliar o desempenho de cada um no desenvolvimento do projeto.
+
+----------------------------------------------------------------------------------------
+Dificuldades encontradas:
+----------------------------------------------------------------------------------------
+- Verificar se o cronograma está de acordo com o que foi solicitado.
+
+----------------------------------------------------------------------------------------
+Tarefas concluídas:
+----------------------------------------------------------------------------------------
+4) Avaliar o nível de dificuldade de cada desenvolvedor;
+
+5) Fazer reunião com a equipe para discutir o desenvolvimento do projeto;
+
+6) Fazer o relatório com as lições aprendidas, dificuldades encontradas, tarefas concluídas 
+e tarefas previstas para a semana e não foram concluídas no final da semana.
+
+----------------------------------------------------------------------------------------
+Tarefas previstas que não foram concluídas:
+----------------------------------------------------------------------------------------
+Nenhuma
+
+________________________________________________________________________________________
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+----------------------------------------------------------------------------------------
+Papel: Controller	|	Responsável: Tiago Ferrari
+----------------------------------------------------------------------------------------
+Semana 2
+----------------------------------------------------------------------------------------
+Lições aprendidas:
+----------------------------------------------------------------------------------------
+Nenhuma
+
+----------------------------------------------------------------------------------------
+Dificuldades encontradas:
+----------------------------------------------------------------------------------------
+Nenhuma
+
+----------------------------------------------------------------------------------------
+Tarefas concluídas:
+----------------------------------------------------------------------------------------
+3) No diretório /mvc/lib/Controller/Empresa.php:
+
+	3.1) Implementar o método cadastrar da classe Empresa;
+
+4) No diretório /mvc/lib/Controller/Marketing.php:
+
+	4.1) Implementar o método cadastrar da classe Marketing;
+
+5) No diretório /mvc/lib/Controller/Preco.php:
+
+	5.1) Implementar o método cadastrar da classe Preco;
+
+6) No diretório /mvc/lib/Controller/Venda.php:
+
+	6.1) Implementar o método cadastrar da classe Venda;
+
+7) No diretório /mvc/lib/Controller/Compra.php:
+
+	7.1) Implementar o método cadastrar da classe Compra;
+
+8) No diretório /mvc/lib/Controller/Cliente.php:
+
+	8.1) Implementar o método cadastrar da classe Cliente;
+
+9) No diretório /mvc/lib/Controller/Rh.php:
+
+	9.1) Implementar o método cadastrar da classe Rh;
+
+10) No diretório /mvc/lib/Controller/Administrativo.php:
+
+	10.1) Implementar o método cadastrar da classe Administrativo;	
+
+11) No diretório /mvc/lib/Controller/Juridico.php:
+
+	11.1) Implementar o método cadastrar da classe Juridico;
+
+12) No diretório /mvc:
+
+	12.1) Criar um arquivo chamado "cadastrar-empresas.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Empresa e chamar o método cadastrar;
+
+	12.2) Criar um arquivo chamado "cadastrar-marketing.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Marketing e chamar o método cadastrar;
+
+	12.3) Criar um arquivo chamado "cadastrar-precos.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Preco e chamar o método cadastrar;
+
+	12.4) Criar um arquivo chamado "cadastrar-vendas.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Vendas e chamar o método cadastrar;
+
+	12.5) Criar um arquivo chamado "cadastrar-compras.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Compra e chamar o método cadastrar;
+
+	12.6) Criar um arquivo chamado "cadastrar-clientes.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Cliente e chamar o método cadastrar;
+
+	12.7) Criar um arquivo chamado "cadastrar-rh.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Rh e chamar o método cadastrar;
+
+	12.8) Criar um arquivo chamado "cadastrar-administrativos.php" contendo o include da 
+	classe config.php, instanciar a classe Controller_Administrativo e chamar o método 
+	cadastrar;
+
+	12.9) Criar um arquivo chamado "cadastrar-juridicos.php" contendo o include da classe 
+	config.php, instanciar a classe Controller_Juridico e chamar o método cadastrar;
+
+----------------------------------------------------------------------------------------
+Tarefas previstas que não foram concluídas:
+----------------------------------------------------------------------------------------
+Nenhuma
+
+________________________________________________________________________________________
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+----------------------------------------------------------------------------------------
+Papel: Model		|	Responsável: Thiago Palota
+----------------------------------------------------------------------------------------
+Semana 2
+----------------------------------------------------------------------------------------
+Lições aprendidas:
+----------------------------------------------------------------------------------------
+- Entrega de todas solicitações pela Gerente.
+
+----------------------------------------------------------------------------------------
+Dificuldades encontradas:
+----------------------------------------------------------------------------------------
+Nenhuma
+
+----------------------------------------------------------------------------------------
+Tarefas concluídas:
+----------------------------------------------------------------------------------------
+4) No diretório /mvc/lib:
+
+	4.1) Criar um arquivo chamado "Dao.php" contendo uma classe abstrata Dao com os atributos 
+	protegidos tabela, pk e vo;
+
+	4.2) Implementar os métodos create, request e delete;
+
+	4.3) Criar um diretório Dao.
+
+5) No diretório /mvc/lib/Dao:
+
+	5.1) Criar um arquivo chamado "Empresa.php" contendo uma classe Dao_Empresa que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.2) Criar um arquivo chamado "Marketing.php" contendo uma classe Dao_Marketing que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.3) Criar um arquivo chamado "Preco.php" contendo uma classe Dao_Preco que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.4) Criar um arquivo chamado "Venda.php" contendo uma classe Dao_Venda que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.5) Criar um arquivo chamado "Compra.php" contendo uma classe Dao_Compra que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.6) Criar um arquivo chamado "Cliente.php" contendo uma classe Dao_Cliente que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.7) Criar um arquivo chamado "Rh.php" contendo uma classe Dao_Rh que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.8) Criar um arquivo chamado "Administrativo.php" contendo uma classe Dao_Administrativo 
+	que estende Dao e inicializar os atributos: tabela, pk e vo;
+
+	5.9) Criar um arquivo chamado "Juridico.php" contendo uma classe Dao_Juridico que estende 
+	Dao e inicializar os atributos: tabela, pk e vo;
+
+----------------------------------------------------------------------------------------
+Tarefas previstas que não foram concluídas:
+----------------------------------------------------------------------------------------
+Nenhuma
+
+________________________________________________________________________________________
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+----------------------------------------------------------------------------------------
+Papel: View		|	Responsável: Taynara Luana
+----------------------------------------------------------------------------------------
+Semana 2
+----------------------------------------------------------------------------------------
+Lições aprendidas:
+----------------------------------------------------------------------------------------
+- Aperfeiçoamento do CSS e HTML.
+
+----------------------------------------------------------------------------------------
+Dificuldades encontradas:
+----------------------------------------------------------------------------------------
+Nenhuma.
+
+----------------------------------------------------------------------------------------
+Tarefas concluídas:
+----------------------------------------------------------------------------------------
+10) No diretório /mvc/telas:
+
+	10.1) Criar o diretório "venda".
+
+11) No diretorio /mvc/telas/venda:
+
+	11.1) Criar um arquivo chamado "cadastrarVenda.php" contendo a validação de erro, caso ocorra 
+	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
+	da questão 4 à 4.5 e incluir um botão chamado "Próxima".
+
+12) No diretório /mvc/telas:
+
+	12.1) Criar o diretório "compra".
+
+13) No diretorio /mvc/telas/compra:
+
+	13.1) Criar um arquivo chamado "cadastrarCompra.php" contendo a validação de erro, caso ocorra 
+	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
+	da questão 5 à 5.2 e incluir um botão chamado "Próxima".
+
+14) No diretório /mvc/telas:
+
+	14.1) Criar o diretório "cliente".
+
+15) No diretorio /mvc/telas/cliente:
+
+	15.1) Criar um arquivo chamado "cadastrarCliente.php" contendo a validação de erro, caso ocorra 
+	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
+	da questão 6 à 6.4 e incluir um botão chamado "Próxima".
+
+16) No diretório /mvc/telas:
+
+	16.1) Criar o diretório "rh".
+
+17) No diretorio /mvc/telas/rh:
+
+	17.1) Criar um arquivo chamado "cadastrarRh.php" contendo a validação de erro, caso ocorra 
+	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
+	da questão 7 à 7.7 e incluir um botão chamado "Próxima".
+
+----------------------------------------------------------------------------------------
+Tarefas previstas que não foram concluídas:
+----------------------------------------------------------------------------------------
+Nenhuma
+
+________________________________________________________________________________________
