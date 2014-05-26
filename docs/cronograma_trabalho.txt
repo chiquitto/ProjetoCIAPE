@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------
 
-				CRONOGRAMA DE TRABALHO
+					CRONOGRAMA DE TRABALHO
 
 ------------------------------------------------------------------------------------------
 Papel: Gerente		|	Responsável: Viviane da Rocha Furtado
@@ -186,113 +186,23 @@ Semana 3
 ------------------------------------------------------------------------------------------
 Tarefas:
 
-13) No diretório /mvc/lib/Controller/Empresa.php:
+13) Remover os controllers criados e implementar somente em um controller;
 
-	13.1) Implementar o método listar da classe Empresa;
+14) No controller, iniciar a implementação do método listar;
 
-14) No diretório /mvc/lib/Controller/Marketing.php:
-
-	14.1) Implementar o método listar da classe Marketing;
-
-15) No diretório /mvc/lib/Controller/Preco.php:
-
-	15.1) Implementar o método listar da classe Preco;
-
-16) No diretório /mvc/lib/Controller/Venda.php:
-
-	16.1) Implementar o método listar da classe Venda;
-
-17) No diretório /mvc/lib/Controller/Compra.php:
-
-	17.1) Implementar o método listar da classe Compra;
-
-18) No diretório /mvc/lib/Controller/Cliente.php:
-
-	18.1) Implementar o método listar da classe Cliente;
-
-19) No diretório /mvc/lib/Controller/Rh.php:
-
-	19.1) Implementar o método listar da classe Rh;
-
-20) No diretório /mvc/lib/Controller/Administrativo.php:
-
-	20.1) Implementar o método listar da classe Administrativo;	
-
-21) No diretório /mvc/lib/Controller/Juridico.php:
-
-	21.1) Implementar o método listar da classe Juridico;
-
-22) No diretório /mvc:
-
-	22.1) Criar um arquivo chamado "listar-empresas.php" contendo o include da classe 
-	config.php, instanciar a classe Controller_Empresa e chamar o método listar;
-
-	22.2) Criar um arquivo chamado "listar-marketing.php" contendo o include da classe 
-	config.php, instanciar a classe Controller_Marketing e chamar o método listar;
-
-	22.3) Criar um arquivo chamado "listar-precos.php" contendo o include da classe 
-	config.php, instanciar a classe Controller_Preco e chamar o método listar;
-
-	22.4) Criar um arquivo chamado "listar-vendas.php" contendo o include da classe 
-	config.php, instanciar a classe Controller_Vendas e chamar o método listar;
-
-	22.5) Criar um arquivo chamado "listar-compras.php" contendo o include da classe 
-	config.php, instanciar a classe Controller_Compra e chamar o método listar;
-
-	22.6) Criar um arquivo chamado "listar-clientes.php" contendo o include da classe 
-	config.php, instanciar a classe Controller_Cliente e chamar o método listar;
-
-	22.7) Criar um arquivo chamado "listar-rh.php" contendo o include da classe 
-	config.php, instanciar a classe Controller_Rh e chamar o método listar;
-
-	22.8) Criar um arquivo chamado "listar-administrativos.php" contendo o include da 
-	classe config.php, instanciar a classe Controller_Administrativo e chamar o método 
-	listar;
-
-	22.9) Criar um arquivo chamado "listar-juridicos.php" contendo o include da classe 
-	config.php, instanciar a classe Controller_Juridico e chamar o método listar;
-
+15) Remover os controllers que interligam o model com a view e implementar somente em um controler.
 
 ------------------------------------------------------------------------------------------
 Semana 4
 ------------------------------------------------------------------------------------------
 Tarefas:
 
-23) No diretório /mvc/lib/Controller/Empresa.php:
+16) Finalizar a implementação do método listar;
 
-	23.1) Implementar o método apagar da classe Empresa;
+17) Implementar o método apagar;
 
-24) No diretório /mvc/lib/Controller/Marketing.php:
-
-	24.1) Implementar o método apagar da classe Marketing;
-
-25) No diretório /mvc/lib/Controller/Preco.php:
-
-	25.1) Implementar o método apagar da classe Preco;
-
-26) No diretório /mvc/lib/Controller/Venda.php:
-
-	26.1) Implementar o método apagar da classe Venda;
-
-27) No diretório /mvc/lib/Controller/Compra.php:
-
-	27.1) Implementar o método apagar da classe Compra;
-
-28) No diretório /mvc/lib/Controller/Cliente.php:
-
-	28.1) Implementar o método apagar da classe Cliente;
-
-29) No diretório /mvc/lib/Controller/Rh.php:
-
-	29.1) Implementar o método apagar da classe Rh;
-
-30) No diretório /mvc/lib/Controller/Administrativo.php:
-
-	30.1) Implementar o método apagar da classe Administrativo;	
-
-31) No diretório /mvc/lib/Controller/Juridico.php:
-
-	31.1) Implementar o método apagar da classe Juridico;
+18) Verificar se o Controller está validando corretamente, a fim de verificar se será necessário
+fazer alguma alteração.
 
 _________________________________________________________________________________________
 
@@ -439,74 +349,23 @@ Semana 3
 ------------------------------------------------------------------------------------------
 Tarefas:
 
-6) No diretório /mvc/lib:
+6) Corrigir o script;
 
-	6.1) Criar um arquivo chamado "Model.php" contendo uma classe abstrata Model com o atributo 
-	protegido erros do tipo array e implementar os métodos públicos addErro, getErros e temErros.
+7) Remover os Vos criados e implementar somente em um Vo;
 
-	6.2) Criar um diretório Model;
+8) Remover os Daos criados e implementar somente em um Dao;
 
-7) No diretório /mvc/lib/Model:
-
-	7.1) Criar um arquivo chamado "Empresa.php" contendo uma class Model_Empresa que estende 
-	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Empresa e 
-	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). 
-	Após os campos serem validados instanciar o Dao_Empresa e o atributo pk recebe os dados do 
-	método create;
-
-	7.2) Criar um arquivo chamado "Marketing.php" contendo uma class Model_Marketing que estende 
-	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Marketing e 
-	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). Após 
-	os campos serem validados instanciar o Dao_Marketing e o atributo pk recebe os dados do método 
-	create;
-
-	7.3) Criar um arquivo chamado "Preco.php" contendo uma class Model_Preco que estende 
-	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Preco e 
-	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). Após 
-	os campos serem validados instanciar o Dao_Preco e o atributo pk recebe os dados do método 
-	create;
-
-	7.4) Criar um arquivo chamado "Venda.php" contendo uma class Model_Venda que estende 
-	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Venda e 
-	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). Após 
-	os campos serem validados instanciar o Dao_Venda e o atributo pk recebe os dados do método 
-	create;
-
+9) Implementar o Model e fazer as validações necessárias;
 
 ------------------------------------------------------------------------------------------
 Semana 4
 ------------------------------------------------------------------------------------------
 Tarefas:
 
-	7.5) Criar um arquivo chamado "Compra.php" contendo uma class Model_Compra que estende 
-	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Compra e 
-	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). 
-	Após os campos serem validados instanciar o Dao_Compra e o atributo pk recebe os dados do 
-	método create;
+10) Finalizar a implementação do Model e validações. 
 
-	7.6) Criar um arquivo chamado "Cliente.php" contendo uma class Model_Cliente que estende 
-	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Cliente e 
-	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). 
-	Após os campos serem validados instanciar o Dao_Cliente e o atributo pk recebe os dados do 
-	método create;
-
-	7.7) Criar um arquivo chamado "Rh.php" contendo uma class Model_Rh que estende 
-	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Rh e 
-	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). 
-	Após os campos serem validados instanciar o Dao_Rh e o atributo pk recebe os dados do 
-	método create;
-
-	7.8) Criar um arquivo chamado "Administrativo.php" contendo uma class Model_Administrativo 
-	que estende Model e implementar o método cadastrar passando como parâmetro dados do tipo 
-	Vo_Administrativo e fazer a validação dos campos e verificar se possui erros utilizando o 
-	método temErros(). Após os campos serem validados instanciar o Dao_Administrativo e o 
-	atributo pk recebe os dados do método create;
-
-	7.9) Criar um arquivo chamado "Juridico.php" contendo uma class Model_Juridico que estende 
-	Model e implementar o método cadastrar passando como parâmetro dados do tipo Vo_Juridico e 
-	fazer a validação dos campos e verificar se possui erros utilizando o método temErros(). 
-	Após os campos serem validados instanciar o Dao_Juridico e o atributo pk recebe os dados do 
-	método create;
+11) Verificar se o Model está validando e funcionando corretamente para que, caso seja necessário,
+fazer alguma alteração.
 
 _________________________________________________________________________________________
 
@@ -618,48 +477,26 @@ Semana 3
 ------------------------------------------------------------------------------------------
 Tarefas:
 
-18) No diretório /mvc/telas:
+18) Finalizar a implementação do formulário;
 
-	18.1) Criar o diretório "administrativo".
+	18.1) Questões: Administrativo e Jurídico;
 
-19) No diretorio /mvc/telas/administrativo:
+19) Implementar a template;
 
-	19.1) Criar um arquivo chamado "cadastrarAdministrativo.php" contendo a validação de erro, 
-	caso ocorra algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE 
-	UNIPAR/ACIC da questão 8 à 8.4 e incluir um botão chamado "Próxima".
+20) Implementar a view;
 
-20) No diretório /mvc/telas:
-
-	20.1) Criar o diretório "juridico".
-
-21) No diretorio /mvc/telas/juridico:
-
-	21.1) Criar um arquivo chamado "cadastrarJuridico.php" contendo a validação de erro, caso ocorra 
-	algum erro. Também o HTML e CSS/Twitter Bootstrap do formulário do PROJETO CIAPE UNIPAR/ACIC 
-	da questão 9 à 9.6 e incluir dois botões: "Salvar" e "Cancelar".
-
-22) No diretorio /mvc/telas:
-
-	22.1) Criar um arquivo chamado "Template.php" contendo o HTML, no qual será divido em 
-	duas div com id: topo e conteudo. Na div com id igual a conteudo dar include no 
-	atributo tela. 
-
-23) No diretório /mvc/lib:
-
-	23.1) Criar um arquivo chamado "View.php" contendo uma classe View com o atributo privado 
-	dados do tipo array e implementar os métodos add e desenhar;
 
 ------------------------------------------------------------------------------------------
 Semana 4
 ------------------------------------------------------------------------------------------
 Tarefas:
 
-24) No diretório /mvc/telas/empresa:
+21) Colocar todas as telas em um formulário;
 
-	24.1) Criar um arquivo chamado "listar.php" contendo o HTML e CSS/Twitter Bootstrap da 
-	tela de listagem no formato de tabela e incluir os botões de incluir, deletar e visualizar;
+22) Implementar a tela de listagem, incluindo os botões de incluir, excluir e visualizar;
 
-	24.2) Imprimir os dados cadastrados utilizando um laço foreach.
+23) Implementar a tela de visualização do formulário.
 
-25) Implementar a tela de visualização do formulário.
+24) Verificar se o layout do formulário está de acordo com o solicitado, caso esteja faltando 
+algo, fazer a implementação/correção.
 ___________________________________________________________________________________________
