@@ -1438,12 +1438,8 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
       
       <br>
       <br>
-      <div class="form-group">
-        <div class="col-sm-offset-22 col-sm-9">
-          <button type="button" class="btn btn-success">Salvar</button>
-          <button type="button" class="btn btn-success">Cancelar</button>
-        </div>
-      </div>
+          <input type="submit">Salvar</input>
+          <input type="reset">Cancelar</input>
 </div>
 </div>
 </form>
