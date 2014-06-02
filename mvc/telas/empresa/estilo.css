@@ -1,0 +1,79 @@
+p {
+     text-align: justify;     
+     font-family:Arial, Helvetica, sans-serif; 
+}
+
+input[type=text]{
+    background: white; 
+    border: 1px solid #DDD; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px #DDD inset; 
+    color: #666; 
+    outline: none; 
+} 
+
+legend{
+   font-weight: bold;
+}
+
+th {
+    font-weight:normal;
+}
+
+body {
+    margin-left:350px;
+    margin-right:350px;
+    margin-top:0px;
+    margin-bottom:0px;   
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px; 
+    font-weight:normal;
+    float:left;
+    left:1em;
+    width:40em
+    position:absolute;
+}
+  
+input[type=text]{
+    background: white; 
+    border: 1px solid #DDD; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px #DDD inset; 
+    color: #666; 
+    outline: none; 
+} 
+   
+button[type=button]{
+    color: white;
+    background: black url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAYAAACd+7GKAAAAJklEQVQIW2P4//+/NxMDA8N/JgYGhn+oLDQu7Vk/GP4zMXDQx3IA0To1YWcEwtQAAAAASUVORK5CYII=") repeat-x;
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    margin: 3px;
+}
+
+#cabecalhoPag{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:10px; 
+    align:right;
+    font-weight:normal;
+    float:right;
+    margin-top:30px;
+}
+
+#logo{
+   margin-top:0px;
+   margin-left:0px;
+   left:10px;
+}
+
+#linha{
+   margin-top:-3px;
+}
