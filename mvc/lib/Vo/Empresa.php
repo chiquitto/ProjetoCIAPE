@@ -48,8 +48,9 @@ extends Vo {
 								'm_jornal',
 								'm_panfleto',
 								'm_OutrosMeiosComunicacao',
+								'm_OutrosMeiosComunicacaoDesc',
 								'm_sinalizacao',
-								'm_espacaoPromocional',
+								'm_espacoPromocional',
 								'p_formacaoPreco',
 								'p_outraFormacaoPreco',
 								'p_precoConcorrencia',
@@ -73,6 +74,7 @@ extends Vo {
 								'v_avista',
 								'v_caderneta',
 								'v_outraFormaPagto',
+								'v_outraFormaPagtoDesc',
 								'v_vlrMedioPorVez',
 								'v_vlrMedioMensal',
 								'c_razaoSocialFantasia',
@@ -144,7 +146,6 @@ extends Vo {
 								'j_colaborador',
 								'j_pessoalmente',
 								'j_outrasCobrancas',
-								'j_descOutrasCobrancas',
 								'j_assessoriaJuridica',
 								'j_observacao');
 }
