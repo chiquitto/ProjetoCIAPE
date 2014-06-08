@@ -52,6 +52,16 @@ solicitado;
 11) Fazer o relatório com as lições aprendidas, dificuldades encontradas, tarefas concluídas 
 e tarefas previstas para a semana e não foram concluídas no final da semana.
 
+------------------------------------------------------------------------------------------
+Semana 5
+------------------------------------------------------------------------------------------
+Tarefas:
+
+12) Verificar no final da semana se o projeto foi concluído e está de acordo com o que foi
+solicitado;
+
+13) Fazer o relatório com as lições aprendidas, dificuldades encontradas, tarefas concluídas 
+e tarefas previstas para a semana e não foram concluídas no final da semana.
 _________________________________________________________________________________________
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -204,6 +214,17 @@ Tarefas:
 18) Verificar se o Controller está validando corretamente, a fim de verificar se será necessário
 fazer alguma alteração.
 
+------------------------------------------------------------------------------------------
+Semana 5
+------------------------------------------------------------------------------------------
+Tarefas:
+
+19) Finalizar a implementação do método listar;
+
+20) Implementar o método apagar;
+
+21) Verificar se o Controller está validando corretamente, a fim de verificar se será necessário
+fazer alguma alteração.
 _________________________________________________________________________________________
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -367,6 +388,15 @@ Tarefas:
 11) Verificar se o Model está validando e funcionando corretamente para que, caso seja necessário,
 fazer alguma alteração.
 
+------------------------------------------------------------------------------------------
+Semana 5
+------------------------------------------------------------------------------------------
+Tarefas:
+
+12) Finalizar a implementação do Model e validações;
+
+13) Verificar se o Model está validando e funcionando corretamente para que, caso seja necessário,
+fazer alguma alteração.
 _________________________________________________________________________________________
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -497,6 +527,15 @@ Tarefas:
 
 23) Implementar a tela de visualização do formulário.
 
-24) Verificar se o layout do formulário está de acordo com o solicitado, caso esteja faltando 
-algo, fazer a implementação/correção.
+24) Verificar se o layout do formulário está de acordo com o solicitado, caso esteja faltando algo,
+fazer a implementação/correção.
+
+------------------------------------------------------------------------------------------
+Semana 5
+------------------------------------------------------------------------------------------
+Tarefas:
+
+25) Verificar se o layout do formulário está de acordo com o solicitado, caso esteja faltando algo,
+fazer a implementação/correção.
+
 ___________________________________________________________________________________________
