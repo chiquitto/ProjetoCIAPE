@@ -1,37 +1,34 @@
-<!DOCTYPE html>
-<html>
-    <head>
+<div class="container">
+<div id ="listagem">
         <title>Listagem de Empresas</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link href=".\\mvc\\estilizacao\\twitter-bootstrap\\css\\bootstrap.css" rel="stylesheet">
-        <link href=".\\mvc\\estilizacao\\estilo.css" rel="stylesheet">
-    </head>
-    <body>
-        <div id="main">
-            <h1>Listagem de Empresas</h1>
-            [<a href="cadastrar.php?id=<?php echo $emp->getNumOrdem(); ?>">Cadastrar</a>] 
-            <br><br>
+        <link rel="stylesheet" href="./estilizacao/twitter-bootstrap/css/bootstrap.css">
+        
+        <div id="main" class="table table-striped">
+            
+            <h1 align="center">Listagem de Empresas</h1>
+            <a href="cadastrar-empresas.php?" id ="btn">Cadastrar</a> 
+           
+            
             <table class="table table-striped">
               <thead>
                 <tr>
                   <th>Nº Ordem</th>
                   <th>Razão Social</th>
-                  <th></th>
+                   <th>Visualizar</th>
+                  <th>Excluir</th>
                 </tr>
               </thead>
               <tbody>
-                  <?php foreach($dados['empresas'] as $emp) { ?>
+                  <?php foreach($this->dados['empresa'] as $emp) { ?>
                 <tr>
                   <td><?php echo $emp->getNumOrdem(); ?></td>
                   <td><?php echo $emp->getE_razaoSocial(); ?></td>  
-                  <td>
-                    [<a href="visualizar.php?id=<?php echo $emp->getNumOrdem(); ?>">Visualizar</a>]    
-                    [<a href="listar.php?id=<?php echo $emp->getNumOrdem(); ?>">Apagar</a>]
-                  </td>
+                     <td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-eye-open"></span></button></p></td>
+                     <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p></td>
                 </tr>
                   <?php } ?>
               </tbody>
             </table>
         </div>
-    </body>
-</html>
+    </div>
+    </div>
