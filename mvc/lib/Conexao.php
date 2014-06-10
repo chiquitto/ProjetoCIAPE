@@ -3,7 +3,7 @@
 
 class Conexao extends PDO {
 
-    private $dsn = 'mysql:host=localhost;dbname=clientes';
+    private $dsn = 'mysql:host=localhost;dbname=trabciape';
     private $user = 'root';
     private $password = '';
     private static $instancia;
