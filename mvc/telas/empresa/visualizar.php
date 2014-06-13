@@ -1,29 +1,9 @@
-﻿<?php
-if (isset($this->dados['erro'])) {   
-?>
-
-<p><?php echo $this->dados['erro']; ?></p>
-
-<?php  
-}
-?>
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>TERMO DE ADESÃO – PROJETO CIAPE UNIPAR/ACIC</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" href="\\mvc\\estilizacao\\estilo.css">
-</head>
-<body>
-<form action="" method="POST">
-<img src="logoUnipar.png" id="logo"  readonly/>
-<img src="logoAcic.png" id="logo"  readonly/>
+﻿
 <div id="cabecalhoPag">
 Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/ACIC</div>
 <hr width="680" size="1" color=black id="linha">
 
-<h4 align="right">Nº de ordem <input type="text" name="numOrdem" value="<?php echo getNumOrdem(); ?>" size=10 readonly /></h4>
+<h4 align="right">Nº de ordem <input type="text" name="numOrdem" value="" size=10/></h4>
   
   <h4 align="center">TERMO DE ADESÃO – PROJETO CIAPE UNIPAR/ACIC</h4>
 
@@ -35,31 +15,31 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
 
       <legend>1. DADOS CADASTRAIS</legend> <br> 
 
-        <label>Razão Social:</label><input type="text" name="e_razaoSocial" value="<?php echo getE_razaoSocial(); ?>" size=85 readonly><br><br>
+        <label>Razão Social:</label><input type="text" name="e_razaoSocial" value="" size=85><br><br>
 
-        <label>Nome Fantasia:</label><input type="text" name="e_nomeFantasia" value="<?php echo getE_nomeFantasia(); ?>" size=85 readonly><br><br>
+        <label>Nome Fantasia:</label><input type="text" name="e_nomeFantasia" value="" size=85><br><br>
 
-        <label>IE:</label><input type="text" name="e_ie" value="<?php echo getE_ie(); ?>" size=30 readonly><br><br>
+        <label>IE:</label><input type="text" name="e_ie" value="" size=30><br><br>
 
-        <label>CNPJ:</label><input type="text" name="e_cnpj" value="<?php echo getE_cnpj(); ?>" size=30 readonly><br><br>
+        <label>CNPJ:</label><input type="text" name="e_cnpj" value="" size=30><br><br>
 
-        <label>Data de Fundação:</label><input type="text" name="e_dtFundacao" value="<?php echo getE_dtFundacao(); ?>" size=15 readonly>
+        <label>Data de Fundação:</label><input type="text" name="e_dtFundacao" value="" size=15>
 
-        <label>Ramo de Atividade:</label><input type="text" name="e_ramoAtividade" value="<?php echo getE_ramoAtividade(); ?>" size=38 readonly><br><br>
+        <label>Ramo de Atividade:</label><input type="text" name="e_ramoAtividade" value="" size=38><br><br>
       
-        <label>Endereço:</label><input type="text" name="e_endereco" value="<?php echo getE_endereco(); ?>" size=55 readonly>
+        <label>Endereço:</label><input type="text" name="e_endereco" value="" size=55>
 
-        <label>Bairro:</label><input type="text" name="e_bairro" value="<?php echo getE_bairro(); ?>" size=20 readonly><br><br>
+        <label>Bairro:</label><input type="text" name="e_bairro" value="" size=20><br><br>
 
-        <label>CEP:</label><input type="text" name="e_cep" value="<?php echo getE_cep(); ?>" size=15 readonly>
+        <label>CEP:</label><input type="text" name="e_cep" value="" size=15>
 
-        <label>Cidade:</label><input type="text" name="e_cidade" value="<?php echo getE_cidade(); ?>" size=50 readonly>
+        <label>Cidade:</label><input type="text" name="e_cidade" value="" size=50>
 
-        <label>UF:</label><input type="text" name="e_uf" value="<?php echo getE_uf(); ?>" size=5 readonly><br><br>
+        <label>UF:</label><input type="text" name="e_uf" value="" size=5><br><br>
 
-        <label>Fone:</label><input type="text" name="e_fone" value="<?php echo getE_fone(); ?>" size=25 readonly>
+        <label>Fone:</label><input type="text" name="e_fone" value="" size=25>
 
-        <label>E-mail:</label><input type="text" name="e_email" value="<?php echo getE_email(); ?>" size=55 readonly><br><br>
+        <label>E-mail:</label><input type="text" name="e_email" value="" size=55><br><br>
 
         <div class="container">
         <div class="row clearfix">
@@ -83,10 +63,10 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
                             a)
                             </td>
                             <td>
-                              <input type="text" name="e_socio" value="<?php echo getE_socio(); ?>" size=45 readonly>
+                              <input type="text" name="e_socio" value="" size=45>
                             </td>
                             <td>
-                              <input type="text" name="e_cargo" value="<?php echo getE_cargo(); ?>" size=45 readonly>
+                              <input type="text" name="e_cargo" value="" size=45>
                             </td>
                          </tr>
 
@@ -95,10 +75,10 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
                             b)
                             </td>
                             <td>
-                              <input type="text" name="e_socio" value="<?php echo getE_socio(); ?>" size=45 readonly>
+                              <input type="text" name="e_socio" value="" size=45>
                             </td>
                             <td>
-                              <input type="text" name="e_cargo" value="<?php echo getE_cargo(); ?>" size=45 readonly>
+                              <input type="text" name="e_cargo" value="" size=45>
                             </td>
                           </tr>
                             
@@ -107,10 +87,10 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
                             c)
                             </td>
                             <td>
-                             <input type="text" name="e_socio" value="<?php echo getE_socio(); ?>" size=45 readonly>
+                             <input type="text" name="e_socio" value="" size=45>
                             </td>
                             <td>
-                              <input type="text" name="e_cargo" value="<?php echo getE_cargo(); ?>" size=45 readonly>
+                              <input type="text" name="e_cargo" value="" size=45>
                             </td>
                           </tr>
 
@@ -119,10 +99,10 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
                             d)
                             </td>
                             <td>
-                              <input type="text" name="e_socio" value="<?php echo getE_socio(); ?>" size=45 readonly>
+                              <input type="text" name="e_socio" value="" size=45>
                             </td>
                             <td>
-                              <input type="text" name="e_cargo" value="<?php echo getE_cargo(); ?>" size=45 readonly>
+                              <input type="text" name="e_cargo" value="" size=45>
                             </td>
                          </tr>
 
@@ -131,10 +111,10 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
                             e)
                             </td>
                             <td>
-                              <input type="text" name="e_socio" value="<?php echo getE_socio(); ?>" size=45 readonly>
+                              <input type="text" name="e_socio" value="" size=45>
                             </td>
                             <td>
-                              <input type="text" name="e_cargo" value="<?php echo getE_cargo(); ?>" size=45 readonly>
+                              <input type="text" name="e_cargo" value="" size=45>
                             </td>
                          </tr>
 
@@ -172,91 +152,91 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
         <tbody>
           <tr id='addr0'>
             <td>
-              <input type="text" name="m_prodMaisVend"  placeholder='' class="form-control" value = "<?php echo getM_prodMaisVend(); ?>" readonly/>
+              <input type="text" name="m_prodMaisVend"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="m_qtdeMensal" placeholder='' class="form-control" value = "<?php echo getM_qtdeMensal(); ?>" size="10" readonly/>
+              <input type="text" name="m_qtdeMensal" placeholder='' class="form-control" size="10"/>
             </td>           
             <td>
-              <input type="text" name="m_unMed"  placeholder='' class="form-control" value = "<?php echo getM_unMed(); ?>" size="10" readonly/>
+              <input type="text" name="m_unMed"  placeholder='' class="form-control" size="10" />
             </td>
             <td>
-              <input type="text" name="m_margemLucro"  placeholder='' class="form-control" value = "<?php echo getM_margemLucro(); ?>" readonly/>
+              <input type="text" name="m_margemLucro"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="m_faturamento" placeholder='' class="form-control" value = "<?php echo getM_faturamento(); ?>" readonly/>
+              <input type="text" name="m_faturamento" placeholder='' class="form-control"/>
             </td>
           </tr>
             
           <tr id='addr1'>
             <td>
-              <input type="text" name="m_prodMaisVend"  placeholder='' class="form-control" value = "<?php echo getM_prodMaisVend(); ?>" readonly/>
+              <input type="text" name="m_prodMaisVend"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="m_qtdeMensal" placeholder='' class="form-control" value = "<?php echo getM_qtdeMensal(); ?>" size="10" readonly/>
+              <input type="text" name="m_qtdeMensal" placeholder='' class="form-control" size="10"/>
             </td>           
             <td>
-              <input type="text" name="m_unMed"  placeholder='' class="form-control" value = "<?php echo getM_unMed(); ?>" size="10" readonly/>
+              <input type="text" name="m_unMed"  placeholder='' class="form-control" size="10" />
             </td>
             <td>
-              <input type="text" name="m_margemLucro"  placeholder='' class="form-control" value = "<?php echo getM_margemLucro(); ?>" readonly/>
+              <input type="text" name="m_margemLucro"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="m_faturamento" placeholder='' class="form-control" value = "<?php echo getM_faturamento(); ?>" readonly/>
+              <input type="text" name="m_faturamento" placeholder='' class="form-control"/>
             </td>
           </tr>
             
           <tr id='addr2'>
             <td>
-              <input type="text" name="m_prodMaisVend"  placeholder='' class="form-control" value = "<?php echo getM_prodMaisVend(); ?>" readonly/>
+              <input type="text" name="m_prodMaisVend"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="m_qtdeMensal" placeholder='' class="form-control" value = "<?php echo getM_qtdeMensal(); ?>" size="10" readonly/>
+              <input type="text" name="m_qtdeMensal" placeholder='' class="form-control" size="10"/>
             </td>           
             <td>
-              <input type="text" name="m_unMed"  placeholder='' class="form-control" value = "<?php echo getM_unMed(); ?>" size="10" readonly/>
+              <input type="text" name="m_unMed"  placeholder='' class="form-control" size="10" />
             </td>
             <td>
-              <input type="text" name="m_margemLucro"  placeholder='' class="form-control" value = "<?php echo getM_margemLucro(); ?>" readonly/>
+              <input type="text" name="m_margemLucro"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="m_faturamento" placeholder='' class="form-control" value = "<?php echo getM_faturamento(); ?>" readonly/>
+              <input type="text" name="m_faturamento" placeholder='' class="form-control"/>
             </td>
           </tr> 
 
           <tr id='addr3'>
             <td>
-              <input type="text" name="m_prodMaisVend"  placeholder='' class="form-control" value = "<?php echo getM_prodMaisVend(); ?>" readonly/>
+              <input type="text" name="m_prodMaisVend"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="m_qtdeMensal" placeholder='' class="form-control" value = "<?php echo getM_qtdeMensal(); ?>" size="10" readonly/>
+              <input type="text" name="m_qtdeMensal" placeholder='' class="form-control" size="10"/>
             </td>           
             <td>
-              <input type="text" name="m_unMed"  placeholder='' class="form-control" value = "<?php echo getM_unMed(); ?>" size="10" readonly/>
+              <input type="text" name="m_unMed"  placeholder='' class="form-control" size="10" />
             </td>
             <td>
-              <input type="text" name="m_margemLucro"  placeholder='' class="form-control" value = "<?php echo getM_margemLucro(); ?>" readonly/>
+              <input type="text" name="m_margemLucro"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="m_faturamento" placeholder='' class="form-control" value = "<?php echo getM_faturamento(); ?>" readonly/>
+              <input type="text" name="m_faturamento" placeholder='' class="form-control"/>
             </td>
           </tr>    
 
           <tr id='addr4'>
             <td>
-              <input type="text" name="m_prodMaisVend"  placeholder='' class="form-control" value = "<?php echo getM_prodMaisVend(); ?>" readonly/>
+              <input type="text" name="m_prodMaisVend"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="m_qtdeMensal" placeholder='' class="form-control" value = "<?php echo getM_qtdeMensal(); ?>" size="10" readonly/>
+              <input type="text" name="m_qtdeMensal" placeholder='' class="form-control" size="10"/>
             </td>           
             <td>
-              <input type="text" name="m_unMed"  placeholder='' class="form-control" value = "<?php echo getM_unMed(); ?>" size="10"  readonly/>
+              <input type="text" name="m_unMed"  placeholder='' class="form-control" size="10" />
             </td>
             <td>
-              <input type="text" name="m_margemLucro"  placeholder='' class="form-control" value = "<?php echo getM_margemLucro(); ?>" readonly/>
+              <input type="text" name="m_margemLucro"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="m_faturamento" placeholder='' class="form-control" value = "<?php echo getM_faturamento(); ?>" readonly/>
+              <input type="text" name="m_faturamento" placeholder='' class="form-control"/>
             </td>
           </tr>              
         </tbody>
@@ -272,13 +252,13 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             <tbody>
               <tr id='addr0'>
                 <td>
-                  A.<input type="text" name="m_concorrente" value = "<?php echo getM_concorrente(); ?>" size=28 readonly>
+                  A.<input type="text" name="m_concorrente" value="" size=28>
                 </td>
                 <td>
-                  B.<input type="text" name="m_concorrente" value = "<?php echo getM_concorrente(); ?>" size=28 readonly>
+                  B.<input type="text" name="m_concorrente" value="" size=28>
                 </td>
                  <td>
-                  C.<input type="text" name="m_concorrente" value = "<?php echo getM_concorrente(); ?>" size=28 readonly>
+                  C.<input type="text" name="m_concorrente" value="" size=28>
                 </td>
               </tr>   
           </tbody>
@@ -290,11 +270,11 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
   <br>
   <tr>
         <div id="alinhaRadio">
-        <label><th class="span1"><input type="radio" name = "m_visitaConcorrencia" value = "<?php echo getM_visitaConcorrencia(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "m_visitaConcorrencia" value = "0"></th>
           <td>Sim</td></label>
       </tr>
       <tr>
-        <label><th class="span1"><input type="radio" name = "m_visitaConcorrencia" value = "<?php echo getM_visitaConcorrencia(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "m_visitaConcorrencia" value = "1"></th>
           <td>Não</td></label>
       </tr><br><br>
       </div>
@@ -302,149 +282,149 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
       <label> 2.4 Quais são seus pontos fortes em relação a concorrência?</label> 
       <br>
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_atendimento" value = "<?php echo getM_atendimento(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_atendimento" value = "1"></th>
         <td>Atendimento</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_estacionamento" value = "<?php echo getM_estacionamento(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_estacionamento" value = "1"></th>
         <td>Estacionamento</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_preco" value = "<?php echo getM_preco(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_preco" value = "1"></th>
         <td>Preço</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_variedade" value = "<?php echo getM_variedade(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_variedade" value = "1"></th>
         <td>Variedade</td></label>
       </tr>
       <br>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_espacoFisico" value = "<?php echo getM_espacoFisico(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_espacoFisico" value = "1"></th>
         <td>Espaço Físico</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_localizacao" value = "<?php echo getM_localizacao(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_localizacao" value = "1"></th>
         <td>Localização</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_qualidade" value = "<?php echo getM_qualidade(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_qualidade" value = "1"></th>
         <td>Qualidade</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_outros" value = "<?php echo getM_outros(); ?>" readonly></th>
-        <td>Outros:<input type="text" name="m_descricaoOutrosPontosFortes" value = "<?php echo getM_descricaoOutrosPontosFortes(); ?>" size=30 readonly><br></td></label>
+        <label><th class="span1"><input type="checkbox" name = "m_outros" value = "1"></th>
+        <td>Outros:<input type="text" name="m_descricaoOutrosPontosFortes" value="" size=30><br></td></label>
       </tr>
 
       <br>
       <label>2.5 Quais são seus pontos para melhoria em relação a concorrência?</label>
       <br>
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_mAtendimento" value = "<?php echo getM_mAtendimento(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_mAtendimento" value = "1"></th>
         <td>Atendimento</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_mEstacionamento" value = "<?php echo getM_mEstacionamento(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_mEstacionamento" value = "1"></th>
         <td>Estacionamento</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_mPreco" value = "<?php echo getM_mPreco(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_mPreco" value = "1"></th>
         <td>Preço</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_mVariedade" value = "<?php echo getM_mVariedade(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_mVariedade" value = "1"></th>
         <td>Variedade</td></label>
       </tr>
       <br>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_mEspacoFisico" value = "<?php echo getM_mEspacoFisico(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_mEspacoFisico" value = "1"></th>
         <td>Espaço Físico</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_mLocalizacao" value = "<?php echo getM_mLocalizacao(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_mLocalizacao" value = "1"></th>
         <td>Localização</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_mQualidade" value = "<?php echo getM_mQualidade(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_mQualidade" value = "1"></th>
         <td>Qualidade</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_mOutros" value = "<?php echo getM_mOutros(); ?>" readonly></th>
-        <td>Outros:<input type="text" name="m_mOutrosPontosDescricao" value = "<?php echo getM_mOutrosPontosDescricao(); ?>" size=30 readonly><br></td></label>
+        <label><th class="span1"><input type="checkbox" name = "m_mOutros" value = "1"></th>
+        <td>Outros:<input type="text" name="m_mOutrosPontosDescricao" value="" size=30><br></td></label>
       </tr>
 
       </br>      
       <label>2.6 Faz promoções? </label>
       <br>
       <tr>
-        <label><th class="span1"><input type="radio" name = "m_promocao" value = "<?php echo getM_promocao(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "m_promocao" value = "0"></th>
           <td>Mais de duas vez por mês</td></label>
       </tr>
       <tr>
-        <label><th class="span1"><input type="radio" name = "m_promocao" value = "<?php echo getM_promocao(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "m_promocao" value = "1"></th>
           <td>Uma vez por mês</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="radio" name = "m_promocao" value = "<?php echo getM_promocao(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "m_promocao" value = "2"></th>
           <td>Não, nunca faço</td></label>
       </tr><br><br>
 
       <label> 2.7 Quais meios utiliza? </label>
       <br>
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_radio" value = "<?php echo getM_radio(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_radio" value = "1"></th>
         <td>Rádio</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_jornal" value = "<?php echo getM_jornal(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_jornal" value = "1"></th>
         <td>Jornal</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_panfleto" value = "<?php echo getM_panfleto(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "m_panfleto" value = "1"></th>
         <td>Panfleto</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "m_OutrosMeiosComunicacao" value = "<?php echo getM_outrosMeiosComunicacao(); ?>" readonly></th>
-        <td>Outros:<input type="text" name="m_OutrosMeiosComunicacaoDesc" value = "<?php echo getM_outrosMeiosComunicacaoDesc(); ?>" size=30 readonly><br></td></label>
+        <label><th class="span1"><input type="checkbox" name = "m_OutrosMeiosComunicacao" value = ""></th>
+        <td>Outros:<input type="text" name="m_OutrosMeiosComunicacao" value="" size=30><br></td></label>
       </tr>
 
       <br>
       <label>2.8 O estabelecimento é bem sinalizado, dividido em seções?</label>
       <br>
       <tr>
-        <label><th class="span1"><input type="radio" name = "m_sinalizacao" value = "<?php echo getM_sinalizacao(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "m_sinalizacao" value = "0"></th>
           <td>Sim</td></label>
       </tr>
       <tr>
-        <label><th class="span1"><input type="radio" name = "m_sinalizacao" value = "<?php echo getM_sinalizacao(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "m_sinalizacao" value = "1"></th>
           <td>Não</td></label>
       </tr><br><br>
 
       <label> 2.9 Dispõe de espaços promocionais? (dispostos na loja)</label>
       <br>
       <tr>
-        <label><th class="span1"><input type="radio" name = "m_espacoPromocional" value = "<?php echo getM_espacoPromocional(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "m_espacaoPromocional" value = "0"></th>
           <td>Sim</td></label>
       </tr>
       <tr>
-        <label><th class="span1"><input type="radio" name = "m_espacoPromocional" value = "<?php echo getM_espacoPromocional(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "m_espacaoPromocional" value = "1"></th>
           <td>Não</td></label>
       </tr><br><br>
 
@@ -454,30 +434,30 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
       <label> 3.1 Como forma os preços de seus produtos? </label>   
       <br>
       <tr>
-        <label><th class="span1"><input type="radio" name = "p_formacaoPreco" value = "<?php echo getP_formacaoPreco(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "p_formacaoPreco" value = "0"></th>
           <td>Percentual sobre os custos</td></label>
       </tr>
       <tr>
-        <label><th class="span1"><input type="radio" name = "p_formacaoPreco" value = "<?php echo getP_formacaoPreco(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "p_formacaoPreco" value = "1"></th>
           <td>Acompanhando o mercado</td></label>
       </tr>
       <tr>
-        <label><th class="span1"><input type="radio" name = "p_formacaoPreco" value = "<?php echo getP_formacaoPreco(); ?>" readonly></th>
-          <td>Outra Maneira, qual?<input type="text" name="p_outraFormacaoPreco" value = "<?php echo getP_outraFormacaoPreco(); ?>" size=10 readonly></td></label>
+        <label><th class="span1"><input type="radio" name = "p_formacaoPreco" value = "2"></th>
+          <td>Outra Maneira, qual?<input type="text" name="p_outraFormacaoPreco" value="" size=10></td></label>
       </tr><br><br>
 
       <label> 3.2 Seus preços em relação a concorrência estão? </label>  
       <br>
       <tr>
-        <label><th class="span1"><input type="radio" name = "p_precoConcorrencia" value = "<?php echo getP_precoConcorrencia(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "p_precoConcorrencia" value = "0"></th>
           <td>Acima</td></label>
       </tr>
       <tr>
-        <label><th class="span1"><input type="radio" name = "p_precoConcorrencia" value = "<?php echo getP_precoConcorrencia(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "p_precoConcorrencia" value = "1"></th>
           <td>Iguais</td></label>
       </tr>
       <tr>
-        <label><th class="span1"><input type="radio" name = "p_precoConcorrencia" value = "<?php echo getP_precoConcorrencia(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "p_precoConcorrencia" value = "2"></th>
           <td>Abaixo</td></label>
       </tr><br><br>
 
@@ -513,17 +493,17 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             
             </td>
             <td>
-              <input type="text" name="v_mesAno"  placeholder='' class="form-control" value = "<?php echo getV_mesAno(); ?>" readonly/>
+              <input type="text" name="v_mesAno"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="v_fatReais" placeholder='' class="form-control" value = "<?php echo getV_fatReais(); ?>" readonly/>
+              <input type="text" name="v_fatReais" placeholder='' class="form-control"/>
             </td>
             
             <td>
-              <input type="text" name="v_mesAno"  placeholder='' class="form-control" value = "<?php echo getV_mesAno(); ?>" readonly/>
+              <input type="text" name="v_mesAno"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="v_fatReais"  placeholder='' class="form-control" value = "<?php echo getV_fatReais(); ?>" readonly/>
+              <input type="text" name="v_fatReais"  placeholder='' class="form-control"/>
             </td>
           </tr>
             
@@ -532,17 +512,17 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             
             </td>
             <td>
-              <input type="text" name="v_mesAno"  placeholder='' class="form-control" value = "<?php echo getV_mesAno(); ?>" readonly/>
+              <input type="text" name="v_mesAno"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="v_fatReais" placeholder='' class="form-control" value = "<?php echo getV_fatReais(); ?>" readonly/>
+              <input type="text" name="v_fatReais" placeholder='' class="form-control"/>
             </td>
             
             <td>
-              <input type="text" name="v_mesAno"  placeholder='' class="form-control" value = "<?php echo getV_mesAno(); ?>" readonly/>
+              <input type="text" name="v_mesAno"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="v_fatReais"  placeholder='' class="form-control" value = "<?php echo getV_fatReais(); ?>" readonly/>
+              <input type="text" name="v_fatReais"  placeholder='' class="form-control"/>
             </td>
           </tr>
             
@@ -551,17 +531,17 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             
             </td>
             <td>
-              <input type="text" name="v_mesAno"  placeholder='' class="form-control" value = "<?php echo getV_mesAno(); ?>" readonly/>
+              <input type="text" name="v_mesAno"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="v_fatReais" placeholder='' class="form-control" value = "<?php echo getV_fatReais(); ?>" readonly/>
+              <input type="text" name="v_fatReais" placeholder='' class="form-control"/>
             </td>
             
             <td>
-              <input type="text" name="v_mesAno"  placeholder='' class="form-control" value = "<?php echo getV_mesAno(); ?>" readonly/>
+              <input type="text" name="v_mesAno"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="v_fatReais"  placeholder='' class="form-control" value = "<?php echo getV_fatReais(); ?>" readonly/>
+              <input type="text" name="v_fatReais"  placeholder='' class="form-control"/>
             </td>
           </tr>
 
@@ -570,17 +550,17 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             
             </td>
             <td>
-             <input type="text" name="v_mesAno"  placeholder='' class="form-control" value = "<?php echo getV_mesAno(); ?>" readonly/>
+             <input type="text" name="v_mesAno"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="v_fatReais" placeholder='' class="form-control" value = "<?php echo getV_fatReais(); ?>" readonly/>
+              <input type="text" name="v_fatReais" placeholder='' class="form-control"/>
             </td>
             
             <td>
-              <input type="text" name="v_mesAno"  placeholder='' class="form-control" value = "<?php echo getV_mesAno(); ?>" readonly/>
+              <input type="text" name="v_mesAno"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="v_fatReais"  placeholder='' class="form-control" value = "<?php echo getV_fatReais(); ?>" readonly/>
+              <input type="text" name="v_fatReais"  placeholder='' class="form-control"/>
             </td>
           </tr>
             
@@ -589,17 +569,17 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             
             </td>
             <td>
-              <input type="text" name="v_mesAno"  placeholder='' class="form-control" value = "<?php echo getV_mesAno(); ?>" readonly/>
+              <input type="text" name="v_mesAno"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="v_fatReais" placeholder='' class="form-control" value = "<?php echo getV_fatReais(); ?>" readonly/>
+              <input type="text" name="v_fatReais" placeholder='' class="form-control"/>
             </td>
             
             <td>
-              <input type="text" name="v_mesAno"  placeholder='' class="form-control" value = "<?php echo getV_mesAno(); ?>" readonly/>
+              <input type="text" name="v_mesAno"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="v_fatReais"  placeholder='' class="form-control" value = "<?php echo getV_fatReais(); ?>" readonly/>
+              <input type="text" name="v_fatReais"  placeholder='' class="form-control"/>
             </td>
           </tr>
             
@@ -608,17 +588,17 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             
             </td>
             <td>
-              <input type="text" name="v_mesAno"  placeholder='' class="form-control" value = "<?php echo getV_mesAno(); ?>" readonly/>
+              <input type="text" name="v_mesAno"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="v_fatReais" placeholder='' class="form-control" value = "<?php echo getV_fatReais(); ?>" readonly/>
+              <input type="text" name="v_fatReais" placeholder='' class="form-control"/>
             </td>
             
             <td>
-              <input type="text" name="v_mesAno"  placeholder='' class="form-control" value = "<?php echo getV_mesAno(); ?>" readonly/>
+              <input type="text" name="v_mesAno"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="v_fatReais"  placeholder='' class="form-control" value = "<?php echo getV_fatReais(); ?>" readonly/>
+              <input type="text" name="v_fatReais"  placeholder='' class="form-control"/>
             </td>
           </tr>
 
@@ -629,56 +609,56 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
   
   <label>4.2 Dias da semana de maior movimento? Período do mês: </label>
     <td>
-      <input type="text" name="v_periodoInicial" value = "<?php echo getV_(); ?>" size=12>
-      <input type="text" name="v_periodoFinal" value = "<?php echo getV_(); ?>" size=12>
+      <input type="text" name="v_periodoInicial" value="" size=12>
+      <input type="text" name="v_periodoFinal" value="" size=12>
     </td>
       <tr><br>
-         <label><th class="span1"><input type="checkbox" name = "v_seg" value = "<?php echo getV_seg(); ?>" readonly></th>
+         <label><th class="span1"><input type="checkbox" name = "v_seg" value = "1"></th>
       <td> Seg</td></label>
       </tr>
     
      <tr>
-        <label><th class="span1"><input type="checkbox" name = "v_ter" value = "<?php echo getV_ter(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "v_ter" value = "1"></th>
       <td> Ter </td></label>
       </tr>
     
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "v_qua" value = "<?php echo getV_qua(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "v_qua" value = "1"></th>
       <td> Qua</td></label>
       </tr>
     
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "v_qui" value = "<?php echo getV_qui(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "v_qui" value = "1"></th>
       <td> Qui</td></label>
       </tr> 
 
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "v_sex" value = "<?php echo getV_sex(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "v_sex" value = "1"></th>
       <td> Sex</td></label>
       </tr>
     
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "v_sab" value = "<?php echo getV_sab(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "v_sab" value = "1"></th>
       <td> Sab</td></label>
       </tr>
     
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "v_dom" value = "<?php echo getV_dom(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "v_dom" value = "1"></th>
       <td> Dom</td></label>
       </tr><br><br>
   
   <label>4.3 Quais horários de maior movimento?</label>
     <br>
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "v_manha" value = "<?php echo getV_manha(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "v_manha" value = "1"></th>
       <td> Manhã</td></label>
       </tr>
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "v_tarde" value = "<?php echo getV_tarde(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "v_tarde" value = "1"></th>
       <td> Tarde</td></label>
       </tr>
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "v_noite" value = "<?php echo getV_noite(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "v_noite" value = "1"></th>
       <td> Noite</td></label>
       </tr>
     
@@ -687,33 +667,33 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
   <label>4.4 Forma de pagamento oferecidas aos clientes?</label>
     <br>
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "v_cheque" value = "<?php echo getV_cheque(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "v_cheque" value = "1"></th>
       <td>Cheque pré-datado </td></label>
       </tr>
     
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "v_ticket" value = "<?php echo getV_ticket(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "v_ticket" value = "1"></th>
       <td>Ticket </td></label>
       </tr>
     
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "v_cartao" value = "<?php echo getV_cartao(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "v_cartao" value = "1"></th>
       <td>Cartão de crédito </td></label>
       </tr>
     <br>
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "v_avista" value = "<?php echo getV_avista(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "v_avista" value = "1"></th>
       <td>Caderneta </td></label>
       </tr>
     
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "v_caderneta" value = "<?php echo getV_cardeneta(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "v_caderneta" value = "1"></th>
       <td>A vista </td></label>
       </tr>
     
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "v_outraFormaPagto" value = "<?php echo getV_outraFormaPagto(); ?>" readonly></th>
-        <td>Outra? Qual?<input type="text" name="v_outraFormaPagtoDesc" value = "<?php echo getV_outraFormaPagtoDesc(); ?>" size=30 readonly> 
+        <label><th class="span1"><input type="checkbox" name = "" value = ""></th>
+        <td>Outra? Qual?<input type="text" name="v_outraFormaPagto" value="" size=30>
         <br> </td></label>
       </tr><br>
   
@@ -721,9 +701,9 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
   <br>
     <div class="form-group">
         <label class="col-sm-3 control-label" for="card-holder-name"> Por vez:</label>    
-           <input type="text" name="v_vlrMedioPorVez" value = "<?php echo getV_vlrMedioPorVez(); ?>" size=30 readonly>
+           <input type="text" name="v_vlrMedioPorVez" value="" size=30>
            <label class="col-sm-3 control-label" for="card-holder-name"> Mensal:</label>   
-           <input type="text" name="v_vlrMedioMensal" value = "<?php echo getV_vlrMedioMensal(); ?>" size=30 readonly>
+           <input type="text" name="v_vlrMedioMensal" value="" size=30>
     </div>
   <br>
 
@@ -760,19 +740,19 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             
             </td>
             <td>
-              <input type="text" name="c_razaoSocialFantasia"  placeholder='' class="form-control" value = "<?php echo getC_razaoSocialFantasia(); ?>" readonly/>
+              <input type="text" name="c_razaoSocialFantasia"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="c_cidadeUf" placeholder='' class="form-control" value = "<?php echo getC_cidadeUf(); ?>" size=10 readonly/>
+              <input type="text" name="c_cidadeUf" placeholder='' class="form-control" size=10/>
             </td>           
             <td>
-              <input type="text" name="c_produtos"  placeholder='' class="form-control" value = "<?php echo getC_produtos(); ?>" size=15 readonly/>
+              <input type="text" name="c_produtos"  placeholder='' class="form-control" size=15/>
             </td>
             <td>
-              <input type="text" name="c_loteMinimo"  placeholder='' class="form-control" value = "<?php echo getC_loteMinimo(); ?>" size=15 readonly/>
+              <input type="text" name="c_loteMinimo"  placeholder='' class="form-control" size=15/>
             </td>
             <td>
-              <input type="text" name="c_relacionamento"  placeholder='' class="form-control" value = "<?php echo getC_relacionamento(); ?>" size=15 readonly/>
+              <input type="text" name="c_relacionamento"  placeholder='' class="form-control" size=15/>
             </td>
           </tr>
             
@@ -781,19 +761,19 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             
             </td>
             <td>
-              <input type="text" name="c_razaoSocialFantasia"  placeholder='' class="form-control" value = "<?php echo getC_razaoSocialFantasia(); ?>" readonly/>
+              <input type="text" name="c_razaoSocialFantasia"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="c_cidadeUf" placeholder='' class="form-control" value = "<?php echo getC_cidadeUf(); ?>" size=10 readonly/>
+              <input type="text" name="c_cidadeUf" placeholder='' class="form-control" size=10/>
             </td>           
             <td>
-              <input type="text" name="c_produtos"  placeholder='' class="form-control" value = "<?php echo getC_produtos(); ?>" size=15 readonly/>
+              <input type="text" name="c_produtos"  placeholder='' class="form-control" size=15/>
             </td>
             <td>
-              <input type="text" name="c_loteMinimo"  placeholder='' class="form-control" value = "<?php echo getC_loteMinimo(); ?>" size=15 readonly/>
+              <input type="text" name="c_loteMinimo"  placeholder='' class="form-control" size=15/>
             </td>
             <td>
-              <input type="text" name="c_relacionamento"  placeholder='' class="form-control" value = "<?php echo getC_relacionamento(); ?>" size=15 readonly/>
+              <input type="text" name="c_relacionamento"  placeholder='' class="form-control" size=15/>
             </td>
           </tr>
             
@@ -802,19 +782,19 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             
             </td>
             <td>
-              <input type="text" name="c_razaoSocialFantasia"  placeholder='' class="form-control" value = "<?php echo getC_razaoSocialFantasia(); ?>" readonly/>
+              <input type="text" name="c_razaoSocialFantasia"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="c_cidadeUf" placeholder='' class="form-control" value = "<?php echo getC_cidadeUf(); ?>" size=10 readonly/>
+              <input type="text" name="c_cidadeUf" placeholder='' class="form-control" size=10/>
             </td>           
             <td>
-              <input type="text" name="c_produtos"  placeholder='' class="form-control" value = "<?php echo getC_produtos(); ?>" size=15 readonly/>
+              <input type="text" name="c_produtos"  placeholder='' class="form-control" size=15/>
             </td>
             <td>
-              <input type="text" name="c_loteMinimo"  placeholder='' class="form-control" value = "<?php echo getC_loteMinimo(); ?>" size=15 readonly/>
+              <input type="text" name="c_loteMinimo"  placeholder='' class="form-control" size=15/>
             </td>
             <td>
-              <input type="text" name="c_relacionamento"  placeholder='' class="form-control" value = "<?php echo getC_relacionamento(); ?>" size=15 readonly/>
+              <input type="text" name="c_relacionamento"  placeholder='' class="form-control" size=15/>
             </td>
           </tr>
             
@@ -823,19 +803,19 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             
             </td>
             <td>
-              <input type="text" name="c_razaoSocialFantasia"  placeholder='' class="form-control" value = "<?php echo getC_razaoSocialFantasia(); ?>" readonly/>
+              <input type="text" name="c_razaoSocialFantasia"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="c_cidadeUf" placeholder='' class="form-control" value = "<?php echo getC_cidadeUf(); ?>" size=10 readonly/>
+              <input type="text" name="c_cidadeUf" placeholder='' class="form-control" size=10/>
             </td>           
             <td>
-              <input type="text" name="c_produtos"  placeholder='' class="form-control" value = "<?php echo getC_produtos(); ?>" size=15 readonly/>
+              <input type="text" name="c_produtos"  placeholder='' class="form-control" size=15/>
             </td>
             <td>
-              <input type="text" name="c_loteMinimo"  placeholder='' class="form-control" value = "<?php echo getC_loteMinimo(); ?>" size=15 readonly/>
+              <input type="text" name="c_loteMinimo"  placeholder='' class="form-control" size=15/>
             </td>
             <td>
-              <input type="text" name="c_relacionamento"  placeholder='' class="form-control" value = "<?php echo getC_relacionamento(); ?>" size=15 readonly/>
+              <input type="text" name="c_relacionamento"  placeholder='' class="form-control" size=15/>
             </td>
             
           <tr id='addr4'>
@@ -843,19 +823,19 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             
             </td>
             <td>
-              <input type="text" name="c_razaoSocialFantasia"  placeholder='' class="form-control" value = "<?php echo getC_razaoSocialFantasia(); ?>" readonly/>
+              <input type="text" name="c_razaoSocialFantasia"  placeholder='' class="form-control"/>
             </td>
             <td>
-              <input type="text" name="c_cidadeUf" placeholder='' class="form-control" value = "<?php echo getC_cidadeUf(); ?>" size=10 readonly/>
+              <input type="text" name="c_cidadeUf" placeholder='' class="form-control" size=10/>
             </td>           
             <td>
-              <input type="text" name="c_produtos"  placeholder='' class="form-control" value = "<?php echo getC_produtos(); ?>" size=15 readonly/>
+              <input type="text" name="c_produtos"  placeholder='' class="form-control" size=15/>
             </td>
             <td>
-              <input type="text" name="c_loteMinimo"  placeholder='' class="form-control" value = "<?php echo getC_loteMinimo(); ?>" size=15 readonly/>
+              <input type="text" name="c_loteMinimo"  placeholder='' class="form-control" size=15/>
             </td>
             <td>
-              <input type="text" name="c_relacionamento"  placeholder='' class="form-control" value = "<?php echo getC_relacionamento(); ?>" size=15 readonly/>
+              <input type="text" name="c_relacionamento"  placeholder='' class="form-control" size=15/>
             </td>
           </tr>                       
         </tbody>
@@ -891,17 +871,17 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
               
               </td>
               <td>
-                <input type="text" name="c_mesAno"  placeholder='' class="form-control" value = "<?php echo getC_mesAno(); ?>" readonly/>
+                <input type="text" name="c_mesAno"  placeholder='' class="form-control"/>
               </td>
               <td>
-                <input type="text" name="c_comprasReais" placeholder='' class="form-control" value = "<?php echo getC_compraReais(); ?>" readonly/>
+                <input type="text" name="c_comprasReais" placeholder='' class="form-control"/>
               </td>
               
               <td>
-                <input type="text" name="c_mesAno"  placeholder='' class="form-control" value = "<?php echo getC_mesAno(); ?>" readonly/>
+                <input type="text" name="c_mesAno"  placeholder='' class="form-control"/>
               </td>
               <td>
-                <input type="text" name="c_comprasReais"  placeholder='' class="form-control" value = "<?php echo getC_compraReais(); ?>" readonly/>
+                <input type="text" name="c_comprasReais"  placeholder='' class="form-control"/>
               </td>
             </tr>
               
@@ -910,17 +890,17 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
               
               </td>
               <td>
-                 <input type="text" name="c_mesAno"  placeholder='' class="form-control" value = "<?php echo getC_mesAno(); ?>" readonly/>
+                 <input type="text" name="c_mesAno"  placeholder='' class="form-control"/>
               </td>
               <td>
-                <input type="text" name="c_comprasReais" placeholder='' class="form-control" value = "<?php echo getC_compraReais(); ?>" readonly/>
+                <input type="text" name="c_comprasReais" placeholder='' class="form-control"/>
               </td>
               
               <td>
-                <input type="text" name="c_mesAno"  placeholder='' class="form-control" value = "<?php echo getC_mesAno(); ?>" readonly/>
+                <input type="text" name="c_mesAno"  placeholder='' class="form-control"/>
               </td>
               <td>
-                <input type="text" name="c_comprasReais"  placeholder='' class="form-control" value = "<?php echo getC_compraReais(); ?>" readonly/>
+                <input type="text" name="c_comprasReais"  placeholder='' class="form-control"/>
               </td>
             </tr>
               
@@ -929,17 +909,17 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
               
               </td>
               <td>
-                <input type="text" name="c_mesAno"  placeholder='' class="form-control" value = "<?php echo getC_mesAno(); ?>" readonly/>
+                <input type="text" name="c_mesAno"  placeholder='' class="form-control"/>
               </td>
               <td>
-                <input type="text" name="c_comprasReais" placeholder='' class="form-control" value = "<?php echo getC_compraReais(); ?>" readonly/>
+                <input type="text" name="c_comprasReais" placeholder='' class="form-control"/>
               </td>
               
               <td>
-                <input type="text" name="c_mesAno"  placeholder='' class="form-control" value = "<?php echo getC_mesAno(); ?>" readonly/>
+                <input type="text" name="c_mesAno"  placeholder='' class="form-control"/>
               </td>
               <td>
-                <input type="text" name="c_comprasReais"  placeholder='' class="form-control" value = "<?php echo getC_compraReais(); ?>" readonly/>
+                <input type="text" name="c_comprasReais"  placeholder='' class="form-control"/>
               </td>
             </tr>
 
@@ -948,17 +928,17 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
               
               </td>
               <td>
-                <input type="text" name="c_mesAno"  placeholder='' class="form-control" value = "<?php echo getC_mesAno(); ?>" readonly/>
+                <input type="text" name="c_mesAno"  placeholder='' class="form-control"/>
               </td>
               <td>
-                <input type="text" name="c_comprasReais" placeholder='' class="form-control" value = "<?php echo getC_compraReais(); ?>" readonly/>
+                <input type="text" name="c_comprasReais" placeholder='' class="form-control"/>
               </td>
               
               <td>
-                <input type="text" name="c_mesAno"  placeholder='' class="form-control" value = "<?php echo getC_mesAno(); ?>" readonly/>
+                <input type="text" name="c_mesAno"  placeholder='' class="form-control"/>
               </td>
               <td>
-                <input type="text" name="c_comprasReais"  placeholder='' class="form-control" value = "<?php echo getC_compraReais(); ?>" readonly/>
+                <input type="text" name="c_comprasReais"  placeholder='' class="form-control"/>
               </td>
             </tr>
               
@@ -967,17 +947,17 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
               
               </td>
               <td>
-                 <input type="text" name="c_mesAno"  placeholder='' class="form-control" value = "<?php echo getC_mesAno(); ?>" readonly/>
+                 <input type="text" name="c_mesAno"  placeholder='' class="form-control"/>
               </td>
               <td>
-                <input type="text" name="c_comprasReais" placeholder='' class="form-control" value = "<?php echo getC_compraReais(); ?>" readonly/>
+                <input type="text" name="c_comprasReais" placeholder='' class="form-control"/>
               </td>
               
               <td>
-                <input type="text" name="c_mesAno"  placeholder='' class="form-control" value = "<?php echo getC_mesAno(); ?>" readonly/>
+                <input type="text" name="c_mesAno"  placeholder='' class="form-control"/>
               </td>
               <td>
-                <input type="text" name="c_comprasReais"  placeholder='' class="form-control" value = "<?php echo getC_compraReais(); ?>" readonly/>
+                <input type="text" name="c_comprasReais"  placeholder='' class="form-control"/>
               </td>
             </tr>
               
@@ -986,17 +966,17 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
               
               </td>
               <td>
-                 <input type="text" name="c_mesAno"  placeholder='' class="form-control" value = "<?php echo getC_mesAno(); ?>" readonly/>
+                 <input type="text" name="c_mesAno"  placeholder='' class="form-control"/>
               </td>
               <td>
-                <input type="text" name="c_comprasReais" placeholder='' class="form-control" value = "<?php echo getC_compraReais(); ?>" readonly/>
+                <input type="text" name="c_comprasReais" placeholder='' class="form-control"/>
               </td>
               
               <td>
-                <input type="text" name="c_mesAno"  placeholder='' class="form-control" value = "<?php echo getC_mesAno(); ?>" readonly/>
+                <input type="text" name="c_mesAno"  placeholder='' class="form-control"/>
               </td>
               <td>
-                <input type="text" name="c_comprasReais"  placeholder='' class="form-control" value = "<?php echo getC_compraReais(); ?>" readonly/>
+                <input type="text" name="c_comprasReais"  placeholder='' class="form-control"/>
               </td>
             </tr>
           </tbody>
@@ -1006,58 +986,58 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
   <legend>6. CLIENTES</legend> 
 
   <label>6.1 Quantos clientes atende por mês?</label>
-    <input type="text" name="cli_qtdeClienteMensal" value = "<?php echo getCli_qtdeClienteMensal(); ?>" size=15 readonly><br><br>
+    <input type="text" name="cli_qtdeClienteMensal" value="" size=15><br><br>
   
   <label>6.2 Qual é o perfil do seu cliente?</label>
     <br>
-      <input type="text" name="cli_percClasA" value = "<?php echo getCli_percClasA(); ?>" size=5 readonly><td>% classe A </td>
+      <input type="text" name="cli_percClasA" value="" size=5><td>% classe A </td>
     
-      <input type="text" name="cli_percClasB" value = "<?php echo getCli_percClasB(); ?>" size=5 readonly><td>% classe B </td>
+      <input type="text" name="cli_percClasB" value="" size=5><td>% classe B </td>
     
-      <input type="text" name="cli_percClasC" value = "<?php echo getCli_percClasC(); ?>" size=5 readonly><td>% classe C </td>
+      <input type="text" name="cli_percClasC" value="" size=5><td>% classe C </td>
     
-      <input type="text" name="cli_percClasD" value = "<?php echo getCli_percClasD(); ?>" size=5 readonly><td>% classe D </td>
+      <input type="text" name="cli_percClasD" value="" size=5><td>% classe D </td>
     <br>
-      <input type="text" name="cli_percIdadeA" value = "<?php echo getCli_percIdadeA(); ?>" size=4 readonly><td>% 0 a 18 anos </td>
+      <input type="text" name="cli_percIdadeA" value="" size=4><td>% 0 a 18 anos </td>
        
-      <input type="text" name="cli_percIdadeB" value = "<?php echo getCli_percIdadeB(); ?>" size=4 readonly><td>% 19 a 30 anos </td>  
+      <input type="text" name="cli_percIdadeB" value="" size=4><td>% 19 a 30 anos </td>  
     
-      <input type="text" name="cli_percIdadeC" value = "<?php echo getCli_percIdadeC(); ?>" size=4 readonly><td>% 31 a 45 anos </td>
+      <input type="text" name="cli_percIdadeC" value="" size=4><td>% 31 a 45 anos </td>
      
-      <input type="text" name="cli_percIdadeD" value = "<?php echo getCli_percIdadeD(); ?>" size=4 readonly><td>% acima de 46 anos </td>
+      <input type="text" name="cli_percIdadeD" value="" size=4><td>% acima de 46 anos </td>
     <br>
-      <input type="text" name="cli_percMasc" value = "<?php echo getCli_percMasc(); ?>" size=5 readonly><td>% Masculino </td>
+      <input type="text" name="cli_percMasc" value="" size=5><td>% Masculino </td>
     
-      <input type="text" name="cli_percFem" value = "<?php echo getCli_percFem(); ?>" size=5 readonly><td>% Feminino </td>
+      <input type="text" name="cli_percFem" value="" size=5><td>% Feminino </td>
     <br><br>
 
     <label>6.3 Vende para empresas?</label><br>
     <tr>
-      <label><th class="span1"><input type="radio" name = "cli_vendeEmpresas" value = "<?php echo getCli_vendeEmpresas(); ?>" readonly></th>
+      <label><th class="span1"><input type="radio" name = "cli_vendeEmpresas" value = "0"></th>
       <td>Sim.Quantos % representa do total do faturamento?</td></label>
-      <input type="text" name="cli_percTotalFat" value = "<?php echo getCli_percTotalFat(); ?>" size=5 readonly>
+      <input type="text" name="cli_percTotalFat" value="" size=5>
       </tr>
     
     <tr>
-      <label><th class="span1"><input type="radio" name = "cli_vendeEmpresas" value = "<?php echo getCli_vendeEmpresas(); ?>" readonly></th>
+      <label><th class="span1"><input type="radio" name = "cli_vendeEmpresas" value = "1"></th>
       <td>Não </td></label>
       </tr>
     
     <br><br>
     <label>6.4 Faz pesquisas com seus clientes?</label><br>
     <tr>
-      <label><th class="span1"><input type="radio" name = "cli_pesquisaClientes" value = "<?php echo getCli_pesquisaClientes(); ?>" readonly></th>
+      <label><th class="span1"><input type="radio" name = "cli_pesquisaClientes" value="0"></th>
       <td>Sim, frequência?</td></label>
-      <input type="text" name="cli_frequencia" size=15 readonly>
+      <input type="text" name="cli_frequencia" size=15>
       </tr>
     
     <tr>
-      <label><th class="span1"><input type="radio" name = "cli_pesquisaClientes" value = "<?php echo getCli_pesquisaClientes(); ?>" readonly></th>
+      <label><th class="span1"><input type="radio" name = "cli_pesquisaClientes" value="1"></th>
       <td>Não, mas já fiz </td></label>
       </tr>
     
     <tr>
-      <label><th class="span1"><input type="radio" name = "cli_pesquisaClientes" value = "<?php echo getCli_pesquisaClientes(); ?>" readonly></th>
+      <label><th class="span1"><input type="radio" name = "cli_pesquisaClientes" value="2"></th>
       <td>Nunca fiz </td></label>
       </tr>
 
@@ -1065,86 +1045,86 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
       <br>
       <legend>7. RECURSOS HUMANOS</legend>
       <br>
-      <label>7.1 Quantos colaboradores possui?</label><input type="text" name="r_qtdeColaboradores" value = "<?php echo getR_qtdeColaboradores(); ?>" size=10 readonly><br><br>
+      <label>7.1 Quantos colaboradores possui?</label><input type="text" name="r_qtdeColaboradores" value="" size=10><br><br>
 
       <label>7.2 No último ano seus colaboradores participaram de treinamento?</label>
       <br>
       <tr>
-        <label><th class="span1"><input type="radio" name = "r_treinamento" value = "<?php echo getR_treinamento(); ?>" readonly></th>
-        <td>Sim. Em que área?<input type="text" name="r_area" value = "<?php echo getR_area(); ?>" size=30 readonly></label></td>
+        <label><th class="span1"><input type="radio" name = "r_treinamento" value = "0"></th>
+        <td>Sim. Em que área?<input type="text" name="r_area" value="" size=30></label></td>
       </tr>
       
       <tr>
-        <label><th class="span1"><input type="radio" name = "r_treinamento" value = "<?php echo getR_treinamento(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "r_treinamento" value = "1"></th>
         <td>Não </td></label>
       </tr><br><br> 
 
       <label>7.3 Qual a escolaridade dos que trabalham na empresa?</label><br>
       <tr>
-        <label><th class="span1"><input type="radio" name = "r_escolaridade" value = "<?php echo getR_escolaridade(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "r_escolaridade" value = "0"></th>
         <td>Segundo grau </td></label>
       </tr>
       
       <tr>
-        <label><th class="span1"><input type="radio" name = "r_escolaridade" value = "<?php echo getR_escolaridade(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "r_escolaridade" value = "1"></th>
         <td>Superior </td></label>
       </tr>
       
       <tr>
-        <label><th class="span1"><input type="radio" name = "r_escolaridade" value = "<?php echo getR_escolaridade(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "r_escolaridade" value = "2"></th>
         <td>Pós-graduação</td></label>
       </tr> <br><br>
 
       <label>7.4 Que critérios utiliza para contratação de colaboradores?</label><br>
     <tr>
-      <label><th class="span1"><input type="checkbox" name = "r_indicacao" value = "<?php echo getR_indicacao(); ?>" readonly></th>
+      <label><th class="span1"><input type="checkbox" name = "r_indicacao" value = "1"></th>
       <td>Indicação </td></label>
     </tr>
     
     <tr>
-      <label><th class="span1"><input type="checkbox" name = "r_entrevista" value = "<?php echo getR_entrevista(); ?>" readonly></th>
+      <label><th class="span1"><input type="checkbox" name = "r_entrevista" value = "1"></th>
       <td>Entrevisa </td></label>
     </tr>
     
     <tr>
-      <label><th class="span1"><input type="checkbox" name = "r_analCurEnt" value = "<?php echo getR_analCurEnt(); ?>" readonly></th>
+      <label><th class="span1"><input type="checkbox" name = "r_analCurEnt" value = "1"></th>
       <td>Análise de Currículo e Entrevista</td></label>
     </tr> <br><br>
     
     <label>7.5 Quais são os fatores prioritários na escolha de um candidato? Enumerar por ordem de importância.</label><br>
     <tr>
-      <label><th class="span1"><input type="checkbox" name = "r_aparencia" value = "<?php echo getR_aparencia(); ?>" readonly></th>
+      <label><th class="span1"><input type="checkbox" name = "r_aparencia" value = "1"></th>
       <td>Aparência </td></label>
     </tr>
     
     <tr>
-      <label><th class="span1"><input type="checkbox" name = "r_boaVontade" value = "<?php echo getR_boaVontade(); ?>" readonly></th>
+      <label><th class="span1"><input type="checkbox" name = "r_boaVontade" value = "1"></th>
       <td>Boa vontade </td></label>
     </tr>
     
     <tr>
-      <label><th class="span1"><input type="checkbox" name = "r_experiencia" value = "<?php echo getR_experiencia(); ?>" readonly></th>
+      <label><th class="span1"><input type="checkbox" name = "r_experiencia" value = "1"></th>
       <td>Experiência</td></label>
     </tr> <br><br>
     
     <label>7.6 Que tipo de atividades realiza para manter seus funcionários motivados?</label><br>
     <tr>
-      <label><th class="span1"><input type="radio" name = "r_tipoAtividade" value = "<?php echo getR_tipoAtividade(); ?>" readonly></th>
+      <label><th class="span1"><input type="radio" name = "r_tipoAtividade" value = "0"></th>
       <td>Festas especiais </td></label>
     </tr>
     
     <tr>
-      <label><th class="span1"><input type="radio" name = "r_tipoAtividade" value = "<?php echo getR_tipoAtividade(); ?>" readonly></th>
+      <label><th class="span1"><input type="radio" name = "r_tipoAtividade" value = "1"></th>
       <td>Participação no lucro </td></label>
     </tr>
     
     <tr>
-      <label><th class="span1"><input type="radio" name = "r_tipoAtividade" value = "<?php echo getR_tipoAtividade(); ?>" readonly></th>
-      <td>Outros: </td></label><input type="text" name="r_outrasAtividades" value = "<?php echo getR_outrasAtividades(); ?>" size=30 readonly>
+      <label><th class="span1"><input type="radio" name = "r_tipoAtividade" value = "2"></th>
+      <td>Outros: </td></label><input type="text" name="r_outrasAtividades" value="" size=30>
     </tr> <br><br>    
     
     <label>7.7 Quantas demissões X Contratações por ano? Por quê?</label><br>
-    <input type="text" name="r_quantasDemContrAno" value = "<?php echo getR_quantasDemContrAno(); ?>" size=100 readonly><br>
+    <input type="text" name="r_quantasDemContrAno" value="" size=100><br>
 
     <br>
     <legend>8. ADMINISTRATIVO/FINANCEIRO/CONTÁBIL</legend>
@@ -1183,19 +1163,19 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             Fluxo de caixa
             </td>
             <td>
-              <input type="text" name="a_fluxoCaixa"  placeholder='' class="form-control" value = "<?php echo getA_fluxoCaixa(); ?>" size="3"  readonly/>
+              <input type="text" name="a_fluxoCaixa"  placeholder='' class="form-control" size="3" />
             </td>
             <td>
-              <input type="text" name="a_fluxoCaixa" placeholder='' class="form-control" value = "<?php echo getA_fluxoCaixa(); ?>" size="8" readonly/>
+              <input type="text" name="a_fluxoCaixa" placeholder='' class="form-control" size="8"/>
             </td>
             <td>
             Adm. de Compras
             </td>           
             <td>
-              <input type="text" name="a_admCompras"  placeholder='' class="form-control" value = "<?php echo getA_admCompras(); ?>" size="3" readonly/>
+              <input type="text" name="a_admCompras"  placeholder='' class="form-control" size="3"/>
             </td>
             <td>
-              <input type="text" name="a_admCompras"  placeholder='' class="form-control" value = "<?php echo getA_admCompras(); ?>" size="8"  readonly/>
+              <input type="text" name="a_admCompras"  placeholder='' class="form-control" size="8" />
             </td>
           </tr>
             
@@ -1204,19 +1184,19 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             Controle de Estoques
             </td>
             <td>
-              <input type="text" name="a_controleEstoque"  placeholder='' class="form-control" value = "<?php echo getA_controleEstoque(); ?>" size="3" readonly/>
+              <input type="text" name="a_controleEstoque"  placeholder='' class="form-control" size="3"/>
             </td>
             <td>
-              <input type="text" name="a_controleEstoque" placeholder='' class="form-control" value = "<?php echo getA_controleEstoque(); ?>" size="8" readonly/>
+              <input type="text" name="a_controleEstoque" placeholder='' class="form-control" size="8"/>
             </td>
             <td>
               Adm. de Vendas
             </td>
             <td>
-              <input type="text" name="a_admVendas"  placeholder='' class="form-control" value = "<?php echo getA_admVendas(); ?>" size="3" readonly/>
+              <input type="text" name="a_admVendas"  placeholder='' class="form-control" size="3"/>
             </td>
             <td>
-              <input type="text" name="a_admVendas"  placeholder='' class="form-control" value = "<?php echo getA_admVendas(); ?>" size="8" readonly/>
+              <input type="text" name="a_admVendas"  placeholder='' class="form-control" size="8"/>
             </td>
           </tr>
             
@@ -1225,19 +1205,19 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             Contas a pagar
             </td>
             <td>
-              <input type="text" name="a_contasPagar"  placeholder='' class="form-control" value = "<?php echo getA_contasPagar(); ?>" size="3" readonly/>
+              <input type="text" name="a_contasPagar"  placeholder='' class="form-control" size="3"/>
             </td>
             <td>
-              <input type="text" name="a_contasPagar" placeholder='' class="form-control" value = "<?php echo getA_contasPagar(); ?>" size="8" readonly/>
+              <input type="text" name="a_contasPagar" placeholder='' class="form-control" size="8"/>
             </td>   
             <td>
               Faturamento
             </td>
             <td>
-              <input type="text" name="a_fat"  placeholder='' class="form-control" value = "<?php echo getA_fat(); ?>" size="3" readonly/>
+              <input type="text" name="a_fat"  placeholder='' class="form-control" size="3"/>
             </td> 
             <td>
-              <input type="text" name="a_fat"  placeholder='' class="form-control" value = "<?php echo getA_fat(); ?>" size="8" readonly/>
+              <input type="text" name="a_fat"  placeholder='' class="form-control" size="8"/>
             </td>
           </tr>
             
@@ -1246,19 +1226,19 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
             Contas a receber
             </td>
             <td>
-              <input type="text" name="a_contasReceber"  placeholder='' class="form-control" value = "<?php echo getA_contasReceber(); ?>" size="3" readonly/>
+              <input type="text" name="a_contasReceber"  placeholder='' class="form-control" size="3"/>
             </td>
             <td>
-              <input type="text" name="a_contasReceber" placeholder='' class="form-control" value = "<?php echo getA_contasReceber(); ?>" size="8" readonly/>
+              <input type="text" name="a_contasReceber" placeholder='' class="form-control" size="8"/>
             </td>   
             <td>
-              Outros:<input type="text" name="a_descOutrosTipos"  placeholder='' class="form-control" value = "<?php echo getA_descOutrosTipos(); ?>" size="10" readonly/>
+              Outros:<input type="text" name="a_descOutrosTipos"  placeholder='' class="form-control" size="10"/>
             </td>
             <td>
-              <input type="text" name="a_outrosTiposSelecionado"  placeholder='' class="form-control" value = "<?php echo getA_outrosTiposSelecionado(); ?>" size="3" readonly/>
+              <input type="text" name="a_outrosTiposSelecionado"  placeholder='' class="form-control" size="3"/>
             </td> 
             <td>
-              <input type="text" name="a_outrosTiposSelecionado"  placeholder='' class="form-control" value = "<?php echo getA_outrosTiposSelecionado(); ?>" size="8" readonly/>
+              <input type="text" name="a_outrosTiposSelecionado"  placeholder='' class="form-control" size="8"/>
             </td>
           </tr>            
         </tbody>
@@ -1268,89 +1248,89 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
   <label>8.2 Realiza Planejamentos?</label>
     <br>
      <tr>
-        <label><th class="span1"><input type="radio" name = "a_planejamento" value = "<?php echo getA_planejamento(); ?>" readonly></th>
-          <td>Sim. Em que áreas?<input type="text" name="a_area" value = "<?php echo getA_area(); ?>" size=30 readonly></label></td>
+        <label><th class="span1"><input type="radio" name = "a_planejamento" value = "0"></th>
+          <td>Sim. Em que áreas?<input type="text" name="a_area" value="" size=30></label></td>
       </tr>
       
       <tr>
-        <label><th class="span1"><input type="radio" name = "a_planejamento" value = "<?php echo getA_planejamento(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "a_planejamento" value = "1"></th>
           <td>Não </td></label>
       </tr><br><br> 
     
     <label>8.3 Trabalha ou já obteve recursos de terceiros?</label>
     <br>
      <tr>
-        <label><th class="span1"><input type="radio" name = "a_trabalhaRecursoTerc" value = "<?php echo getA_trabalhaRecursoTerc(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "a_trabalhaRecursoTerc" value = "0"></th>
           <td>Não </td></label>
       </tr>
        <tr>
-        <label><th class="span1"><input type="radio" name = "a_trabalhaRecursoTerc" value = "<?php echo getA_trabalhaRecursoTerc(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "a_trabalhaRecursoTerc" value = "1"></th>
           <td>Sim </td></label>
       </tr>
       
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "a_chequeEspecial" value = "<?php echo getA_chequeEspecial(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "a_chequeEspecial" value = "1"></th>
         <td>Cheque Especial</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "a_emprestimo" value = "<?php echo getA_emprestimo(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "a_emprestimo" value = "1"></th>
         <td>Empréstimo</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "a_factoring" value = "<?php echo getA_factoring(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "a_factoring" value = "1"></th>
         <td>Factoring</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "a_outros" value = "<?php echo getA_outros(); ?>" readonly></th>
-        <td>Outros <input type="text" name="a_descOutrosRecursos" value = "<?php echo getA_descOutrosRecursos(); ?>" size=50 readonly></td></label>
+        <label><th class="span1"><input type="checkbox" name = "a_outros" value = "1"></th>
+        <td>Outros <input type="text" name="a_descOutrosRecursos" value="" size=50></td></label>
       </tr>
     <br>
   <BR>
   <label>8.4 Quais são seus maiores gastos?</label>
     <br>
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "a_frete" value = "<?php echo getA_frete(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "a_frete" value = "1"></th>
         <td>Frete</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "a_energiaEletrica" value = "<?php echo getA_energiaEletrica(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "a_energiaEletrica" value = "1"></th>
         <td>Energia Elétrica</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "a_folhaPagto" value = "<?php echo getA_folhaPagto(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "a_folhaPagto" value = "1"></th>
         <td>Folha de Pagamento</td></label>
       </tr>
 
       <br>
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "a_financeiros" value = "<?php echo getA_financeiros(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "a_financeiros" value = "1"></th>
         <td>Financeiros</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "a_manutGeral" value = "<?php echo getA_manutGeral(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "a_manutGeral" value = "1"></th>
         <td>Manutenção Geral</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "a_impostos" value = "<?php echo getA_impostos(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "a_impostos" value = "1"></th>
         <td>Impostos</td></label>
       </tr>
 
       <br>
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "a_aluguel" value = "<?php echo getA_aluguel(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "a_aluguel" value = "1"></th>
         <td>Aluguel</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "a_outrosGastos" value = "<?php echo getA_outrosGastos(); ?>" readonly></th>
-        <td>Outros, quais? <input type="text" name="a_descOutrosGastos" value = "<?php echo getA_descOutrosGastos(); ?>" size=50 readonly></td></label>
+        <label><th class="span1"><input type="checkbox" name = "a_outrosGastos" value = "1"></th>
+        <td>Outros, quais? <input type="text" name="a_descOutrosGastos" value="" size=50></td></label>
       </tr>
     
     <br>  
@@ -1359,64 +1339,64 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
     <br> 
     <label>  9.1 Você conhece todos os impostos devidos pela sua empresa?</label><br>
     <tr>
-        <label><th class="span1"><input type="radio" name = "j_impostos" value = "<?php echo getJ_impostos(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "j_impostos" value = "0"></th>
           <td>Sim</td></label>
       </tr>
       <tr>
-        <label><th class="span1"><input type="radio" name = "j_impostos" value = "<?php echo getJ_impostos(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "j_impostos" value = "1"></th>
           <td>Não</td></label>
       </tr><br><br>
 
       <label>9.2 Você já recebeu alguma autuação de fiscalização?</label><br>
     <tr>
-        <label><th class="span1"><input type="radio" name = "j_autuacaoFiscal" value = "<?php echo getJ_autuacaoFiscal(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "j_autuacaoFiscal" value = "0"></th>
           <td>Sim</td></label>
       </tr>
       <tr>
-        <label><th class="span1"><input type="radio" name = "j_autuacaoFiscal" value = "<?php echo getJ_autuacaoFiscal(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "j_autuacaoFiscal" value = "1"></th>
           <td>Não</td></label>
       </tr><br><br>
   
   <label>9.3 Sua empresa está respondendo alguma ação judicial, inclusive trabalhista?</label>
   <BR>
     <tr>
-        <label><th class="span1"><input type="radio" name = "j_acaoJudicial" value = "<?php echo getJ_acaoJudicial(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "j_acaoJudicial" value = "0"></th>
           <td>Sim</td></label>
       </tr>
       <tr>
-        <label><th class="span1"><input type="radio" name = "j_acaoJudicial" value = "<?php echo getJ_acaoJudicial(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "j_acaoJudicial" value = "1"></th>
           <td>Não</td></label>
       </tr><br><br>
   
   
   <label>9.4 Suas tratativas com seus fornecedores são:</label><br>
     <tr>
-        <label><th class="span1"><input type="radio" name = "j_tratativas" value = "<?php echo getJ_tratativas(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "j_tratativas" value = "0"></th>
           <td>Verbais</td></label>
       </tr>
       <tr>
-        <label><th class="span1"><input type="radio" name = "j_tratativas" value = "<?php echo getJ_tratativas(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "j_tratativas" value = "1"></th>
           <td>Com contratos</td></label>
       </tr><br><br>
   
   <label>9.5 Como você realiza suas cobranças na empresa?</label><br>
     <tr>
-        <label><th class="span1"><input type="checkbox" name = "j_empresaCobranca" value = "<?php echo getJ_empresaCobranca(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "j_empresaCobranca" value = "1"></th>
         <td>Empresa de cobrança</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "j_colaborador" value = "<?php echo getJ_colaborador(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "j_colaborador" value = "1"></th>
         <td>Colaborador</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "j_pessoalmente" value = "<?php echo getJ_pessoalmente(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "j_pessoalmente" value = "1"></th>
         <td>Pessoalmente</td></label>
       </tr>
 
       <tr>
-        <label><th class="span1"><input type="checkbox" name = "j_outrasCobrancas" value = "<?php echo getJ_outrasCobrancas(); ?>" readonly></th>
+        <label><th class="span1"><input type="checkbox" name = "j_outrasCobrancas" value = "1"></th>
         <td>Outros</td></label>
       </tr>
    </br>
@@ -1424,17 +1404,17 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
    
    <label>9.6 Tem assessoria jurídica?</label><br>
     <tr>
-        <label><th class="span1"><input type="radio" name = "j_assessoriaJuridica" value = "<?php echo getJ_assessoriaJuridica(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "j_assessoriaJuridica" value = "0"></th>
           <td>Sim</td></label>
       </tr>
       <tr>
-        <label><th class="span1"><input type="radio" name = "j_assessoriaJuridica" value = "<?php echo getJ_assessoriaJuridica(); ?>" readonly></th>
+        <label><th class="span1"><input type="radio" name = "j_assessoriaJuridica" value = "1"></th>
           <td>Não</td></label>
       </tr><br><br>
   
   <label>Observação:</label>
   <br>
-  <input type="text" name="j_observacao" value = "<?php echo getJ_observacao(); ?>" size=100 readonly><br>
+  <input type="text" name="j_observacao" value="" size=100><br>
   <br>
   <br>
   <br>
@@ -1474,13 +1454,4 @@ Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/A
 
   <br>
   <br>
-  <div class="form-group">
-    <div class="col-sm-offset-22 col-sm-9">
-      <!--<button type="button" class="btn btn-success">Voltar</button> -->
-    </div>
-  </div>
-  </form>
-</div>
-</div>
-</body>
-</html>
+</form>
