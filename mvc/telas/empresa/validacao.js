@@ -1,11 +1,11 @@
-
-
 function focar(campo, foco) {
     if (foco == '') {
         return campo;
     }
     return foco;
 }
+
+
 function validaEntrada1(){
     document.cadastroCiape.m_outros.checked = true;
 }
@@ -283,11 +283,6 @@ function validarFormulario() {
         }
     }
     
-    
-    
-    
-
-
     if (ok == false) {
         window.alert(msg);
         document.getElementById(foco).focus();

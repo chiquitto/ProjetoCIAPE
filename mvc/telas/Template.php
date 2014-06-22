@@ -5,6 +5,7 @@
         <img src="./imagens/logoUnipar.png" id="logo"/>
         <img src="./imagens/logoAcic.png" id="logo" />
         <img src="./imagens/logoCiape.png" id="logo"/>
+        <script type="text/javascript" src="telas\empresa\validacao.js"></script>
         <title></title>
     </head>
     <body>

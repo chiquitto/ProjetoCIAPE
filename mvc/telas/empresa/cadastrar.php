@@ -119,6 +119,7 @@ $v_cartao = 0;
 $v_avista = 0;
 $v_caderneta = 0;
 $v_outraFormaPagto = 0;
+$v_outraFormaPagtoDesc = '';
 $v_vlrMedioPorVez = '';
 $v_vlrMedioMensal = '';
 
@@ -491,6 +492,7 @@ if ($_POST) {
 		$v_sab = 1;
 	}
 
+    $v_outraFormaPagtoDesc = $_POST['v_outraFormaPagtoDesc'];
     $v_vlrMedioPorVez = $_POST['v_vlrMedioPorVez'];
     $v_vlrMedioMensal = $_POST['v_vlrMedioMensal'];
 
@@ -721,11 +723,9 @@ if ($_POST) {
   }
 ?>
  
-  
-  
         <div id="cabecalhoPag">
             Projeto CIAPE – Centro Integrado de Apoio a Projetos Empresariais – UNIPAR/ACIC</div>
-        <hr width="680" size="1" color=black id="linha">
+        <hr width="900" size="1" color=black id="linha">
 
         <form name="cadastroCiape" action="cadastrar-empresas.php" method="POST" role="form" onsubmit="return validarFormulario();">
           <div class="form-group">

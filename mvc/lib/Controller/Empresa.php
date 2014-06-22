@@ -1,9 +1,16 @@
 <?php
 
+
 class Controller_Empresa extends Controller {
 
+
+
     public function apagar() {
-        
+
+        $dao = new Dao_Empresa();
+        $id = $_GET['id'];
+        $empresas = $dao->delete("numOrdem = $id");
+        $empresas = $dao->request();
     }
 
     public function cadastrar() {
@@ -27,14 +34,44 @@ class Controller_Empresa extends Controller {
             $vo->setE_uf($_POST['e_uf']);
             $vo->setE_fone($_POST['e_fone']);
             $vo->setE_email($_POST['e_email']);
-            $vo->setE_socio($_POST['e_socio']);
-            $vo->setE_cargo($_POST['e_cargo']);
-            $vo->setM_prodMaisVend($_POST['m_prodMaisVend']);                   
-            $vo->setM_qtdeMensal($_POST['m_qtdeMensal']);
-            $vo->setM_unMed($_POST['m_unMed']);
-            $vo->setM_margemLucro($_POST['m_margemLucro']);
-            $vo->setM_faturamento($_POST['m_faturamento']);
-            $vo->setM_concorrente($_POST['m_concorrente']);
+            $vo->setE_socioA($_POST['e_socioA']);
+            $vo->setE_socioB($_POST['e_socioB']);
+            $vo->setE_socioC($_POST['e_socioC']);
+            $vo->setE_socioD($_POST['e_socioD']);
+            $vo->setE_socioE($_POST['e_socioE']);
+            $vo->setE_cargoA($_POST['e_cargoA']);
+            $vo->setE_cargoB($_POST['e_cargoB']);
+            $vo->setE_cargoC($_POST['e_cargoC']);
+            $vo->setE_cargoD($_POST['e_cargoD']);
+            $vo->setE_cargoE($_POST['e_cargoE']);
+            $vo->setM_prodMaisVendA($_POST['m_prodMaisVendA']);  
+            $vo->setM_prodMaisVendB($_POST['m_prodMaisVendB']); 
+            $vo->setM_prodMaisVendC($_POST['m_prodMaisVendC']); 
+            $vo->setM_prodMaisVendD($_POST['m_prodMaisVendD']); 
+            $vo->setM_prodMaisVendE($_POST['m_prodMaisVendE']);                  
+            $vo->setM_qtdeMensalA($_POST['m_qtdeMensalA']);
+            $vo->setM_qtdeMensalB($_POST['m_qtdeMensalB']);
+            $vo->setM_qtdeMensalC($_POST['m_qtdeMensalC']);
+            $vo->setM_qtdeMensalD($_POST['m_qtdeMensalD']);
+            $vo->setM_qtdeMensalE($_POST['m_qtdeMensalE']);
+            $vo->setM_unMedA($_POST['m_unMedA']);
+            $vo->setM_unMedB($_POST['m_unMedB']);
+            $vo->setM_unMedC($_POST['m_unMedC']);
+            $vo->setM_unMedD($_POST['m_unMedD']);
+            $vo->setM_unMedE($_POST['m_unMedE']);
+            $vo->setM_margemLucroA($_POST['m_margemLucroA']);
+            $vo->setM_margemLucroB($_POST['m_margemLucroB']);
+            $vo->setM_margemLucroC($_POST['m_margemLucroC']);
+            $vo->setM_margemLucroD($_POST['m_margemLucroD']);
+            $vo->setM_margemLucroE($_POST['m_margemLucroE']);
+            $vo->setM_faturamentoA($_POST['m_faturamentoA']);
+            $vo->setM_faturamentoB($_POST['m_faturamentoB']);
+            $vo->setM_faturamentoC($_POST['m_faturamentoC']);
+            $vo->setM_faturamentoD($_POST['m_faturamentoD']);
+            $vo->setM_faturamentoE($_POST['m_faturamentoE']);
+            $vo->setM_concorrenteA($_POST['m_concorrenteA']);
+            $vo->setM_concorrenteB($_POST['m_concorrenteB']);
+            $vo->setM_concorrenteC($_POST['m_concorrenteC']);
             $vo->setM_visitaConcorrencia(isset($_POST['m_visitaConcorrencia'])?$_POST['m_visitaConcorrencia']:'');
             $vo->setM_atendimento(isset($_POST['m_atendimento'])?$_POST['m_atendimento']:'');
             $vo->setM_estacionamento(isset($_POST['m_estacionamento'])?'1':'0');//padrao para radio button 
@@ -63,10 +100,20 @@ class Controller_Empresa extends Controller {
             $vo->setM_sinalizacao(isset($_POST['m_sinalizacao'])?1:0);//radio button
             $vo->setM_espacaoPromocional(isset($_POST['m_espacaoPromocional'])?1:0);
             $vo->setP_formacaoPreco(isset($_POST['p_formacaoPreco'])?1:0);
-            $vo->setP_outraFormacaoPreco($_POST['p_outraFormacaoPreco']);
+            //$vo->setP_outraFormacaoPreco($_POST['p_outraFormacaoPreco']);
             $vo->setP_precoConcorrencia(isset($_POST['p_precoConcorrencia'])?1:0);
-            $vo->setV_mesAno($_POST['v_mesAno']);
-            $vo->setV_fatReais($_POST['v_fatReais']);
+            $vo->setV_mesAnoA($_POST['v_mesAnoA']);
+            $vo->setV_mesAnoB($_POST['v_mesAnoB']);
+            $vo->setV_mesAnoC($_POST['v_mesAnoC']);
+            $vo->setV_mesAnoD($_POST['v_mesAnoD']);
+            $vo->setV_mesAnoE($_POST['v_mesAnoE']);
+            $vo->setV_mesAnoF($_POST['v_mesAnoF']);
+            $vo->setV_fatReaisA($_POST['v_fatReaisA']);
+            $vo->setV_fatReaisB($_POST['v_fatReaisB']);
+            $vo->setV_fatReaisC($_POST['v_fatReaisC']);
+            $vo->setV_fatReaisD($_POST['v_fatReaisD']);
+            $vo->setV_fatReaisE($_POST['v_fatReaisE']);
+            $vo->setV_fatReaisF($_POST['v_fatReaisF']);
             $vo->setV_periodoInicial($_POST['v_periodoInicial']);
             $vo->setV_periodoFinal($_POST['v_periodoFinal']);
             $vo->setV_seg(isset($_POST['v_seg'])?$_POST['v_seg']:'');
@@ -84,16 +131,46 @@ class Controller_Empresa extends Controller {
             $vo->setV_cartao(isset($_POST['v_cartao'])?$_POST['v_cartao']:'');
             $vo->setV_avista(isset($_POST['v_avista'])?$_POST['v_avista']:'');
             $vo->setV_caderneta(isset($_POST['v_caderneta'])?$_POST['v_caderneta']:'');
-            $vo->setV_outraFormaPagto($_POST['v_outraFormaPagto']);
+            $vo->setV_outraFormaPagto(isset($_POST['v_outraFormaPagto'])?$_POST['v_outraFormaPagto']:'');
             $vo->setV_vlrMedioPorVez($_POST['v_vlrMedioPorVez']);
             $vo->setV_vlrMedioMensal($_POST['v_vlrMedioMensal']);
-            $vo->setC_razaoSocialFantasia($_POST['c_razaoSocialFantasia']);
-            $vo->setC_cidadeUf($_POST['c_cidadeUf']);
-            $vo->setC_produtos($_POST['c_produtos']);
-            $vo->setC_loteMinimo($_POST['c_loteMinimo']);
-            $vo->setC_relacionamento($_POST['c_relacionamento']);
-            $vo->setc_mesAno($_POST['c_mesAno']);
-            $vo->setC_comprasReais($_POST['c_comprasReais']);
+            $vo->setC_razaoSocialFantasiaA($_POST['c_razaoSocialFantasiaA']);
+            $vo->setC_razaoSocialFantasiaB($_POST['c_razaoSocialFantasiaB']);
+            $vo->setC_razaoSocialFantasiaC($_POST['c_razaoSocialFantasiaC']);
+            $vo->setC_razaoSocialFantasiaD($_POST['c_razaoSocialFantasiaD']);
+            $vo->setC_razaoSocialFantasiaE($_POST['c_razaoSocialFantasiaE']);
+            $vo->setC_cidadeUfA($_POST['c_cidadeUfA']);
+            $vo->setC_cidadeUfB($_POST['c_cidadeUfB']);
+            $vo->setC_cidadeUfC($_POST['c_cidadeUfC']);
+            $vo->setC_cidadeUfD($_POST['c_cidadeUfD']);
+            $vo->setC_cidadeUfE($_POST['c_cidadeUfE']);
+            $vo->setC_produtosA($_POST['c_produtosA']);
+            $vo->setC_produtosB($_POST['c_produtosB']);
+            $vo->setC_produtosC($_POST['c_produtosC']);
+            $vo->setC_produtosD($_POST['c_produtosD']);
+            $vo->setC_produtosE($_POST['c_produtosE']);
+            $vo->setC_loteMinimoA($_POST['c_loteMinimoA']);
+            $vo->setC_loteMinimoB($_POST['c_loteMinimoB']);
+            $vo->setC_loteMinimoC($_POST['c_loteMinimoC']);
+            $vo->setC_loteMinimoD($_POST['c_loteMinimoD']);
+            $vo->setC_loteMinimoE($_POST['c_loteMinimoE']);
+            $vo->setC_relacionamentoA($_POST['c_relacionamentoA']);
+            $vo->setC_relacionamentoB($_POST['c_relacionamentoB']);
+            $vo->setC_relacionamentoC($_POST['c_relacionamentoC']);
+            $vo->setC_relacionamentoD($_POST['c_relacionamentoD']);
+            $vo->setC_relacionamentoE($_POST['c_relacionamentoE']);
+            $vo->setc_mesAnoA($_POST['c_mesAnoA']);
+            $vo->setc_mesAnoB($_POST['c_mesAnoB']);
+            $vo->setc_mesAnoC($_POST['c_mesAnoC']);
+            $vo->setc_mesAnoD($_POST['c_mesAnoD']);
+            $vo->setc_mesAnoE($_POST['c_mesAnoE']);
+            $vo->setc_mesAnoF($_POST['c_mesAnoF']);
+            $vo->setC_comprasReaisA($_POST['c_comprasReaisA']);
+            $vo->setC_comprasReaisB($_POST['c_comprasReaisB']);
+            $vo->setC_comprasReaisC($_POST['c_comprasReaisC']);
+            $vo->setC_comprasReaisD($_POST['c_comprasReaisD']);
+            $vo->setC_comprasReaisE($_POST['c_comprasReaisE']);
+            $vo->setC_comprasReaisF($_POST['c_comprasReaisF']);
             $vo->setCli_qtdeClienteMensal($_POST['cli_qtdeClienteMensal']);
             $vo->setCli_percClasA($_POST['cli_percClasA']);
             $vo->setCli_percClasB($_POST['cli_percClasB']);
@@ -122,15 +199,23 @@ class Controller_Empresa extends Controller {
             $vo->setR_tipoAtividade(isset($_POST['r_tipoAtividade'])?1:0);
             $vo->setR_outrasAtividades($_POST['r_outrasAtividades']);
             $vo->setR_quantasDemContrAno($_POST['r_quantasDemContrAno']);
-            $vo->setA_fluxoCaixa($_POST['a_fluxoCaixa']);
-            $vo->setA_controleEstoque($_POST['a_controleEstoque']);
-            $vo->setA_contasPagar($_POST['a_contasPagar']);
-            $vo->setA_contasReceber($_POST['a_contasReceber']);
-            $vo->setA_admCompras($_POST['a_admCompras']);
-            $vo->setA_admVendas($_POST['a_admVendas']);
-            $vo->setA_fat($_POST['a_fat']);
+            $vo->setA_fluxoCaixaManual($_POST['a_fluxoCaixaManual']);
+            $vo->setA_fluxoCaixaInfo($_POST['a_fluxoCaixaInfo']);
+            $vo->setA_controleEstoqueManual($_POST['a_controleEstoqueManual']);
+            $vo->setA_controleEstoqueInfo($_POST['a_controleEstoqueInfo']);
+            $vo->setA_contasPagarManual($_POST['a_contasPagarManual']);
+            $vo->setA_contasPagarInfo($_POST['a_contasPagarInfo']);
+            $vo->setA_contasReceberManual($_POST['a_contasReceberManual']);
+            $vo->setA_contasReceberInfo($_POST['a_contasReceberInfo']);
+            $vo->setA_admComprasManual($_POST['a_admComprasManual']);
+            $vo->setA_admComprasInfo($_POST['a_admComprasInfo']);
+            $vo->setA_admVendasManual($_POST['a_admVendasManual']);
+            $vo->setA_admVendasInfo($_POST['a_admVendasInfo']);
+            $vo->setA_fatManual($_POST['a_fatManual']);
+            $vo->setA_fatInfo($_POST['a_fatInfo']);
             $vo->setA_descOutrosTipos($_POST['a_descOutrosTipos']);
-            $vo->setA_outrosTiposSelecionado($_POST['a_outrosTiposSelecionado']);
+            $vo->setA_outrosTiposSelecionadoManual($_POST['a_outrosTiposSelecionadoManual']);
+            $vo->setA_outrosTiposSelecionadoInfo($_POST['a_outrosTiposSelecionadoInfo']);
             $vo->setA_planejamento(isset($_POST['a_planejamento'])?1:0);
             $vo->setA_area($_POST['a_area']);
             $vo->setA_trabalhaRecursoTerc(isset($_POST['a_trabalhaRecursoTerc'])?1:0);
