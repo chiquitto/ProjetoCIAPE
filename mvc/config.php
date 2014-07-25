@@ -1,6 +1,6 @@
 <?php
 
-define('DIRETORIO', 'C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC9\\data\\localweb\\TrabalhoCiape\\mvc');
+define('DIRETORIO', 'D:\\EasyPHP-DevServer-14.1VC11\\data\\localweb\\mvc');
 
 define('DIRETORIO_AUTOLOAD', DIRETORIO . '/lib');
 

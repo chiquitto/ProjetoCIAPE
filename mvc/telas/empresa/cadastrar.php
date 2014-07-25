@@ -730,7 +730,7 @@ if ($_POST) {
         <form name="cadastroCiape" action="cadastrar-empresas.php" method="POST" role="form" onsubmit="return validarFormulario();">
           <div class="form-group">
               
-            <h4 align="right">Nº de ordem <input type="text" name="numOrdem" value="" size=10 readonly/></h4>
+              <h4 align="right">Nº de ordem <input type="text" name="numOrdem" id="numOrdem" value="" size=10 readonly/></h4>
 
             <h4 align="center">TERMO DE ADESÃO – PROJETO CIAPE UNIPAR/ACIC</h4>
 
@@ -742,31 +742,31 @@ if ($_POST) {
 
             <legend>1. DADOS CADASTRAIS</legend> <br> 
 
-            <label>Razão Social:</label><input type="text" name="e_razaoSocial" value="<?php echo $e_razaoSocial; ?>" size=85><br><br>
+            <label>Razão Social:</label><input type="text" name="e_razaoSocial" id="e_razaoSocial" value="<?php echo $e_razaoSocial; ?>" size=85><br><br>
 
-            <label>Nome Fantasia:</label><input type="text" name="e_nomeFantasia" value="<?php echo $e_nomeFantasia; ?>" size=85><br><br>
+            <label>Nome Fantasia:</label><input type="text" name="e_nomeFantasia" id="e_nomeFantasia" value="<?php echo $e_nomeFantasia; ?>" size=85><br><br>
 
-            <label>IE:</label><input type="text" name="e_ie" value="<?php echo $e_ie; ?>" size=25>
+            <label>IE:</label><input type="text" name="e_ie" id="i_ie" value="<?php echo $e_ie; ?>" size=25>
 
-            <label>CNPJ:</label><input type="text" name="e_cnpj" value="<?php echo $e_cnpj; ?>" size=25><br><br>
+            <label>CNPJ:</label><input type="text" name="e_cnpj" id="e_cnpj" value="<?php echo $e_cnpj; ?>" size=25><br><br>
 
-            <label>Data de Fundação:</label><input type="text" name="e_dtFundacao" value="<?php echo $e_dtFundacao; ?>" size=15>
+            <label>Data de Fundação:</label><input type="text" name="e_dtFundacao" id="e_dtFundacao" value="<?php echo $e_dtFundacao; ?>" size=15>
 
-            <label>Ramo de Atividade:</label><input type="text" name="e_ramoAtividade" value="<?php echo $e_ramoAtividade; ?>" size=30><br><br>
+            <label>Ramo de Atividade:</label><input type="text" name="e_ramoAtividade" id="e_ramoAtividade" value="<?php echo $e_ramoAtividade; ?>" size=30><br><br>
 
-            <label>Endereço:</label><input type="text" name="e_endereco" value="<?php echo $e_endereco; ?>" size=50>
+            <label>Endereço:</label><input type="text" name="e_endereco" id="e_endereco" value="<?php echo $e_endereco; ?>" size=50>
 
-            <label>Bairro:</label><input type="text" name="e_bairro" value="<?php echo $e_bairro; ?>" size=15><br><br>
+            <label>Bairro:</label><input type="text" name="e_bairro" id="e_bairro" value="<?php echo $e_bairro; ?>" size=15><br><br>
 
-            <label>CEP:</label><input type="text" name="e_cep" value="<?php echo $e_cep; ?>" size=15>
+            <label>CEP:</label><input type="text" name="e_cep" id="e_cep" value="<?php echo $e_cep; ?>" size=15>
 
-            <label>Cidade:</label><input type="text" name="e_cidade" value="<?php echo $e_cidade; ?>" size=40>
+            <label>Cidade:</label><input type="text" name="e_cidade" id="e_cidade" value="<?php echo $e_cidade; ?>" size=40>
 
-            <label>UF:</label><input type="text" name="e_uf" value="<?php echo $e_uf; ?>" size=5><br><br>
+            <label>UF:</label><input type="text" name="e_uf" id="e_uf" value="<?php echo $e_uf; ?>" size=5><br><br>
 
-            <label>Fone:</label><input type="text" name="e_fone" value="<?php echo $e_fone; ?>" size=20>
+            <label>Fone:</label><input type="text" name="e_fone" id="e_fone" value="<?php echo $e_fone; ?>" size=20>
 
-            <label>E-mail:</label><input type="text" name="e_email" value="<?php echo $e_email; ?>" size=45><br><br>
+            <label>E-mail:</label><input type="text" name="e_email" id="e_email" value="<?php echo $e_email; ?>" size=45><br><br>
 
             <div class="container">
                 <div class="row clearfix">
@@ -790,10 +790,10 @@ if ($_POST) {
                                         a)
                                     </td>
                                     <td>
-                                        <input type="text" name="e_socioA" value="<?php echo $e_socioA; ?>" size=45>
+                                        <input type="text" name="e_socioA" id="e_socioA" value="<?php echo $e_socioA; ?>" size=45>
                                     </td>
                                     <td>
-                                        <input type="text" name="e_cargoA" value="<?php echo $e_cargoA; ?>" size=45>
+                                        <input type="text" name="e_cargoA" id="e_cargoA" value="<?php echo $e_cargoA; ?>" size=45>
                                     </td>
                                 </tr>
 
@@ -802,10 +802,10 @@ if ($_POST) {
                                         b)
                                     </td>
                                     <td>
-                                        <input type="text" name="e_socioB" value="<?php echo $e_socioB; ?>" size=45>
+                                        <input type="text" name="e_socioB" id="e_socioB" value="<?php echo $e_socioB; ?>" size=45>
                                     </td>
                                     <td>
-                                        <input type="text" name="e_cargoB" value="<?php echo $e_cargoB; ?>" size=45>
+                                        <input type="text" name="e_cargoB" id="e_cargoB" value="<?php echo $e_cargoB; ?>" size=45>
                                     </td>
                                 </tr>
 
@@ -814,10 +814,10 @@ if ($_POST) {
                                         c)
                                     </td>
                                     <td>
-                                        <input type="text" name="e_socioC" value="<?php echo $e_socioC; ?>" size=45>
+                                        <input type="text" name="e_socioC" id="e_socioC" value="<?php echo $e_socioC; ?>" size=45>
                                     </td>
                                     <td>
-                                        <input type="text" name="e_cargoC" value="<?php echo $e_cargoC; ?>" size=45>
+                                        <input type="text" name="e_cargoC" id="e_cargoC" value="<?php echo $e_cargoC; ?>" size=45>
                                     </td>
                                 </tr>
 
@@ -826,10 +826,10 @@ if ($_POST) {
                                         d)
                                     </td>
                                     <td>
-                                        <input type="text" name="e_socioD" value="<?php echo $e_socioD; ?>" size=45>
+                                        <input type="text" name="e_socioD" id="e_socioD" value="<?php echo $e_socioD; ?>" size=45>
                                     </td>
                                     <td>
-                                        <input type="text" name="e_cargoD" value="<?php echo $e_cargoD; ?>" size=45>
+                                        <input type="text" name="e_cargoD" id="e_cargoD" value="<?php echo $e_cargoD; ?>" size=45>
                                     </td>
                                 </tr>
 
@@ -838,10 +838,10 @@ if ($_POST) {
                                         e)
                                     </td>
                                     <td>
-                                        <input type="text" name="e_socioE" value="<?php echo $e_socioE; ?>" size=45>
+                                        <input type="text" name="e_socioE" id="e_socioE" value="<?php echo $e_socioE; ?>" size=45>
                                     </td>
                                     <td>
-                                        <input type="text" name="e_cargoE" value="<?php echo $e_cargoE; ?>" size=45>
+                                        <input type="text" name="e_cargoE" id="e_cargoE" value="<?php echo $e_cargoE; ?>" size=45>
                                     </td>
                                 </tr>
 
@@ -879,91 +879,91 @@ if ($_POST) {
                         <tbody>
                             <tr id='addr0'>
                                 <td>
-                                    <input type="text" name="m_prodMaisVendA"  placeholder='' class="form-control" value="<?php echo $m_prodMaisVendA; ?>"/>
+                                    <input type="text" name="m_prodMaisVendA" id="m_prodMaisVendA" placeholder='' class="form-control" value="<?php echo $m_prodMaisVendA; ?>"/>
                                 </td>
                                 <td>
-                                    <input type="text" name="m_qtdeMensalA" placeholder='' class="form-control" size="10" value="<?php echo $m_qtdeMensalA; ?>"/>
+                                    <input type="text" name="m_qtdeMensalA" id="m_qtdeMensalA" placeholder='' class="form-control" size="10" value="<?php echo $m_qtdeMensalA; ?>"/>
                                 </td>           
                                 <td>
-                                    <input type="text" name="m_unMedA"  placeholder='' class="form-control" size="10" value="<?php echo $m_unMedA; ?>"/>
+                                    <input type="text" name="m_unMedA" id="m_unMedA" placeholder='' class="form-control" size="10" value="<?php echo $m_unMedA; ?>"/>
                                 </td>
                                 <td>
-                                    <input type="text" name="m_margemLucroA"  placeholder='' class="form-control" value="<?php echo $m_margemLucroA; ?>"/>
+                                    <input type="text" name="m_margemLucroA" id="m_margemLucroA" placeholder='' class="form-control" value="<?php echo $m_margemLucroA; ?>"/>
                                 </td>
                                 <td>
-                                    <input type="text" name="m_faturamentoA" placeholder='' class="form-control" value="<?php echo $m_faturamentoA; ?>"/>
+                                    <input type="text" name="m_faturamentoA" id="m_faturamentoA" placeholder='' class="form-control" value="<?php echo $m_faturamentoA; ?>"/>
                                 </td>
                             </tr>
 
                             <tr id='addr1'>
                                 <td>
-                                    <input type="text" name="m_prodMaisVendB"  placeholder='' class="form-control" value="<?php echo $m_prodMaisVendB; ?>"/>
+                                    <input type="text" name="m_prodMaisVendB" id="m_prodMaisVendB" placeholder='' class="form-control" value="<?php echo $m_prodMaisVendB; ?>"/>
                                 </td>
                                 <td>
-                                    <input type="text" name="m_qtdeMensalB" placeholder='' class="form-control" size="10" value="<?php echo $m_qtdeMensalB; ?>"/>
+                                    <input type="text" name="m_qtdeMensalB" id="m_qtdeMensalB" placeholder='' class="form-control" size="10" value="<?php echo $m_qtdeMensalB; ?>"/>
                                 </td>           
                                 <td>
-                                    <input type="text" name="m_unMedB"  placeholder='' class="form-control" size="10" value="<?php echo $m_unMedB; ?>"/>
+                                    <input type="text" name="m_unMedB" id="m_unMedB"  placeholder='' class="form-control" size="10" value="<?php echo $m_unMedB; ?>"/>
                                 </td>
                                 <td>
-                                    <input type="text" name="m_margemLucroB"  placeholder='' class="form-control" value="<?php echo $m_margemLucroB; ?>"/>
+                                    <input type="text" name="m_margemLucroB" id="m_margemLucroB" placeholder='' class="form-control" value="<?php echo $m_margemLucroB; ?>"/>
                                 </td>
                                 <td>
-                                    <input type="text" name="m_faturamentoB" placeholder='' class="form-control" value="<?php echo $m_faturamentoB; ?>"/>
+                                    <input type="text" name="m_faturamentoB" id="m_faturamentoB" placeholder='' class="form-control" value="<?php echo $m_faturamentoB; ?>"/>
                                 </td>
                             </tr>
 
                             <tr id='addr2'>
                                 <td>
-                                    <input type="text" name="m_prodMaisVendC"  placeholder='' class="form-control" value="<?php echo $m_prodMaisVendC; ?>"/>
+                                    <input type="text" name="m_prodMaisVendC" id="m_prodMaisVendC" placeholder='' class="form-control" value="<?php echo $m_prodMaisVendC; ?>"/>
                                 </td>
                                 <td>
-                                    <input type="text" name="m_qtdeMensalC" placeholder='' class="form-control" size="10" value="<?php echo $m_qtdeMensalC; ?>"/>
+                                    <input type="text" name="m_qtdeMensalC" id="m_qtdeMensalC" placeholder='' class="form-control" size="10" value="<?php echo $m_qtdeMensalC; ?>"/>
                                 </td>           
                                 <td>
-                                    <input type="text" name="m_unMedC"  placeholder='' class="form-control" size="10" value="<?php echo $m_unMedC; ?>"/>
+                                    <input type="text" name="m_unMedC" id="m_unMedC" placeholder='' class="form-control" size="10" value="<?php echo $m_unMedC; ?>"/>
                                 </td>
                                 <td>
-                                    <input type="text" name="m_margemLucroC"  placeholder='' class="form-control" value="<?php echo $m_margemLucroC; ?>"/>
+                                    <input type="text" name="m_margemLucroC" id="m_margemLucroC" placeholder='' class="form-control" value="<?php echo $m_margemLucroC; ?>"/>
                                 </td>
                                 <td>
-                                    <input type="text" name="m_faturamentoC" placeholder='' class="form-control" value="<?php echo $m_faturamentoC; ?>"/>
+                                    <input type="text" name="m_faturamentoC" id="m_faturamentoC" placeholder='' class="form-control" value="<?php echo $m_faturamentoC; ?>"/>
                                 </td>
                             </tr> 
 
                             <tr id='addr3'>
                                 <td>
-                                    <input type="text" name="m_prodMaisVendD"  placeholder='' class="form-control" value="<?php echo $m_prodMaisVendD; ?>"/>
+                                    <input type="text" name="m_prodMaisVendD" id="m_prodMaisVendD" placeholder='' class="form-control" value="<?php echo $m_prodMaisVendD; ?>"/>
                                 </td>
                                 <td>
-                                    <input type="text" name="m_qtdeMensalD" placeholder='' class="form-control" size="10" value="<?php echo $m_qtdeMensalD; ?>"/>
+                                    <input type="text" name="m_qtdeMensalD" id="m_qtdeMensalD" placeholder='' class="form-control" size="10" value="<?php echo $m_qtdeMensalD; ?>"/>
                                 </td>           
                                 <td>
-                                    <input type="text" name="m_unMedD"  placeholder='' class="form-control" size="10" value="<?php echo $m_unMedD; ?>"/>
+                                    <input type="text" name="m_unMedD" id="m_unMedD" placeholder='' class="form-control" size="10" value="<?php echo $m_unMedD; ?>"/>
                                 </td>
                                 <td>
-                                    <input type="text" name="m_margemLucroD"  placeholder='' class="form-control" value="<?php echo $m_margemLucroD; ?>"/>
+                                    <input type="text" name="m_margemLucroD" id="m_margemLucroD" placeholder='' class="form-control" value="<?php echo $m_margemLucroD; ?>"/>
                                 </td>
                                 <td>
-                                    <input type="text" name="m_faturamentoD" placeholder='' class="form-control" value="<?php echo $m_faturamentoD; ?>"/>
+                                    <input type="text" name="m_faturamentoD" id="m_faturamentoD" placeholder='' class="form-control" value="<?php echo $m_faturamentoD; ?>"/>
                                 </td>
                             </tr>    
 
                             <tr id='addr4'>
                                 <td>
-                                    <input type="text" name="m_prodMaisVendE"  placeholder='' class="form-control" value="<?php echo $m_prodMaisVendE; ?>"/>
+                                    <input type="text" name="m_prodMaisVendE" id="m_prodMaisVendE" placeholder='' class="form-control" value="<?php echo $m_prodMaisVendE; ?>"/>
                                 </td>
                                 <td>
-                                    <input type="text" name="m_qtdeMensalE" placeholder='' class="form-control" size="10" value="<?php echo $m_qtdeMensalE; ?>"/>
+                                    <input type="text" name="m_qtdeMensalE" id="m_qtdeMensalE" placeholder='' class="form-control" size="10" value="<?php echo $m_qtdeMensalE; ?>"/>
                                 </td>           
                                 <td>
-                                    <input type="text" name="m_unMedE"  placeholder='' class="form-control" size="10" value="<?php echo $m_unMedE; ?>"/>
+                                    <input type="text" name="m_unMedE" id="m_unMedE" placeholder='' class="form-control" size="10" value="<?php echo $m_unMedE; ?>"/>
                                 </td>
                                 <td>
-                                    <input type="text" name="m_margemLucroE"  placeholder='' class="form-control" value="<?php echo $m_margemLucroE; ?>"/>
+                                    <input type="text" name="m_margemLucroE" id="m_margemLucroE" placeholder='' class="form-control" value="<?php echo $m_margemLucroE; ?>"/>
                                 </td>
                                 <td>
-                                    <input type="text" name="m_faturamentoE" placeholder='' class="form-control" value="<?php echo $m_faturamentoE; ?>"/>
+                                    <input type="text" name="m_faturamentoE" id="m_faturamentoE" placeholder='' class="form-control" value="<?php echo $m_faturamentoE; ?>"/>
                                 </td>
                             </tr>              
                         </tbody>
@@ -979,13 +979,13 @@ if ($_POST) {
                             <tbody>
                                 <tr id='addr0'>
                                     <td>
-                                        A.<input type="text" name="m_concorrenteA" value="<?php echo $m_concorrenteA; ?>" size=28>
+                                        A.<input type="text" name="m_concorrenteA" id="m_concorrenteA" value="<?php echo $m_concorrenteA; ?>" size=28>
                                     </td>
                                     <td>
-                                        B.<input type="text" name="m_concorrenteB" value="<?php echo $m_concorrenteB; ?>" size=28>
+                                        B.<input type="text" name="m_concorrenteB" id="m_concorrenteB" value="<?php echo $m_concorrenteB; ?>" size=28>
                                     </td>
                                     <td>
-                                        C.<input type="text" name="m_concorrenteC" value="<?php echo $m_concorrenteC; ?>" size=28>
+                                        C.<input type="text" name="m_concorrenteC" id="m_concorrenteC" value="<?php echo $m_concorrenteC; ?>" size=28>
                                     </td>
                                 </tr>   
                             </tbody>
@@ -997,11 +997,11 @@ if ($_POST) {
                 <br>
                 <tr>
                 <div id="alinhaRadio">
-                    <label><th class="span1"><input type="radio" name = "m_visitaConcorrencia" value = "0" <?php if ($m_visitaConcorrencia == '0') { ?> checked<?php } ?>></th>
+                    <label><th class="span1"><input type="radio" name = "m_visitaConcorrencia" id="m_visitaConcorrencia" value = "0" <?php if ($m_visitaConcorrencia == '0') { ?> checked<?php } ?>></th>
                         <td>Sim</td></label>
                     </tr>
                     <tr>
-                    <label><th class="span1"><input type="radio" name = "m_visitaConcorrencia" value = "1" <?php if ($m_visitaConcorrencia == '1') { ?> checked<?php } ?>></th>
+                    <label><th class="span1"><input type="radio" name = "m_visitaConcorrencia" id="m_visitaConcorrencia" value = "1" <?php if ($m_visitaConcorrencia == '1') { ?> checked<?php } ?>></th>
                         <td>Não</td></label>
                     </tr><br><br>
                 </div>
@@ -1009,148 +1009,148 @@ if ($_POST) {
                 <label> 2.4 Quais são seus pontos fortes em relação a concorrência?</label> 
                 <br>
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_atendimento" value = "1" <?php if ($m_atendimento == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_atendimento" id="m_atendimento" value = "1" <?php if ($m_atendimento == 1) { ?> checked<?php } ?>></th>
                     <td>Atendimento</td></label>
                 </tr>
                 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_estacionamento" value = "1" <?php if ($m_estacionamento == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_estacionamento" id="m_estacionamento" value = "1" <?php if ($m_estacionamento == 1) { ?> checked<?php } ?>></th>
                     <td>Estacionamento</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_preco" value = "1" <?php if ($m_preco == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_preco" id="m_preco" value = "1" <?php if ($m_preco == 1) { ?> checked<?php } ?>></th>
                     <td>Preço</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_variedade" value = "1" <?php if ($m_variedade == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_variedade" id="m_variedade" value = "1" <?php if ($m_variedade == 1) { ?> checked<?php } ?>></th>
                     <td>Variedade</td></label>
                 </tr>
                 <br>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_espacoFisico" value = "1" <?php if ($m_espacoFisico == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_espacoFisico" id="m_espacoFisico" value = "1" <?php if ($m_espacoFisico == 1) { ?> checked<?php } ?>></th>
                     <td>Espaço Físico</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_localizacao" value = "1" <?php if ($m_localizacao == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_localizacao" id="m_localizacao" value = "1" <?php if ($m_localizacao == 1) { ?> checked<?php } ?>></th>
                     <td>Localização</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_qualidade" value = "1" <?php if ($m_qualidade == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_qualidade" id="m_qualidade" value = "1" <?php if ($m_qualidade == 1) { ?> checked<?php } ?>></th>
                     <td>Qualidade</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_outros" value = "1" <?php if ($m_outros == 1) { ?> checked<?php } ?>></th>
-                    <td>Outros:<input type="text" name="m_descricaoOutrosPontosFortes" value="<?php echo $m_descricaoOutrosPontosFortes; ?>" size=20 onKeyPress = "return validaEntrada1();" onblur="return validaSaida1();"><br></td></label>
+                <label><th class="span1"><input type="checkbox" name = "m_outros" id="m_outros" value = "1" <?php if ($m_outros == 1) { ?> checked<?php } ?>></th>
+                    <td>Outros:<input type="text" name="m_descricaoOutrosPontosFortes" id="m_descricaoOutrosPontosFortes" value="<?php echo $m_descricaoOutrosPontosFortes; ?>" size=20 onKeyPress = "return validaEntrada1();" onblur="return validaSaida1();"><br></td></label>
                 </tr>
                 <br>
                 <label>2.5 Quais são seus pontos para melhoria em relação a concorrência?</label>
                 <br>
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_mAtendimento" value = "1" <?php if ($m_mAtendimento == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_mAtendimento" id="m_mAtendimento" value = "1" <?php if ($m_mAtendimento == 1) { ?> checked<?php } ?>></th>
                     <td>Atendimento</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_mEstacionamento" value = "1" <?php if ($m_mEstacionamento == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_mEstacionamento" id="m_mEstacionamento" value = "1" <?php if ($m_mEstacionamento == 1) { ?> checked<?php } ?>></th>
                     <td>Estacionamento</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_mPreco" value = "1" <?php if ($m_mPreco == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_mPreco" id="m_mPreco" value = "1" <?php if ($m_mPreco == 1) { ?> checked<?php } ?>></th>
                     <td>Preço</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_mVariedade" value = "1" <?php if ($m_mVariedade == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_mVariedade" id="m_mVariedade" value = "1" <?php if ($m_mVariedade == 1) { ?> checked<?php } ?>></th>
                     <td>Variedade</td></label>
                 </tr>
                 <br>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_mEspacoFisico" value = "1" <?php if ($m_mEspacoFisico == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_mEspacoFisico" id="m_mEspacoFisico" value = "1" <?php if ($m_mEspacoFisico == 1) { ?> checked<?php } ?>></th>
                     <td>Espaço Físico</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_mLocalizacao" value = "1" <?php if ($m_mLocalizacao == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_mLocalizacao" id="m_mLocalizacao" value = "1" <?php if ($m_mLocalizacao == 1) { ?> checked<?php } ?>></th>
                     <td>Localização</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_mQualidade" value = "1" <?php if ($m_mQualidade == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_mQualidade" id="m_mQualidade" value = "1" <?php if ($m_mQualidade == 1) { ?> checked<?php } ?>></th>
                     <td>Qualidade</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_mOutros" value = "1" <?php if ($m_mOutros == 1) { ?> checked<?php } ?>></th>
-                    <td>Outros:<input type="text" name="m_mOutrosPontosDescricao" value="<?php echo $m_mOutrosPontosDescricao; ?>"  size=20 onKeyPress = "return validaEntrada2();" onblur="return validaSaida2();"><br></td></label>
+                <label><th class="span1"><input type="checkbox" name = "m_mOutros" id="m_mOutros" value = "1" <?php if ($m_mOutros == 1) { ?> checked<?php } ?>></th>
+                    <td>Outros:<input type="text" name="m_mOutrosPontosDescricao" id="m_mOutrosPontosDescricao" value="<?php echo $m_mOutrosPontosDescricao; ?>"  size=20 onKeyPress = "return validaEntrada2();" onblur="return validaSaida2();"><br></td></label>
                 </tr>
 
                 </br>      
                 <label>2.6 Faz promoções? </label>
                 <br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "m_promocao" value = "0" <?php if ($m_promocao == '0') { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "m_promocao" id="m_promocao" value = "0" <?php if ($m_promocao == '0') { ?> checked<?php } ?>></th>
                     <td>Mais de duas vez por mês</td></label>
                 </tr>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "m_promocao" value = "1" <?php if ($m_promocao == '1') { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "m_promocao" id="m_promocao" value = "1" <?php if ($m_promocao == '1') { ?> checked<?php } ?>></th>
                     <td>Uma vez por mês</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="radio" name = "m_promocao" value = "2" <?php if ($m_promocao == '2') { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "m_promocao" id="m_promocao" value = "2" <?php if ($m_promocao == '2') { ?> checked<?php } ?>></th>
                     <td>Não, nunca faço</td></label>
                 </tr><br><br>
 
                 <label> 2.7 Quais meios utiliza? </label>
                 <br>
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_radio" value = "1" <?php if ($m_radio == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_radio" id="m_radio" value = "1" <?php if ($m_radio == 1) { ?> checked<?php } ?>></th>
                     <td>Rádio</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_jornal" value = "1" <?php if ($m_jornal == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_jornal" id="m_jornal" value = "1" <?php if ($m_jornal == 1) { ?> checked<?php } ?>></th>
                     <td>Jornal</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_panfleto" value = "1" <?php if ($m_panfleto == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "m_panfleto" id="m_panfleto" value = "1" <?php if ($m_panfleto == 1) { ?> checked<?php } ?>></th>
                     <td>Panfleto</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "m_OutrosMeiosComunicacao" value = "1" <?php if ($m_OutrosMeiosComunicacao == 1) { ?> checked<?php } ?>></th>
-                    <td>Outros:<input type="text" name="m_OutrosMeiosComunicacaoDesc" value="<?php echo $m_OutrosMeiosComunicacaoDesc; ?>" size=20 onKeyPress = "return validaEntrada3();" onblur="return validaSaida3();"><br></td></label>
+                <label><th class="span1"><input type="checkbox" name = "m_OutrosMeiosComunicacao" id="m_OutrosMeiosComunicacao" value = "1" <?php if ($m_OutrosMeiosComunicacao == 1) { ?> checked<?php } ?>></th>
+                    <td>Outros:<input type="text" name="m_OutrosMeiosComunicacaoDesc" id="m_OutrosMeiosComunicacaoDesc" value="<?php echo $m_OutrosMeiosComunicacaoDesc; ?>" size=20 onKeyPress = "return validaEntrada3();" onblur="return validaSaida3();"><br></td></label>
                 </tr>
 
                 <br>
                 <label>2.8 O estabelecimento é bem sinalizado, dividido em seções?</label>
                 <br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "m_sinalizacao" value = "0" <?php if ($m_sinalizacao == '0') { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "m_sinalizacao" id="m_sinalizacao" value = "0" <?php if ($m_sinalizacao == '0') { ?> checked<?php } ?>></th>
                     <td>Sim</td></label>
                 </tr>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "m_sinalizacao" value = "1" <?php if ($m_sinalizacao == '1') { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "m_sinalizacao"  value = "1" <?php if ($m_sinalizacao == '1') { ?> checked<?php } ?>></th>
                     <td>Não</td></label>
                 </tr><br><br>
 
                 <label> 2.9 Dispõe de espaços promocionais? (dispostos na loja)</label>
                 <br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "m_espacaoPromocional" value = "0" <?php if ($m_espacaoPromocional == '0') { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "m_espacaoPromocional" id="m_espacaoPromocional" value = "0" <?php if ($m_espacaoPromocional == '0') { ?> checked<?php } ?>></th>
                     <td>Sim</td></label>
                 </tr>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "m_espacaoPromocional" value = "1" <?php if ($m_espacaoPromocional == '1') { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "m_espacaoPromocional"  value = "1" <?php if ($m_espacaoPromocional == '1') { ?> checked<?php } ?>></th>
                     <td>Não</td></label>
                 </tr><br><br>
 
@@ -1160,22 +1160,22 @@ if ($_POST) {
                 <label> 3.1 Como forma os preços de seus produtos? </label>   
                 <br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "p_formacaoPreco" value = "0" <?php if ($p_formacaoPreco == '0') { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "p_formacaoPreco" id="p_formacaoPreco" value = "0" <?php if ($p_formacaoPreco == '0') { ?> checked<?php } ?>></th>
                     <td>Percentual sobre os custos</td></label>
                 </tr>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "p_formacaoPreco" value = "1" <?php if ($p_formacaoPreco == '1') { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "p_formacaoPreco"  value = "1" <?php if ($p_formacaoPreco == '1') { ?> checked<?php } ?>></th>
                     <td>Acompanhando o mercado</td></label>
                 </tr>
                 <tr>
                 <label><br><th class="span1"><input type="radio" name = "p_formacaoPreco" value = "2" <?php if ($p_formacaoPreco == '2') { ?> checked<?php } ?>></th>
-                   <td>Outra Maneira, Qual?<input type="text" name="p_outraFormacaoPreco" value="<?php echo $p_outraFormacaoPreco; ?>" size=20></td></label>
+                    <td>Outra Maneira, Qual?<input type="text" name="p_outraFormacaoPreco" id="p_outraFormacaoPreco" value="<?php echo $p_outraFormacaoPreco; ?>" size=20></td></label>
                 </tr><br><br>
 
                 <label> 3.2 Seus preços em relação a concorrência estão? </label>  
                 <br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "p_precoConcorrencia" value = "0" <?php if ($p_precoConcorrencia == '0') { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "p_precoConcorrencia" id="p_precoConcorrencia" value = "0" <?php if ($p_precoConcorrencia == '0') { ?> checked<?php } ?>></th>
                     <td>Acima</td></label>
                 </tr>
                 <tr>
@@ -1219,17 +1219,17 @@ if ($_POST) {
 
                                     </td>
                                     <td>
-                                        <input type="text" name="v_mesAnoA"  placeholder='' class="form-control" value="<?php echo $v_mesAnoA; ?>"/>
+                                        <input type="text" name="v_mesAnoA" id="v_mesAnoA"  placeholder='' class="form-control" value="<?php echo $v_mesAnoA; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="v_fatReaisA" placeholder='' class="form-control" value="<?php echo $v_fatReaisA; ?>"/>
+                                        <input type="text" name="v_fatReaisA" id="v_fatReaisA" placeholder='' class="form-control" value="<?php echo $v_fatReaisA; ?>"/>
                                     </td>
 
                                     <td>
-                                        <input type="text" name="v_mesAnoB"  placeholder='' class="form-control" value="<?php echo $v_mesAnoB; ?>"/>
+                                        <input type="text" name="v_mesAnoB" id="v_mesAnoB"  placeholder='' class="form-control" value="<?php echo $v_mesAnoB; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="v_fatReaisB"  placeholder='' class="form-control" value="<?php echo $v_fatReaisB; ?>"/>
+                                        <input type="text" name="v_fatReaisB" id="v_fatReaisB"  placeholder='' class="form-control" value="<?php echo $v_fatReaisB; ?>"/>
                                     </td>
                                 </tr>
 
@@ -1238,17 +1238,17 @@ if ($_POST) {
 
                                     </td>
                                     <td>
-                                        <input type="text" name="v_mesAnoC"  placeholder='' class="form-control" value="<?php echo $v_mesAnoC; ?>"/>
+                                        <input type="text" name="v_mesAnoC" id="v_mesAnoC" placeholder='' class="form-control" value="<?php echo $v_mesAnoC; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="v_fatReaisC" placeholder='' class="form-control" value="<?php echo $v_fatReaisC; ?>"/>
+                                        <input type="text" name="v_fatReaisC" id="v_fatReaisC" placeholder='' class="form-control" value="<?php echo $v_fatReaisC; ?>"/>
                                     </td>
 
                                     <td>
-                                        <input type="text" name="v_mesAnoD"  placeholder='' class="form-control" value="<?php echo $v_mesAnoD; ?>"/>
+                                        <input type="text" name="v_mesAnoD" id="v_mesAnoD"  placeholder='' class="form-control" value="<?php echo $v_mesAnoD; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="v_fatReaisD"  placeholder='' class="form-control" value="<?php echo $v_fatReaisD; ?>"/>
+                                        <input type="text" name="v_fatReaisD" id="v_fatReaisD"  placeholder='' class="form-control" value="<?php echo $v_fatReaisD; ?>"/>
                                     </td>
                                 </tr>
 
@@ -1257,17 +1257,17 @@ if ($_POST) {
 
                                     </td>
                                     <td>
-                                        <input type="text" name="v_mesAnoE"  placeholder='' class="form-control" value="<?php echo $v_mesAnoE; ?>"/>
+                                        <input type="text" name="v_mesAnoE" id="v_mesAnoE"  placeholder='' class="form-control" value="<?php echo $v_mesAnoE; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="v_fatReaisE" placeholder='' class="form-control" value="<?php echo $v_fatReaisE; ?>"/>
+                                        <input type="text" name="v_fatReaisE" id="v_fatReaisE" placeholder='' class="form-control" value="<?php echo $v_fatReaisE; ?>"/>
                                     </td>
 
                                     <td>
-                                        <input type="text" name="v_mesAnoF"  placeholder='' class="form-control" value="<?php echo $v_mesAnoF; ?>"/>
+                                        <input type="text" name="v_mesAnoF" id="v_mesAnoF"  placeholder='' class="form-control" value="<?php echo $v_mesAnoF; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="v_fatReaisF"  placeholder='' class="form-control" value="<?php echo $v_fatReaisF; ?>"/>
+                                        <input type="text" name="v_fatReaisF" id="v_fatReaisF"  placeholder='' class="form-control" value="<?php echo $v_fatReaisF; ?>"/>
                                     </td>
                                 </tr>
                             </tbody>
@@ -1277,56 +1277,56 @@ if ($_POST) {
 
                 <label>4.2 Dias da semana de maior movimento? Período do mês: </label>
                 <td>
-                    <input type="text" name="v_periodoInicial" value="<?php echo $v_periodoInicial; ?>" size=10>
-                    <input type="text" name="v_periodoFinal" value="<?php echo $v_periodoFinal; ?>" size=10>
+                    <input type="text" name="v_periodoInicial" id="v_periodoInicial" value="<?php echo $v_periodoInicial; ?>" size=10>
+                    <input type="text" name="v_periodoFinal" id="v_periodoFinal" value="<?php echo $v_periodoFinal; ?>" size=10>
                 </td>
                 <tr><br>
-                <label><th class="span1"><input type="checkbox" name = "v_seg" value = "1" <?php if ($v_seg == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "v_seg" id="v_seg" value = "1" <?php if ($v_seg == 1) { ?> checked<?php } ?>></th>
                     <td> Seg</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "v_ter" value = "1" <?php if ($v_ter == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "v_ter" id="v_ter" value = "1" <?php if ($v_ter == 1) { ?> checked<?php } ?>></th>
                     <td> Ter </td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "v_qua" value = "1" <?php if ($v_qua == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "v_qua" id="v_qua" value = "1" <?php if ($v_qua == 1) { ?> checked<?php } ?>></th>
                     <td> Qua</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "v_qui" value = "1" <?php if ($v_qui == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "v_qui" id="v_qui" value = "1" <?php if ($v_qui == 1) { ?> checked<?php } ?>></th>
                     <td> Qui</td></label>
                 </tr> 
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "v_sex" value = "1" <?php if ($v_sex == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "v_sex" id="v_sex" value = "1" <?php if ($v_sex == 1) { ?> checked<?php } ?>></th>
                     <td> Sex</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "v_sab" value = "1" <?php if ($v_sab == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "v_sab" id="v_sab" value = "1" <?php if ($v_sab == 1) { ?> checked<?php } ?>></th>
                     <td> Sab</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "v_dom" value = "1" <?php if ($v_dom == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "v_dom" id="v_dom" value = "1" <?php if ($v_dom == 1) { ?> checked<?php } ?>></th>
                     <td> Dom</td></label>
                 </tr><br><br>
 
                 <label>4.3 Quais horários de maior movimento?</label>
                 <br>
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "v_manha" value = "1" <?php if ($v_manha == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "v_manha" id="v_manha" value = "1" <?php if ($v_manha == 1) { ?> checked<?php } ?>></th>
                     <td> Manhã</td></label>
                 </tr>
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "v_tarde" value = "1" <?php if ($v_tarde == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "v_tarde" id="v_tarde" value = "1" <?php if ($v_tarde == 1) { ?> checked<?php } ?>></th>
                     <td> Tarde</td></label>
                 </tr>
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "v_noite" value = "1" <?php if ($v_noite == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "v_noite" id="v_noite" value = "1" <?php if ($v_noite == 1) { ?> checked<?php } ?>></th>
                     <td> Noite</td></label>
                 </tr>
 
@@ -1335,33 +1335,33 @@ if ($_POST) {
                 <label>4.4 Forma de pagamento oferecidas aos clientes?</label>
                 <br>
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "v_cheque" value = "1" <?php if ($v_cheque == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "v_cheque" id="v_cheque" value = "1" <?php if ($v_cheque == 1) { ?> checked<?php } ?>></th>
                     <td>Cheque pré-datado </td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "v_ticket" value = "1" <?php if ($v_ticket == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "v_ticket" id="v_ticket" value = "1" <?php if ($v_ticket == 1) { ?> checked<?php } ?>></th>
                     <td>Ticket </td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "v_cartao" value = "1" <?php if ($v_cartao == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "v_cartao" id="v_cartao" value = "1" <?php if ($v_cartao == 1) { ?> checked<?php } ?>></th>
                     <td>Cartão de crédito </td></label>
                 </tr>
                 <br>
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "v_avista" value = "1" <?php if ($v_avista == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "v_avista" id="v_avista" value = "1" <?php if ($v_avista == 1) { ?> checked<?php } ?>></th>
                     <td>Caderneta </td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "v_caderneta" value = "1" <?php if ($v_caderneta == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "v_caderneta" id="v_caderneta" value = "1" <?php if ($v_caderneta == 1) { ?> checked<?php } ?>></th>
                     <td>A vista </td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "v_outraFormaPagto" value = "1" <?php if ($v_outraFormaPagto == 1) { ?> checked<?php } ?>></th>
-                    <td>Outra? Qual?<input type="text" name="v_outraFormaPagtoDesc" value="<?php echo $v_outraFormaPagtoDesc; ?>" size=30 onKeyPress = "return validaEntrada4();" onblur="return validaSaida4();">
+                <label><th class="span1"><input type="checkbox" name = "v_outraFormaPagto" id="v_outraFormaPagto" value = "1" <?php if ($v_outraFormaPagto == 1) { ?> checked<?php } ?>></th>
+                    <td>Outra? Qual?<input type="text" name="v_outraFormaPagtoDesc" id="v_outraFormaPagtoDesc" value="<?php echo $v_outraFormaPagtoDesc; ?>" size=30 onKeyPress = "return validaEntrada4();" onblur="return validaSaida4();">
                         <br> </td></label>
                 </tr><br>
 
@@ -1369,9 +1369,9 @@ if ($_POST) {
                 <br>
                 <div class="form-group">
                     <label class="col-sm-3 control-label" for="card-holder-name"> Por vez:</label>    
-                    <input type="text" name="v_vlrMedioPorVez" value="<?php echo $v_vlrMedioPorVez; ?>" size=30>
+                    <input type="text" name="v_vlrMedioPorVez" id="v_vlrMedioPorVez" value="<?php echo $v_vlrMedioPorVez; ?>" size=30>
                     <label class="col-sm-3 control-label" for="card-holder-name"> Mensal:</label>   
-                    <input type="text" name="v_vlrMedioMensal" value="<?php echo $v_vlrMedioMensal; ?>" size=30>
+                    <input type="text" name="v_vlrMedioMensal" id="v_vlrMedioMensal" value="<?php echo $v_vlrMedioMensal; ?>" size=30>
                 </div>
                 <br>
 
@@ -1408,19 +1408,19 @@ if ($_POST) {
 
                                     </td>
                                     <td>
-                                        <input type="text" name="c_razaoSocialFantasiaA"  placeholder='' class="form-control" value="<?php echo $c_razaoSocialFantasiaA; ?>"/>
+                                        <input type="text" name="c_razaoSocialFantasiaA" id="c_razaoSocialFantasiaA"  placeholder='' class="form-control" value="<?php echo $c_razaoSocialFantasiaA; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_cidadeUfA" placeholder='' class="form-control" value="<?php echo $c_cidadeUfA; ?>" size=10/>
+                                        <input type="text" name="c_cidadeUfA" id="c_cidadeUfA" placeholder='' class="form-control" value="<?php echo $c_cidadeUfA; ?>" size=10/>
                                     </td>           
                                     <td>
-                                        <input type="text" name="c_produtosA"  placeholder='' class="form-control" value="<?php echo $c_produtosA; ?>" size=15/>
+                                        <input type="text" name="c_produtosA" id="c_produtosA"  placeholder='' class="form-control" value="<?php echo $c_produtosA; ?>" size=15/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_loteMinimoA"  placeholder='' class="form-control" value="<?php echo $c_loteMinimoA; ?>" size=15/>
+                                        <input type="text" name="c_loteMinimoA" id="c_loteMinimoA"  placeholder='' class="form-control" value="<?php echo $c_loteMinimoA; ?>" size=15/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_relacionamentoA"  placeholder='' class="form-control" value="<?php echo $c_relacionamentoA; ?>" size=15/>
+                                        <input type="text" name="c_relacionamentoA" id="c_relacionamentoA"  placeholder='' class="form-control" value="<?php echo $c_relacionamentoA; ?>" size=15/>
                                     </td>
                                 </tr>
 
@@ -1429,19 +1429,19 @@ if ($_POST) {
 
                                     </td>
                                     <td>
-                                        <input type="text" name="c_razaoSocialFantasiaB"  placeholder='' class="form-control" value="<?php echo $c_razaoSocialFantasiaB; ?>"/>
+                                        <input type="text" name="c_razaoSocialFantasiaB" id="c_razaoSocialFantasiaB"  placeholder='' class="form-control" value="<?php echo $c_razaoSocialFantasiaB; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_cidadeUfB" placeholder='' class="form-control" value="<?php echo $c_cidadeUfB; ?>" size=10/>
+                                        <input type="text" name="c_cidadeUfB" id="c_cidadeUfB" placeholder='' class="form-control" value="<?php echo $c_cidadeUfB; ?>" size=10/>
                                     </td>           
                                     <td>
-                                        <input type="text" name="c_produtosB"  placeholder='' class="form-control" value="<?php echo $c_produtosB; ?>" size=15/>
+                                        <input type="text" name="c_produtosB" id="c_produtosB"  placeholder='' class="form-control" value="<?php echo $c_produtosB; ?>" size=15/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_loteMinimoB"  placeholder='' class="form-control" value="<?php echo $c_loteMinimoB; ?>" size=15/>
+                                        <input type="text" name="c_loteMinimoB" id="c_loteMinimoB"  placeholder='' class="form-control" value="<?php echo $c_loteMinimoB; ?>" size=15/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_relacionamentoB"  placeholder='' class="form-control" value="<?php echo $c_relacionamentoB; ?>" size=15/>
+                                        <input type="text" name="c_relacionamentoB" id="c_relacionamentoB"  placeholder='' class="form-control" value="<?php echo $c_relacionamentoB; ?>" size=15/>
                                     </td>
                                 </tr>
 
@@ -1450,19 +1450,19 @@ if ($_POST) {
 
                                     </td>
                                     <td>
-                                        <input type="text" name="c_razaoSocialFantasiaC"  placeholder='' class="form-control" value="<?php echo $c_razaoSocialFantasiaC; ?>"/>
+                                        <input type="text" name="c_razaoSocialFantasiaC" id="c_razaoSocialFantasiaC"  placeholder='' class="form-control" value="<?php echo $c_razaoSocialFantasiaC; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_cidadeUfC" placeholder='' class="form-control" value="<?php echo $c_cidadeUfC; ?>" size=10/>
+                                        <input type="text" name="c_cidadeUfC" id="c_cidadeUfC" placeholder='' class="form-control" value="<?php echo $c_cidadeUfC; ?>" size=10/>
                                     </td>           
                                     <td>
-                                        <input type="text" name="c_produtosC"  placeholder='' class="form-control" value="<?php echo $c_produtosC; ?>" size=15/>
+                                        <input type="text" name="c_produtosC" id="c_produtosC"  placeholder='' class="form-control" value="<?php echo $c_produtosC; ?>" size=15/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_loteMinimoC"  placeholder='' class="form-control" value="<?php echo $c_loteMinimoC; ?>" size=15/>
+                                        <input type="text" name="c_loteMinimoC" id="c_loteMinimoC"  placeholder='' class="form-control" value="<?php echo $c_loteMinimoC; ?>" size=15/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_relacionamentoC"  placeholder='' class="form-control" value="<?php echo $c_relacionamentoC; ?>" size=15/>
+                                        <input type="text" name="c_relacionamentoC" id="c_relacionamentoC"  placeholder='' class="form-control" value="<?php echo $c_relacionamentoC; ?>" size=15/>
                                     </td>
                                 </tr>
 
@@ -1471,19 +1471,19 @@ if ($_POST) {
 
                                     </td>
                                     <td>
-                                        <input type="text" name="c_razaoSocialFantasiaD"  placeholder='' class="form-control" value="<?php echo $c_razaoSocialFantasiaD; ?>"/>
+                                        <input type="text" name="c_razaoSocialFantasiaD" id="c_razaoSocialFantasiaD"  placeholder='' class="form-control" value="<?php echo $c_razaoSocialFantasiaD; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_cidadeUfD" placeholder='' class="form-control" value="<?php echo $c_cidadeUfD; ?>" size=10/>
+                                        <input type="text" name="c_cidadeUfD" id="c_cidadeUfD" placeholder='' class="form-control" value="<?php echo $c_cidadeUfD; ?>" size=10/>
                                     </td>           
                                     <td>
-                                        <input type="text" name="c_produtosD"  placeholder='' class="form-control" value="<?php echo $c_produtosD; ?>" size=15/>
+                                        <input type="text" name="c_produtosD" id="c_produtosD"  placeholder='' class="form-control" value="<?php echo $c_produtosD; ?>" size=15/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_loteMinimoD"  placeholder='' class="form-control" value="<?php echo $c_loteMinimoD; ?>" size=15/>
+                                        <input type="text" name="c_loteMinimoD" id="c_loteMinimoD"  placeholder='' class="form-control" value="<?php echo $c_loteMinimoD; ?>" size=15/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_relacionamentoD"  placeholder='' class="form-control" value="<?php echo $c_relacionamentoD; ?>" size=15/>
+                                        <input type="text" name="c_relacionamentoD" id="c_relacionamentoD"  placeholder='' class="form-control" value="<?php echo $c_relacionamentoD; ?>" size=15/>
                                     </td>
 
                                 <tr id='addr4'>
@@ -1491,19 +1491,19 @@ if ($_POST) {
 
                                     </td>
                                     <td>
-                                        <input type="text" name="c_razaoSocialFantasiaE"  placeholder='' class="form-control" value="<?php echo $c_razaoSocialFantasiaE; ?>"/>
+                                        <input type="text" name="c_razaoSocialFantasiaE" id="c_razaoSocialFantasiaE"  placeholder='' class="form-control" value="<?php echo $c_razaoSocialFantasiaE; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_cidadeUfE" placeholder='' class="form-control" value="<?php echo $c_cidadeUfE; ?>" size=10/>
+                                        <input type="text" name="c_cidadeUfE" id="c_cidadeUfE" placeholder='' class="form-control" value="<?php echo $c_cidadeUfE; ?>" size=10/>
                                     </td>           
                                     <td>
-                                        <input type="text" name="c_produtosE"  placeholder='' class="form-control" value="<?php echo $c_produtosE; ?>" size=15/>
+                                        <input type="text" name="c_produtosE" id="c_produtosE"  placeholder='' class="form-control" value="<?php echo $c_produtosE; ?>" size=15/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_loteMinimoE"  placeholder='' class="form-control" value="<?php echo $c_loteMinimoE; ?>" size=15/>
+                                        <input type="text" name="c_loteMinimoE" id="c_loteMinimoE"  placeholder='' class="form-control" value="<?php echo $c_loteMinimoE; ?>" size=15/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_relacionamentoE"  placeholder='' class="form-control" value="<?php echo $c_relacionamentoE; ?>" size=15/>
+                                        <input type="text" name="c_relacionamentoE" id="c_relacionamentoE" placeholder='' class="form-control" value="<?php echo $c_relacionamentoE; ?>" size=15/>
                                     </td>
                                 </tr>                       
                             </tbody>
@@ -1539,17 +1539,17 @@ if ($_POST) {
 
                                     </td>
                                     <td>
-                                        <input type="text" name="c_mesAnoA"  placeholder='' class="form-control" value="<?php echo $c_mesAnoA; ?>"/>
+                                        <input type="text" name="c_mesAnoA" id="c_mesAnoA" placeholder='' class="form-control" value="<?php echo $c_mesAnoA; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_comprasReaisA" placeholder='' class="form-control" value="<?php echo $c_comprasReaisA; ?>"/>
+                                        <input type="text" name="c_comprasReaisA" id="c_comprasReaisA" placeholder='' class="form-control" value="<?php echo $c_comprasReaisA; ?>"/>
                                     </td>
 
                                     <td>
-                                        <input type="text" name="c_mesAnoB"  placeholder='' class="form-control" value="<?php echo $c_mesAnoB; ?>"/>
+                                        <input type="text" name="c_mesAnoB" id="c_mesAnoB"  placeholder='' class="form-control" value="<?php echo $c_mesAnoB; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_comprasReaisB"  placeholder='' class="form-control" value="<?php echo $c_comprasReaisB; ?>"/>
+                                        <input type="text" name="c_comprasReaisB" id="c_comprasReaisB" placeholder='' class="form-control" value="<?php echo $c_comprasReaisB; ?>"/>
                                     </td>
                                 </tr>
 
@@ -1558,17 +1558,17 @@ if ($_POST) {
 
                                     </td>
                                     <td>
-                                        <input type="text" name="c_mesAnoC"  placeholder='' class="form-control" value="<?php echo $c_mesAnoC; ?>"/>
+                                        <input type="text" name="c_mesAnoC" id="c_mesAnoC" placeholder='' class="form-control" value="<?php echo $c_mesAnoC; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_comprasReaisC" placeholder='' class="form-control" value="<?php echo $c_comprasReaisC; ?>"/>
+                                        <input type="text" name="c_comprasReaisC" id="c_comprasReaisC" placeholder='' class="form-control" value="<?php echo $c_comprasReaisC; ?>"/>
                                     </td>
 
                                     <td>
-                                        <input type="text" name="c_mesAnoD"  placeholder='' class="form-control" value="<?php echo $c_mesAnoD; ?>"/>
+                                        <input type="text" name="c_mesAnoD" id="c_mesAnoD" placeholder='' class="form-control" value="<?php echo $c_mesAnoD; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_comprasReaisD"  placeholder='' class="form-control" value="<?php echo $c_comprasReaisD; ?>"/>
+                                        <input type="text" name="c_comprasReaisD" id="c_comprasReaisD" placeholder='' class="form-control" value="<?php echo $c_comprasReaisD; ?>"/>
                                     </td>
                                 </tr>
 
@@ -1577,17 +1577,17 @@ if ($_POST) {
 
                                     </td>
                                     <td>
-                                        <input type="text" name="c_mesAnoE"  placeholder='' class="form-control" value="<?php echo $c_mesAnoE; ?>"/>
+                                        <input type="text" name="c_mesAnoE" id="c_mesAnoE" placeholder='' class="form-control" value="<?php echo $c_mesAnoE; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_comprasReaisE" placeholder='' class="form-control" value="<?php echo $c_comprasReaisE; ?>"/>
+                                        <input type="text" name="c_comprasReaisE" id="c_comprasReaisE" placeholder='' class="form-control" value="<?php echo $c_comprasReaisE; ?>"/>
                                     </td>
 
                                     <td>
-                                        <input type="text" name="c_mesAnoF"  placeholder='' class="form-control" value="<?php echo $c_mesAnoF; ?>"/>
+                                        <input type="text" name="c_mesAnoF" id="c_mesAnoF" placeholder='' class="form-control" value="<?php echo $c_mesAnoF; ?>"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="c_comprasReaisF"  placeholder='' class="form-control" value="<?php echo $c_comprasReaisF; ?>"/>
+                                        <input type="text" name="c_comprasReaisF" id="c_comprasReaisF" placeholder='' class="form-control" value="<?php echo $c_comprasReaisF; ?>"/>
                                     </td>
                                 </tr>
                             </tbody>
@@ -1597,53 +1597,53 @@ if ($_POST) {
                 <legend>6. CLIENTES</legend> 
 
                 <label>6.1 Quantos clientes atende por mês?</label>
-                <input type="text" name="cli_qtdeClienteMensal" value="<?php echo $cli_qtdeClienteMensal; ?>" size=15><br><br>
+                <input type="text" name="cli_qtdeClienteMensal" id="cli_qtdeClienteMensal" value="<?php echo $cli_qtdeClienteMensal; ?>" size=15><br><br>
 
                 <label>6.2 Qual é o perfil do seu cliente?</label>
                 <br>
-                <input type="text" name="cli_percClasA" value="<?php echo $cli_percClasA; ?>" size=5><td>% classe A </td>
+                <input type="text" name="cli_percClasA" id="cli_percClasA" value="<?php echo $cli_percClasA; ?>" size=5><td>% classe A </td>
 
-                <input type="text" name="cli_percClasB" value="<?php echo $cli_percClasB; ?>" size=5><td>% classe B </td>
+                <input type="text" name="cli_percClasB" id="cli_percClasB" value="<?php echo $cli_percClasB; ?>" size=5><td>% classe B </td>
 
-                <input type="text" name="cli_percClasC" value="<?php echo $cli_percClasC; ?>" size=5><td>% classe C </td>
+                <input type="text" name="cli_percClasC" id="cli_percClasC" value="<?php echo $cli_percClasC; ?>" size=5><td>% classe C </td>
 
-                <input type="text" name="cli_percClasD" value="<?php echo $cli_percClasD; ?>" size=5><td>% classe D </td>
+                <input type="text" name="cli_percClasD" id="cli_percClasD" value="<?php echo $cli_percClasD; ?>" size=5><td>% classe D </td>
                 <br>
-                <input type="text" name="cli_percIdadeA" value="<?php echo $cli_percIdadeA; ?>" size=4><td>% 0 a 18 anos </td>
+                <input type="text" name="cli_percIdadeA" id="cli_percIdadeA" value="<?php echo $cli_percIdadeA; ?>" size=4><td>% 0 a 18 anos </td>
 
-                <input type="text" name="cli_percIdadeB" value="<?php echo $cli_percIdadeB; ?>" size=4><td>% 19 a 30 anos </td>  
+                <input type="text" name="cli_percIdadeB" id="cli_percIdadeB" value="<?php echo $cli_percIdadeB; ?>" size=4><td>% 19 a 30 anos </td>  
 
-                <input type="text" name="cli_percIdadeC" value="<?php echo $cli_percIdadeC; ?>" size=4><td>% 31 a 45 anos </td>
+                <input type="text" name="cli_percIdadeC" id="cli_percIdadeC" value="<?php echo $cli_percIdadeC; ?>" size=4><td>% 31 a 45 anos </td>
 
-                <input type="text" name="cli_percIdadeD" value="<?php echo $cli_percIdadeD; ?>" size=4><td>% acima de 46 anos </td>
+                <input type="text" name="cli_percIdadeD" id="cli_percIdadeD" value="<?php echo $cli_percIdadeD; ?>" size=4><td>% acima de 46 anos </td>
                 <br>
-                <input type="text" name="cli_percMasc" value="<?php echo $cli_percMasc; ?>" size=5><td>% Masculino </td>
+                <input type="text" name="cli_percMasc" id="cli_percMasc" value="<?php echo $cli_percMasc; ?>" size=5><td>% Masculino </td>
 
-                <input type="text" name="cli_percFem" value="<?php echo $cli_percFem; ?>" size=5><td>% Feminino </td>
+                <input type="text" name="cli_percFem" id="cli_percFem" value="<?php echo $cli_percFem; ?>" size=5><td>% Feminino </td>
                 <br><br>
 
                 <label>6.3 Vende para empresas?</label><br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "cli_vendeEmpresas" value = "0"></th>
+                <label><th class="span1"><input type="radio" name = "cli_vendeEmpresas" id="cli_vendeEmpresas" value = "0"></th>
                     <td>Sim.Quantos % representa do total do faturamento?</td></label>
-                <input type="text" name="cli_percTotalFat" value="<?php echo $cli_percTotalFat; ?>" size=5>
+                <input type="text" name="cli_percTotalFat" id="cli_percTotalFat" value="<?php echo $cli_percTotalFat; ?>" size=5>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="radio" name = "cli_vendeEmpresas" value = "1" <?php if ($v_manha == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "cli_vendeEmpresas" id="cli_vendeEmpresas" value = "1" <?php if ($v_manha == 1) { ?> checked<?php } ?>></th>
                     <td>Não </td></label>
                 </tr>
 
                 <br><br>
                 <label>6.4 Faz pesquisas com seus clientes?</label><br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "cli_pesquisaClientes" value="0" <?php if ($cli_pesquisaClientes == 0) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name="cli_pesquisaClientes" id="cli_pesquisaClientes" value="0" <?php if ($cli_pesquisaClientes == 0) { ?> checked<?php } ?>></th>
                     <td>Sim, frequência?</td></label>
-                <input type="text" name="cli_frequencia" value="<?php echo $cli_frequencia; ?>" size=15>
+                <input type="text" name="cli_frequencia" id="cli_frequencia" value="<?php echo $cli_frequencia; ?>" size=15>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="radio" name = "cli_pesquisaClientes" value="1" <?php if ($cli_pesquisaClientes == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "cli_pesquisaClientes" id="cli_pesquisaClientes" value="1" <?php if ($cli_pesquisaClientes == 1) { ?> checked<?php } ?>></th>
                     <td>Não, mas já fiz </td></label>
                 </tr>
 
@@ -1656,13 +1656,13 @@ if ($_POST) {
                 <br>
                 <legend>7. RECURSOS HUMANOS</legend>
                 <br>
-                <label>7.1 Quantos colaboradores possui?</label><input type="text" name="r_qtdeColaboradores" value="<?php echo $r_qtdeColaboradores; ?>" size=10><br><br>
+                <label>7.1 Quantos colaboradores possui?</label><input type="text" name="r_qtdeColaboradores" id="r_qtdeColaboradores" value="<?php echo $r_qtdeColaboradores; ?>" size=10><br><br>
 
                 <label>7.2 No último ano seus colaboradores participaram de treinamento?</label>
                 <br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "r_treinamento" value = "0" <?php if ($r_treinamento == 0) { ?> checked<?php } ?>></th>
-                    <td>Sim. Em que área?<input type="text" name="r_area" value="<?php echo $r_area; ?>" size=30></label></td>
+                <label><th class="span1"><input type="radio" name = "r_treinamento" id="r_treinamento" value = "0" <?php if ($r_treinamento == 0) { ?> checked<?php } ?>></th>
+                    <td>Sim. Em que área?<input type="text" name="r_area" id="r_area" value="<?php echo $r_area; ?>" size=30></label></td>
                 </tr>
 
                 <tr>
@@ -1672,7 +1672,7 @@ if ($_POST) {
 
                 <label>7.3 Qual a escolaridade dos que trabalham na empresa?</label><br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "r_escolaridade" value = "0" <?php if ($r_escolaridade == 0) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "r_escolaridade" id="r_escolaridade" value = "0" <?php if ($r_escolaridade == 0) { ?> checked<?php } ?>></th>
                     <td>Segundo grau </td></label>
                 </tr>
 
@@ -1688,39 +1688,39 @@ if ($_POST) {
 
                 <label>7.4 Que critérios utiliza para contratação de colaboradores?</label><br>
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "r_indicacao" value = "1" <?php if ($r_indicacao == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "r_indicacao" id="r_indicacao" value = "1" <?php if ($r_indicacao == 1) { ?> checked<?php } ?>></th>
                     <td>Indicação </td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "r_entrevista" value = "1" <?php if ($r_entrevista == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "r_entrevista" id="r_entrevista" value = "1" <?php if ($r_entrevista == 1) { ?> checked<?php } ?>></th>
                     <td>Entrevisa </td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "r_analCurEnt" value = "1" <?php if ($r_analCurEnt == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "r_analCurEnt" id="r_analCurEnt" value = "1" <?php if ($r_analCurEnt == 1) { ?> checked<?php } ?>></th>
                     <td>Análise de Currículo e Entrevista</td></label>
                 </tr> <br><br>
 
                 <label>7.5 Quais são os fatores prioritários na escolha de um candidato? Enumerar por ordem de importância.</label><br>
                 <tr>
-                <label><th class="span1"><input type="text" name="r_aparencia" value="<?php echo $r_aparencia; ?>" size=1></th>
+                <label><th class="span1"><input type="text" name="r_aparencia" id="r_aparencia" value="<?php echo $r_aparencia; ?>" size=1></th>
                     <td>Aparência </td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="text" name = "r_boaVontade" value = "<?php echo $r_boaVontade; ?>" size=1></th>
+                <label><th class="span1"><input type="text" name = "r_boaVontade" id="r_boaVontade" value = "<?php echo $r_boaVontade; ?>" size=1></th>
                     <td>Boa vontade </td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="text" name = "r_experiencia" value = "<?php echo $r_experiencia; ?>" size=1></th>
+                <label><th class="span1"><input type="text" name = "r_experiencia" id="r_experiencia" value = "<?php echo $r_experiencia; ?>" size=1></th>
                     <td>Experiência</td></label>
                 </tr> <br><br>
 
                 <label>7.6 Que tipo de atividades realiza para manter seus funcionários motivados?</label><br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "r_tipoAtividade" value = "0" <?php if ($r_tipoAtividade == 0) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "r_tipoAtividade" id="r_tipoAtividade" value = "0" <?php if ($r_tipoAtividade == 0) { ?> checked<?php } ?>></th>
                     <td>Festas especiais </td></label>
                 </tr>
 
@@ -1731,11 +1731,11 @@ if ($_POST) {
 
                 <tr>
                 <label><th class="span1"><input type="radio" name = "r_tipoAtividade" value = "2" <?php if ($r_tipoAtividade == 2) { ?> checked<?php } ?>></th>
-                    <td>Outros: </td></label><input type="text" name="r_outrasAtividades" value="<?php echo $r_outrasAtividades; ?>" size=30>
+                    <td>Outros: </td></label><input type="text" name="r_outrasAtividades" id="r_outrasAtividades" value="<?php echo $r_outrasAtividades; ?>" size=30>
                 </tr> <br><br>    
 
                 <label>7.7 Quantas demissões X Contratações por ano? Por quê?</label><br>
-                <input type="text" name="r_quantasDemContrAno" value="<?php echo $r_quantasDemContrAno; ?>" size=100><br>
+                <input type="text" name="r_quantasDemContrAno" id="r_quantasDemContrAno" value="<?php echo $r_quantasDemContrAno; ?>" size=100><br>
 
                 <br>
                 <legend>8. ADMINISTRATIVO/FINANCEIRO/CONTÁBIL</legend>
@@ -1774,19 +1774,19 @@ if ($_POST) {
                                         Fluxo de caixa
                                     </td>
                                     <td>
-                                        <input type="text" name="a_fluxoCaixaManual"  placeholder='' class="form-control" value="<?php echo $a_fluxoCaixaManual; ?>" size="3" />
+                                        <input type="text" name="a_fluxoCaixaManual" id="a_fluxoCaixaManual"  placeholder='' class="form-control" value="<?php echo $a_fluxoCaixaManual; ?>" size="3" />
                                     </td>
                                     <td>
-                                        <input type="text" name="a_fluxoCaixaInfo" placeholder='' class="form-control" value="<?php echo $a_fluxoCaixaInfo; ?>" size="8"/>
+                                        <input type="text" name="a_fluxoCaixaInfo" id="a_fluxoCaixaInfo" placeholder='' class="form-control" value="<?php echo $a_fluxoCaixaInfo; ?>" size="8"/>
                                     </td>
                                     <td>
                                         Adm. de Compras
                                     </td>           
                                     <td>
-                                        <input type="text" name="a_admComprasManual"  placeholder='' class="form-control" value="<?php echo $a_admComprasManual; ?>" size="3"/>
+                                        <input type="text" name="a_admComprasManual" id="a_admComprasManual"  placeholder='' class="form-control" value="<?php echo $a_admComprasManual; ?>" size="3"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="a_admComprasInfo"  placeholder='' class="form-control" value="<?php echo $a_admComprasInfo; ?>" size="8" />
+                                        <input type="text" name="a_admComprasInfo" id="a_admComprasInfo"  placeholder='' class="form-control" value="<?php echo $a_admComprasInfo; ?>" size="8" />
                                     </td>
                                 </tr>
 
@@ -1795,19 +1795,19 @@ if ($_POST) {
                                         Controle de Estoques
                                     </td>
                                     <td>
-                                        <input type="text" name="a_controleEstoqueManual"  placeholder='' class="form-control" value="<?php echo $a_controleEstoqueManual; ?>" size="3"/>
+                                        <input type="text" name="a_controleEstoqueManual" id="a_controleEstoqueManual"  placeholder='' class="form-control" value="<?php echo $a_controleEstoqueManual; ?>" size="3"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="a_controleEstoqueInfo" placeholder='' class="form-control" value="<?php echo $a_controleEstoqueInfo; ?>" size="8"/>
+                                        <input type="text" name="a_controleEstoqueInfo" id="a_controleEstoqueInfo" placeholder='' class="form-control" value="<?php echo $a_controleEstoqueInfo; ?>" size="8"/>
                                     </td>
                                     <td>
                                         Adm. de Vendas
                                     </td>
                                     <td>
-                                        <input type="text" name="a_admVendasManual"  placeholder='' class="form-control" value="<?php echo $a_admVendasManual; ?>" size="3"/>
+                                        <input type="text" name="a_admVendasManual" id="a_admVendasManual" placeholder='' class="form-control" value="<?php echo $a_admVendasManual; ?>" size="3"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="a_admVendasInfo"  placeholder='' class="form-control" value="<?php echo $a_admVendasInfo; ?>" size="8"/>
+                                        <input type="text" name="a_admVendasInfo" id="a_admVendasInfo" placeholder='' class="form-control" value="<?php echo $a_admVendasInfo; ?>" size="8"/>
                                     </td>
                                 </tr>
 
@@ -1816,19 +1816,19 @@ if ($_POST) {
                                         Contas a pagar
                                     </td>
                                     <td>
-                                        <input type="text" name="a_contasPagarManual"  placeholder='' class="form-control" value="<?php echo $a_contasPagarManual; ?>" size="3"/>
+                                        <input type="text" name="a_contasPagarManual" id="a_contasPagarManual" placeholder='' class="form-control" value="<?php echo $a_contasPagarManual; ?>" size="3"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="a_contasPagarInfo" placeholder='' class="form-control" value="<?php echo $a_contasPagarInfo; ?>" size="8"/>
+                                        <input type="text" name="a_contasPagarInfo" id="a_contasPagarInfo" placeholder='' class="form-control" value="<?php echo $a_contasPagarInfo; ?>" size="8"/>
                                     </td>   
                                     <td>
                                         Faturamento
                                     </td>
                                     <td>
-                                        <input type="text" name="a_fatManual"  placeholder='' class="form-control" value="<?php echo $a_fatManual; ?>" size="3"/>
+                                        <input type="text" name="a_fatManual" id="a_fatManual" placeholder='' class="form-control" value="<?php echo $a_fatManual; ?>" size="3"/>
                                     </td> 
                                     <td>
-                                        <input type="text" name="a_fatInfo"  placeholder='' class="form-control" value="<?php echo $a_fatInfo; ?>" size="8"/>
+                                        <input type="text" name="a_fatInfo" id="a_fatInfo" placeholder='' class="form-control" value="<?php echo $a_fatInfo; ?>" size="8"/>
                                     </td>
                                 </tr>
 
@@ -1837,19 +1837,19 @@ if ($_POST) {
                                         Contas a receber
                                     </td>
                                     <td>
-                                        <input type="text" name="a_contasReceberManual"  placeholder='' class="form-control" value="<?php echo $a_contasReceberManual; ?>" size="3"/>
+                                        <input type="text" name="a_contasReceberManual" id="a_contasReceberManual" placeholder='' class="form-control" value="<?php echo $a_contasReceberManual; ?>" size="3"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="a_contasReceberInfo" placeholder='' class="form-control" value="<?php echo $a_contasReceberInfo; ?>" size="8"/>
+                                        <input type="text" name="a_contasReceberInfo" id="a_contasReceberInfo" placeholder='' class="form-control" value="<?php echo $a_contasReceberInfo; ?>" size="8"/>
                                     </td>   
                                     <td>
-                                        Outros:<input type="text" name="a_descOutrosTipos"  placeholder='' class="form-control" value="<?php echo $a_descOutrosTipos; ?>" size="3"/>
+                                        Outros:<input type="text" name="a_descOutrosTipos" id="a_descOutrosTipos"  placeholder='' class="form-control" value="<?php echo $a_descOutrosTipos; ?>" size="3"/>
                                     </td>
                                     <td>
-                                        <input type="text" name="a_outrosTiposSelecionadoManual"  placeholder='' class="form-control" value="<?php echo $a_outrosTiposSelecionadoManual; ?>" size="3"/>
+                                        <input type="text" name="a_outrosTiposSelecionadoManual" id="a_outrosTiposSelecionadoManual" placeholder='' class="form-control" value="<?php echo $a_outrosTiposSelecionadoManual; ?>" size="3"/>
                                     </td> 
                                     <td>
-                                        <input type="text" name="a_outrosTiposSelecionadoInfo"  placeholder='' class="form-control" value="<?php echo $a_outrosTiposSelecionadoInfo; ?>" size="8"/>
+                                        <input type="text" name="a_outrosTiposSelecionadoInfo" id="a_outrosTiposSelecionadoInfo" placeholder='' class="form-control" value="<?php echo $a_outrosTiposSelecionadoInfo; ?>" size="8"/>
                                     </td>
                                 </tr>            
                             </tbody>
@@ -1859,19 +1859,19 @@ if ($_POST) {
                 <label>8.2 Realiza Planejamentos?</label>
                 <br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "a_planejamento" value = "0" <?php if ($a_planejamento == 0) { ?> checked<?php } ?>></th>
-                    <td>Sim. Em que áreas?<input type="text" name="a_area" value="<?php echo $a_area; ?>" size=30></label></td>
+                <label><th class="span1"><input type="radio" name = "a_planejamento" id="a_planejamento" value = "0" <?php if ($a_planejamento == 0) { ?> checked<?php } ?>></th>
+                    <td>Sim. Em que áreas?<input type="text" name="a_area" id="a_area" value="<?php echo $a_area; ?>" size=30></label></td>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="radio" name = "a_planejamento" value = "1" <?php if ($a_planejamento == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "a_planejamento" id="a_planejamento" value = "1" <?php if ($a_planejamento == 1) { ?> checked<?php } ?>></th>
                     <td>Não </td></label>
                 </tr><br><br> 
 
                 <label>8.3 Trabalha ou já obteve recursos de terceiros?</label>
                 <br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "a_trabalhaRecursoTerc" value = "0" <?php if ($a_trabalhaRecursoTerc == 0) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "a_trabalhaRecursoTerc" id="a_trabalhaRecursoTerc" value = "0" <?php if ($a_trabalhaRecursoTerc == 0) { ?> checked<?php } ?>></th>
                     <td>Não </td></label>
                 </tr>
                 <tr>
@@ -1880,68 +1880,68 @@ if ($_POST) {
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "a_chequeEspecial" value = "1" <?php if ($a_chequeEspecial == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "a_chequeEspecial" id="a_chequeEspecial" value = "1" <?php if ($a_chequeEspecial == 1) { ?> checked<?php } ?>></th>
                     <td>Cheque Especial</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "a_emprestimo" value = "1" <?php if ($a_emprestimo == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "a_emprestimo" id="a_emprestimo" value = "1" <?php if ($a_emprestimo == 1) { ?> checked<?php } ?>></th>
                     <td>Empréstimo</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "a_factoring" value = "1" <?php if ($a_factoring == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "a_factoring" id="a_factoring" value = "1" <?php if ($a_factoring == 1) { ?> checked<?php } ?>></th>
                     <td>Factoring</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "a_outros" value = "1" <?php if ($a_outros == 1) { ?> checked<?php } ?>></th>
-                    <td>Outros <input type="text" name="a_descOutrosRecursos" value="<?php echo $a_descOutrosRecursos; ?>" size=50></td></label>
+                <label><th class="span1"><input type="checkbox" name = "a_outros" id="a_outros" value = "1" <?php if ($a_outros == 1) { ?> checked<?php } ?>></th>
+                    <td>Outros <input type="text" name="a_descOutrosRecursos" id="a_descOutrosRecursos" value="<?php echo $a_descOutrosRecursos; ?>" size=50></td></label>
                 </tr>
                 <br>
                 <BR>
                 <label>8.4 Quais são seus maiores gastos?</label>
                 <br>
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "a_frete" value = "1" <?php if ($a_frete == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "a_frete" id="a_frete" value = "1" <?php if ($a_frete == 1) { ?> checked<?php } ?>></th>
                     <td>Frete</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "a_energiaEletrica" value = "1" <?php if ($a_energiaEletrica == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "a_energiaEletrica" id="a_energiaEletrica" value = "1" <?php if ($a_energiaEletrica == 1) { ?> checked<?php } ?>></th>
                     <td>Energia Elétrica</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "a_folhaPagto" value = "1" <?php if ($a_folhaPagto == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "a_folhaPagto" id="a_folhaPagto" value = "1" <?php if ($a_folhaPagto == 1) { ?> checked<?php } ?>></th>
                     <td>Folha de Pagamento</td></label>
                 </tr>
 
                 <br>
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "a_financeiros" value = "1" <?php if ($a_financeiros == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "a_financeiros" id="a_financeiros" value = "1" <?php if ($a_financeiros == 1) { ?> checked<?php } ?>></th>
                     <td>Financeiros</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "a_manutGeral" value = "1" <?php if ($a_manutGeral == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "a_manutGeral" id="a_manutGeral" value = "1" <?php if ($a_manutGeral == 1) { ?> checked<?php } ?>></th>
                     <td>Manutenção Geral</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "a_impostos" value = "1" <?php if ($a_impostos == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "a_impostos" id="a_impostos" value = "1" <?php if ($a_impostos == 1) { ?> checked<?php } ?>></th>
                     <td>Impostos</td></label>
                 </tr>
 
                 <br>
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "a_aluguel" value = "1" <?php if ($a_aluguel == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "a_aluguel" id="a_aluguel" value = "1" <?php if ($a_aluguel == 1) { ?> checked<?php } ?>></th>
                     <td>Aluguel</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "a_outrosGastos" value = "1" <?php if ($a_outrosGastos == 1) { ?> checked<?php } ?>></th>
-                    <td>Outros, quais? <input type="text" name="a_descOutrosGastos" value="<?php echo $a_descOutrosGastos; ?>" size=50></td></label>
+                <label><th class="span1"><input type="checkbox" name = "a_outrosGastos" id="a_outrosGastos" value = "1" <?php if ($a_outrosGastos == 1) { ?> checked<?php } ?>></th>
+                    <td>Outros, quais? <input type="text" name="a_descOutrosGastos" id="a_descOutrosGastos" value="<?php echo $a_descOutrosGastos; ?>" size=50></td></label>
                 </tr>
 
                 <br>  
@@ -1950,7 +1950,7 @@ if ($_POST) {
                 <br> 
                 <label>  9.1 Você conhece todos os impostos devidos pela sua empresa?</label><br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "j_impostos" value = "0" <?php if ($a_outrosGastos == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "j_impostos" id="j_impostos" value = "0" <?php if ($a_outrosGastos == 1) { ?> checked<?php } ?>></th>
                     <td>Sim</td></label>
                 </tr>
                 <tr>
@@ -1960,7 +1960,7 @@ if ($_POST) {
 
                 <label>9.2 Você já recebeu alguma autuação de fiscalização?</label><br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "j_autuacaoFiscal" value = "0" <?php if ($j_autuacaoFiscal == 0) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "j_autuacaoFiscal" id="j_autuacaoFiscal" value = "0" <?php if ($j_autuacaoFiscal == 0) { ?> checked<?php } ?>></th>
                     <td>Sim</td></label>
                 </tr>
                 <tr>
@@ -1971,7 +1971,7 @@ if ($_POST) {
                 <label>9.3 Sua empresa está respondendo alguma ação judicial, inclusive trabalhista?</label>
                 <BR>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "j_acaoJudicial" value = "0" <?php if ($j_acaoJudicial == 0) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "j_acaoJudicial" id="j_acaoJudicial" value = "0" <?php if ($j_acaoJudicial == 0) { ?> checked<?php } ?>></th>
                     <td>Sim</td></label>
                 </tr>
                 <tr>
@@ -1982,7 +1982,7 @@ if ($_POST) {
 
                 <label>9.4 Suas tratativas com seus fornecedores são:</label><br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "j_tratativas" value = "0" <?php if ($j_tratativas == 0) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "j_tratativas" id="j_tratativas" value = "0" <?php if ($j_tratativas == 0) { ?> checked<?php } ?>></th>
                     <td>Verbais</td></label>
                 </tr>
                 <tr>
@@ -1992,22 +1992,22 @@ if ($_POST) {
 
                 <label>9.5 Como você realiza suas cobranças na empresa?</label><br>
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "j_empresaCobranca" value = "1" <?php if ($j_empresaCobranca == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "j_empresaCobranca" id="j_empresaCobranca" value = "1" <?php if ($j_empresaCobranca == 1) { ?> checked<?php } ?>></th>
                     <td>Empresa de cobrança</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "j_colaborador" value = "1" <?php if ($j_colaborador == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "j_colaborador" id="j_colaborador" value = "1" <?php if ($j_colaborador == 1) { ?> checked<?php } ?>></th>
                     <td>Colaborador</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "j_pessoalmente" value = "1" <?php if ($j_pessoalmente == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "j_pessoalmente" id="j_pessoalmente" value = "1" <?php if ($j_pessoalmente == 1) { ?> checked<?php } ?>></th>
                     <td>Pessoalmente</td></label>
                 </tr>
 
                 <tr>
-                <label><th class="span1"><input type="checkbox" name = "j_outrasCobrancas" value = "1" <?php if ($j_outrasCobrancas == 1) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="checkbox" name = "j_outrasCobrancas" id="j_outrasCobrancas" value = "1" <?php if ($j_outrasCobrancas == 1) { ?> checked<?php } ?>></th>
                     <td>Outros</td></label>
                 </tr>
                 </br>
@@ -2015,7 +2015,7 @@ if ($_POST) {
 
                 <label>9.6 Tem assessoria jurídica?</label><br>
                 <tr>
-                <label><th class="span1"><input type="radio" name = "j_assessoriaJuridica" value = "0" <?php if ($j_assessoriaJuridica == 0) { ?> checked<?php } ?>></th>
+                <label><th class="span1"><input type="radio" name = "j_assessoriaJuridica" id="j_assessoriaJuridica" value = "0" <?php if ($j_assessoriaJuridica == 0) { ?> checked<?php } ?>></th>
                     <td>Sim</td></label>
                 </tr>
                 <tr>
@@ -2025,12 +2025,12 @@ if ($_POST) {
 
                 <label>Observação:</label>
                 <br>
-                <input type="text" name="j_observacao" value="<?php echo $j_observacao; ?>" size=100><br>
+                <input type="text" name="j_observacao" id="j_observacao" value="<?php echo $j_observacao; ?>" size=100><br>
                 <br>
                 <br>
             </div>            
           </div>
-             <button type="submit" id ="btn">Confirmar</button>
-             <button type="reset" id = "btn">Cancelar</button>
-             <a href="listar-empresas.php" id ="btn">Voltar</a>
+             <button type="submit" id ="btnA">Confirmar</button>
+             <button type="reset" id = "btnB">Cancelar</button>
+             <a href="listar-empresas.php" id ="btnC">Voltar</a>
         </form>

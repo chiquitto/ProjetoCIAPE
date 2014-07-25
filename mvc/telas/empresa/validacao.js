@@ -43,12 +43,12 @@ function validarFormulario() {
     var msg = '';
     var foco = '';
 
-    //var razaoSocial = document.getElementById('e_razaoSocial').value;
+    
     if (document.cadastroCiape.e_razaoSocial.value == "") {
         ok = false;
         msg += 'Informe a Razão Social \n';
         document.cadastroCiape.e_razaoSocial.focus();
-        //foco = focar('e_razaoSocial', foco);
+        foco = focar('e_razaoSocial', foco);
     }
     if (document.cadastroCiape.e_cnpj.value == "") {
         ok = false;
@@ -177,8 +177,8 @@ function validarFormulario() {
     if (document.cadastroCiape.m_OutrosMeiosComunicacao.checked == true) {
         if (document.cadastroCiape.m_OutrosMeiosComunicacaoDesc.value == "") {
             ok = false;
-            msg += 'Informe pelo menos um meio de comunicação \n';
-            foco = focar('m_OutrosMeiosComunicacao', foco);
+            msg += 'Informe o outro meio de comunicação \n';
+            foco = focar('m_OutrosMeiosComunicacaoDesc', foco);
         }
     }
     
@@ -195,7 +195,7 @@ function validarFormulario() {
         if (document.cadastroCiape.p_outraFormacaoPreco.value == "") {
             ok = false;
             msg += 'Informe qual a outra maneira como forma os preços de seus produtos  \n';
-            foco = focar('p_formacaoPreco', foco);
+            foco = focar('p_outraFormacaoPreco', foco);
         }
     }
     
@@ -213,7 +213,7 @@ function validarFormulario() {
         if(document.cadastroCiape.v_periodoFinal.value == ""){
             ok = false;
             msg += 'Informe o período inicial e final de maior movimento \n';
-            foco = focar('v_periodoFinal', foco);
+            foco = focar('v_periodoInicial', foco);
         }
     }
     
@@ -226,7 +226,7 @@ function validarFormulario() {
                             if (document.cadastroCiape.v_dom.checked == false) {
                                 ok = false;
                                 msg += 'Informe pelo menos um dia da semana de maior movimento \n';
-                                foco = focar('v_dom', foco);
+                                foco = focar('v_seg', foco);
                             }
                         }
                     }
@@ -240,7 +240,7 @@ function validarFormulario() {
             if (document.cadastroCiape.v_noite.checked == false) {
                     ok = false;
                     msg += 'Informe pelo menos um horário de maior movimento \n';
-                    foco = focar('v_noite', foco);
+                    foco = focar('v_manha', foco);
             }
         }
     }
@@ -253,7 +253,7 @@ function validarFormulario() {
                         if (document.cadastroCiape.v_outraFormaPagto.checked == false) {
                             ok = false;
                             msg += 'Informe pelo menos uma das formas de pagamento oferecidas aos clientes \n';
-                            foco = focar('v_outraFormaPagto', foco);
+                            foco = focar('v_cheque', foco);
                         }
                     }
                 }
@@ -282,11 +282,195 @@ function validarFormulario() {
             foco = focar('cli_percTotalFat', foco);
         }
     }
+    if(document.cadastroCiape.r_treinamento[0].checked == false){
+        if(document.cadastroCiape.r_treinamento[1].checked == false){
+            ok = false;
+            msg += 'Informe se seus colaboradores receberam treinamentos  \n';
+            foco = focar('r_treinamento', foco);
+        }
+    }
+    if(document.cadastroCiape.r_treinamento[0].checked == true){
+        if(document.cadastroCiape.r_area.value == ''){
+            ok = false;
+            msg += 'Informe qual treinamento seus colaboradores tiveram  \n';
+            foco = focar('r_area', foco);
+        }
+    }
+    if(document.cadastroCiape.r_indicacao.checked == false){
+        if(document.cadastroCiape.r_entrevista.checked == false){
+            if(document.cadastroCiape.r_analCurEnt.checked == false){
+                ok = false;
+                msg += 'Informe qual método utiliza para contratação  \n';
+                foco = focar('r_indicacao', foco);
+            }
+        }
+    }
+    
+    if(document.cadastroCiape.a_fluxoCaixaManual.value != ''){
+        if(document.cadastroCiape.a_fluxoCaixaInfo.value != ''){
+                ok = false;
+                msg += 'Informe somente um método para Fluxo de caixa  \n';
+                foco = focar('a_fluxoCaixaInfo', foco);
+        }
+    }
+    if(document.cadastroCiape.a_admComprasManual.value != ''){
+        if(document.cadastroCiape.a_admComprasInfo.value != ''){
+                ok = false;
+                msg += 'Informe somente um método para Adm. de Compras  \n';
+                foco = focar('a_admComprasInfo', foco);
+        }
+    }
+    if(document.cadastroCiape.a_controleEstoqueManual.value != ''){
+        if(document.cadastroCiape.a_controleEstoqueInfo.value != ''){
+                ok = false;
+                msg += 'Informe somente um método para Controle de Estoques  \n';
+                foco = focar('a_controleEstoqueInfo', foco);
+        }
+    }
+    if(document.cadastroCiape.a_admVendasManual.value != ''){
+        if(document.cadastroCiape.a_admVendasInfo.value != ''){
+                ok = false;
+                msg += 'Informe somente um método para Adm. de Vendas  \n';
+                foco = focar('a_admVendasInfo', foco);
+        }
+    }
+    if(document.cadastroCiape.a_contasPagarManual.value != ''){
+        if(document.cadastroCiape.a_contasPagarInfo.value != ''){
+                ok = false;
+                msg += 'Informe somente um método para Contas a pagar  \n';
+                foco = focar('a_contasPagarInfo', foco);
+        }
+    }
+    if(document.cadastroCiape.a_fatManual.value != ''){
+        if(document.cadastroCiape.a_fatInfo.value != ''){
+                ok = false;
+                msg += 'Informe somente um método para Faturamento  \n';
+                foco = focar('a_fatInfo', foco);
+        }
+    }
+    if(document.cadastroCiape.a_contasReceberManual.value != ''){
+        if(document.cadastroCiape.a_contasReceberInfo.value != ''){
+                ok = false;
+                msg += 'Informe somente um método para Contas a receber  \n';
+                foco = focar('a_contasReceberInfo', foco);
+        }
+    }
+    if(document.cadastroCiape.a_descOutrosTipos.value != ''){
+        if(document.cadastroCiape.a_outrosTiposSelecionadoManual.value != ''){
+            if(document.cadastroCiape.a_outrosTiposSelecionadoInfo.value != ''){
+                ok = false;
+                msg += 'Informe somente um método para Outros tipos de controle  \n';
+                foco = focar('a_outrosTiposSelecionadoInfo', foco);
+            }
+        }
+    }
+    
+    if(document.cadastroCiape.a_planejamento[0].checked == false){
+        if(document.cadastroCiape.a_planejamento[1].checked == false){
+            ok = false;
+            msg += 'Informe se realiza planejamentos  \n';
+            foco = focar('r_treinamento', foco);
+        }
+    }
+    if(document.cadastroCiape.a_planejamento[0].checked == true){
+        if(document.cadastroCiape.a_area.value == ''){
+            ok = false;
+            msg += 'Informe qual planejamento realiza  \n';
+            foco = focar('a_area', foco);
+        }
+    }
+    
+    if(document.cadastroCiape.a_trabalhaRecursoTerc[0].checked == false){
+        if(document.cadastroCiape.a_trabalhaRecursoTerc[1].checked == false){
+            ok = false;
+            msg += 'Informe se trabalha com recursos de terceiros  \n';
+            foco = focar('a_trabalhaRecursoTerc', foco);
+        }
+    }
+    if(document.cadastroCiape.a_trabalhaRecursoTerc[1].checked == true){
+        if(document.cadastroCiape.a_chequeEspecial.checked == false){
+          if(document.cadastroCiape.a_emprestimo.checked == false){
+            if(document.cadastroCiape.a_factoring.checked == false){
+              if(document.cadastroCiape.a_outros.checked == false){
+                  ok = false;
+                  msg += 'Informe quais os recursos de terceiro que utiliza  \n';
+                  foco = focar('a_chequeEspecial', foco);
+              } 
+            }
+          }  
+        }
+    }
+    if(document.cadastroCiape.a_outros.checked == true){
+        if(document.cadastroCiape.a_descOutrosRecursos.value == ''){
+            ok = false;
+            msg += 'Informe qual o outro recurso de terceiro que utiliza  \n';
+            foco = focar('a_descOutrosRecursos', foco);
+        }
+    }
+    if(document.cadastroCiape.a_frete.checked == false){
+        if(document.cadastroCiape.a_energiaEletrica.checked == false){
+            if(document.cadastroCiape.a_folhaPagto.checked == false){
+                if(document.cadastroCiape.a_financeiros.checked == false){
+                    if(document.cadastroCiape.a_manutGeral.checked == false){
+                        if(document.cadastroCiape.a_impostos.checked == false){
+                            if(document.cadastroCiape.a_aluguel.checked == false){
+                                if(document.cadastroCiape.a_outrosGastos.checked == false){
+                                    ok = false;
+                                    msg += 'Informe qual seu maior gasto  \n';
+                                    foco = focar('a_frete', foco);
+                                }
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+    }
+    
+    if(document.cadastroCiape.a_outrosGastos.checked == true){
+       if(document.cadastroCiape.a_descOutrosGastos.value == ''){
+            ok = false;
+            msg += 'Informe qual outro gasto voce possui  \n';
+            foco = focar('a_descOutrosGastos', foco);
+       }
+    }
+    
+    if(document.cadastroCiape.j_impostos[0].checked == false){
+        if(document.cadastroCiape.j_impostos[1].checked == false){
+            ok = false;
+            msg += 'Informe se conhece os impostos  \n';
+            foco = focar('j_impostos', foco);
+        }
+    }
+    if(document.cadastroCiape.j_autuacaoFiscal[0].checked == false){
+        if(document.cadastroCiape.j_autuacaoFiscal[1].checked == false){
+            ok = false;
+            msg += 'Informe se ja recebeu alguma autuação judicial  \n';
+            foco = focar('j_autuacaoFiscal', foco);
+        }
+    }
+    if(document.cadastroCiape.j_acaoJudicial[0].checked == false){
+        if(document.cadastroCiape.j_acaoJudicial[1].checked == false){
+            ok = false;
+            msg += 'Informe se esta respondendo alguma ação judicial  \n';
+            foco = focar('j_acaoJudicial', foco);
+        }
+    }
+    if(document.cadastroCiape.j_assessoriaJuridica[0].checked == false){
+        if(document.cadastroCiape.j_assessoriaJuridica[1].checked == false){
+            ok = false;
+            msg += 'Informe se possui assessoria juridica  \n';
+            foco = focar('j_assessoriaJuridica', foco);
+        }
+    }
+    
     
     if (ok == false) {
         window.alert(msg);
         document.getElementById(foco).focus();
+    }else{
+        window.alert('Cadastrado com sucesso!');
     }
-
+    
     return ok;
 }
