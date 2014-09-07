@@ -50,7 +50,7 @@ switch($acao) {
                 <tr>
                   <td><?php echo $emp->getNumOrdem(); ?></td>
                   <td><?php echo $emp->getE_razaoSocial(); ?></td> 
-                   <td><a href="visualizar2.php?id=<?php echo $emp->getNumOrdem(); ?>">[Visualizar]</a></td>
+                   <td><a href="visualizar.php?id=<?php echo $emp->getNumOrdem(); ?>">[Visualizar]</a></td>
                    <td><a href="listar-empresas.php?id=<?php echo $emp->getNumOrdem(); ?>&acao=apagar" onclick="return confirm('Tem certeza que deseja excluir este cadastro?')">[Excluir]</a></td>
                 </tr>
                   <?php } ?>

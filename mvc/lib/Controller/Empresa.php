@@ -268,4 +268,16 @@ class Controller_Empresa extends Controller {
         $view->desenhar('empresa/listar');
     }
 
+    public function visulizar() {
+        $dao = new Dao_Empresa();
+        $id = $_GET['id'];
+        $empresas = $dao->request("numOrdem = $id");
+        
+        $empresa = $empresas[0];
+        
+        $view = new View();
+        $view->add('empresa', $empresa);
+        $view->desenhar('empresa/visualizar2');
+    }
+
 }
