@@ -4,12 +4,7 @@ p {
 }
 
 input[type=text]{
-    background: white; 
-    border: 1px solid #DDD; 
-    border-radius: 5px; 
-    box-shadow: 0 0 5px #DDD inset; 
-    color: #666; 
-    outline: none; 
+    
 } 
 
 legend{
@@ -21,26 +16,19 @@ th {
 }
 
 body {
-    margin-left:350px;
-    margin-right:350px;
-    margin-top:0px;
-    margin-bottom:0px;   
     font-family:Arial, Helvetica, sans-serif;
     font-size:15px; 
     font-weight:normal;
-    float:left;
-    left:1em;
-    width:40em;
-    position:absolute;
 }
   
 input[type=text]{
-    background: white; 
-    border: 1px solid #DDD; 
-    border-radius: 5px; 
-    box-shadow: 0 0 5px #DDD inset; 
-    color: #666; 
-    outline: none; 
+    background: white;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0 0 5px #DDD inset;
+    color: #666;
+    outline: none;
 } 
    
 #btnA{

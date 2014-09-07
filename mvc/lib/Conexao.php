@@ -3,9 +3,9 @@
 
 class Conexao extends PDO {
 
-    private $dsn = 'mysql:host=localhost;dbname=trabciape';
+    private $dsn = 'mysql:host=localhost;dbname=ciape';
     private $user = 'root';
-    private $password = '';
+    private $password = '123456';
     private static $instancia;
 
     function __construct() {
@@ -13,7 +13,7 @@ class Conexao extends PDO {
             parent::__construct($this->dsn, $this->user, $this->password);
             $this->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
-            echo "Conexão falhou. Erro: " . $e->getMessage();
+            echo "ConexÃ£o falhou. Erro: " . $e->getMessage();
             exit;
         }
     }
